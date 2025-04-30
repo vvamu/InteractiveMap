@@ -1,0 +1,124 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/companies.csqb5zoldd.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"csqb5zoldd"},{"Name":"integrity","Value":"sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/companies.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/companies.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/companies/_.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\_.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/companies/_.qygrwjo5h3.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\_.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qygrwjo5h3"},{"Name":"integrity","Value":"sha256-XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/companies/_.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/belarus.2h0b4uvk1j.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\belarus.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2h0b4uvk1j"},{"Name":"integrity","Value":"sha256-2nzFp0PJNteUWKkCn9oLDDE/4n\u002BMXpr0JFwJn9M\u002BZew="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/belarus.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"589547"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00222nzFp0PJNteUWKkCn9oLDDE/4n\u002BMXpr0JFwJn9M\u002BZew=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/belarus.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\belarus.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2nzFp0PJNteUWKkCn9oLDDE/4n\u002BMXpr0JFwJn9M\u002BZew="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"589547"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00222nzFp0PJNteUWKkCn9oLDDE/4n\u002BMXpr0JFwJn9M\u002BZew=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/brest.9ijjrxgzf3.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\brest.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9ijjrxgzf3"},{"Name":"integrity","Value":"sha256-gchPFF0XF/lFZS7kcM1\u002BpScHQFslpzOZCUXyz3kxdG8="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/brest.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"653661"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022gchPFF0XF/lFZS7kcM1\u002BpScHQFslpzOZCUXyz3kxdG8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/brest.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\brest.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gchPFF0XF/lFZS7kcM1\u002BpScHQFslpzOZCUXyz3kxdG8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"653661"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022gchPFF0XF/lFZS7kcM1\u002BpScHQFslpzOZCUXyz3kxdG8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/gomel.3ej6r77vgk.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\gomel.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3ej6r77vgk"},{"Name":"integrity","Value":"sha256-q05mdBokQBlp3r0JvAAXAP\u002BiraCxRxOSZs\u002BsRFPJvS8="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/gomel.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"758831"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022q05mdBokQBlp3r0JvAAXAP\u002BiraCxRxOSZs\u002BsRFPJvS8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/gomel.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\gomel.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q05mdBokQBlp3r0JvAAXAP\u002BiraCxRxOSZs\u002BsRFPJvS8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"758831"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022q05mdBokQBlp3r0JvAAXAP\u002BiraCxRxOSZs\u002BsRFPJvS8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/grodno.33udguv0nz.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\grodno.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"33udguv0nz"},{"Name":"integrity","Value":"sha256-ce7Wtk\u002B6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/grodno.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"489617"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022ce7Wtk\u002B6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/grodno.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\grodno.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ce7Wtk\u002B6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"489617"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022ce7Wtk\u002B6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/minsk.faogms5bdo.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\minsk.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"faogms5bdo"},{"Name":"integrity","Value":"sha256-97SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/minsk.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1016284"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u002297SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/minsk.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\minsk.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-97SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1016284"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u002297SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/mogilev.c2q1jxvovz.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\mogilev.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c2q1jxvovz"},{"Name":"integrity","Value":"sha256-zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/mogilev.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"718962"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/mogilev.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\mogilev.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"718962"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/vitebsk.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\vitebsk.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1004824"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/geojson/vitebsk.u687cpvtru.geojson">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\vitebsk.geojson'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u687cpvtru"},{"Name":"integrity","Value":"sha256-NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/geojson/vitebsk.geojson"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1004824"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/media/_.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\_.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InteractiveMapOfEnterprises.Server/media/_.qygrwjo5h3.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\_.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qygrwjo5h3"},{"Name":"integrity","Value":"sha256-XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw="},{"Name":"label","Value":"_content/InteractiveMapOfEnterprises.Server/media/_.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022XmUQ1vm1Lni\u002BGlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 08:35:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

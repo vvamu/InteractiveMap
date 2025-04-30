@@ -1,0 +1,10 @@
+wwwroot\companies.json
+wwwroot\companies\_.json
+wwwroot\geojson\belarus.geojson
+wwwroot\geojson\brest.geojson
+wwwroot\geojson\gomel.geojson
+wwwroot\geojson\grodno.geojson
+wwwroot\geojson\minsk.geojson
+wwwroot\geojson\mogilev.geojson
+wwwroot\geojson\vitebsk.geojson
+wwwroot\media\_.json

@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
+      "PackagePath": "staticwebassets\\companies.json"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
+      "PackagePath": "staticwebassets\\companies\\_.json"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
+      "PackagePath": "staticwebassets\\geojson\\belarus.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
+      "PackagePath": "staticwebassets\\geojson\\brest.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
+      "PackagePath": "staticwebassets\\geojson\\gomel.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
+      "PackagePath": "staticwebassets\\geojson\\grodno.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
+      "PackagePath": "staticwebassets\\geojson\\minsk.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
+      "PackagePath": "staticwebassets\\geojson\\mogilev.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
+      "PackagePath": "staticwebassets\\geojson\\vitebsk.geojson"
+    },
+    {
+      "Id": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
+      "PackagePath": "staticwebassets\\media\\_.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InteractiveMapOfEnterprises.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InteractiveMapOfEnterprises.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.InteractiveMapOfEnterprises.Server.props",
+      "PackagePath": "build\\InteractiveMapOfEnterprises.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.InteractiveMapOfEnterprises.Server.props",
+      "PackagePath": "buildMultiTargeting\\InteractiveMapOfEnterprises.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.InteractiveMapOfEnterprises.Server.props",
+      "PackagePath": "buildTransitive\\InteractiveMapOfEnterprises.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

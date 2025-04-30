@@ -1,0 +1,6 @@
+@InteractiveMapOfEnterprises.Server_HostAddress = http://localhost:5094
+
+GET {{InteractiveMapOfEnterprises.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

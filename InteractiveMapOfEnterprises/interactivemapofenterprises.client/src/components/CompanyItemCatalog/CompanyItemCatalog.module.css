@@ -1,0 +1,41 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #4678c311;
+  transition: 0.2s;
+}
+
+.item:hover {
+  border-color: #4677c3;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-family: MA-Medium;
+}
+
+.addName {
+  margin: 0;
+  opacity: 0.5;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tools > * {
+  margin-left: 5px;
+}
+
+.item:hover > .tools {
+  opacity: 1;
+  pointer-events: all;
+}

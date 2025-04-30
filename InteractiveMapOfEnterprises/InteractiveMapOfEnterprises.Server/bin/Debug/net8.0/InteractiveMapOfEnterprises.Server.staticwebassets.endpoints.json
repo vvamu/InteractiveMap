@@ -1,0 +1,826 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "companies.csqb5zoldd.json",
+      "AssetFile": "companies.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "csqb5zoldd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw="
+        },
+        {
+          "Name": "label",
+          "Value": "companies.json"
+        }
+      ]
+    },
+    {
+      "Route": "companies.json",
+      "AssetFile": "companies.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw="
+        }
+      ]
+    },
+    {
+      "Route": "companies/_.json",
+      "AssetFile": "companies/_.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw="
+        }
+      ]
+    },
+    {
+      "Route": "companies/_.qygrwjo5h3.json",
+      "AssetFile": "companies/_.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qygrwjo5h3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw="
+        },
+        {
+          "Name": "label",
+          "Value": "companies/_.json"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/belarus.2h0b4uvk1j.geojson",
+      "AssetFile": "geojson/belarus.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589547"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2nzFp0PJNteUWKkCn9oLDDE/4n+MXpr0JFwJn9M+Zew=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2h0b4uvk1j"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2nzFp0PJNteUWKkCn9oLDDE/4n+MXpr0JFwJn9M+Zew="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/belarus.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/belarus.geojson",
+      "AssetFile": "geojson/belarus.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589547"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2nzFp0PJNteUWKkCn9oLDDE/4n+MXpr0JFwJn9M+Zew=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2nzFp0PJNteUWKkCn9oLDDE/4n+MXpr0JFwJn9M+Zew="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/brest.9ijjrxgzf3.geojson",
+      "AssetFile": "geojson/brest.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "653661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gchPFF0XF/lFZS7kcM1+pScHQFslpzOZCUXyz3kxdG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ijjrxgzf3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gchPFF0XF/lFZS7kcM1+pScHQFslpzOZCUXyz3kxdG8="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/brest.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/brest.geojson",
+      "AssetFile": "geojson/brest.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "653661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gchPFF0XF/lFZS7kcM1+pScHQFslpzOZCUXyz3kxdG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gchPFF0XF/lFZS7kcM1+pScHQFslpzOZCUXyz3kxdG8="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/gomel.3ej6r77vgk.geojson",
+      "AssetFile": "geojson/gomel.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "758831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3ej6r77vgk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/gomel.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/gomel.geojson",
+      "AssetFile": "geojson/gomel.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "758831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/grodno.33udguv0nz.geojson",
+      "AssetFile": "geojson/grodno.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "489617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ce7Wtk+6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "33udguv0nz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ce7Wtk+6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/grodno.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/grodno.geojson",
+      "AssetFile": "geojson/grodno.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "489617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ce7Wtk+6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ce7Wtk+6iqyGNGQq8bypkFbHlQeYhD7U6SbQ9Vya5BA="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/minsk.faogms5bdo.geojson",
+      "AssetFile": "geojson/minsk.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"97SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "faogms5bdo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-97SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/minsk.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/minsk.geojson",
+      "AssetFile": "geojson/minsk.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"97SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-97SOWWzCKRYzId/1wvco/OoUwHWZadGLaELc8s1adBs="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/mogilev.c2q1jxvovz.geojson",
+      "AssetFile": "geojson/mogilev.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "718962"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c2q1jxvovz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/mogilev.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "geojson/mogilev.geojson",
+      "AssetFile": "geojson/mogilev.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "718962"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zL7UFgjbxayCLVtP6q1obDiQoK1QV3PluEikn1aJMKY="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/vitebsk.geojson",
+      "AssetFile": "geojson/vitebsk.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1004824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis="
+        }
+      ]
+    },
+    {
+      "Route": "geojson/vitebsk.u687cpvtru.geojson",
+      "AssetFile": "geojson/vitebsk.geojson",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1004824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u687cpvtru"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NuXVtAdlGo1pyaV/NNMGnocgdJL6Yvp/GSy83025Dis="
+        },
+        {
+          "Name": "label",
+          "Value": "geojson/vitebsk.geojson"
+        }
+      ]
+    },
+    {
+      "Route": "media/_.json",
+      "AssetFile": "media/_.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw="
+        }
+      ]
+    },
+    {
+      "Route": "media/_.qygrwjo5h3.json",
+      "AssetFile": "media/_.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 08:35:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qygrwjo5h3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw="
+        },
+        {
+          "Name": "label",
+          "Value": "media/_.json"
+        }
+      ]
+    }
+  ]
+}

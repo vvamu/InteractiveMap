@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveMapOfEnterprises.Server", "InteractiveMapOfEnterprises.Server\InteractiveMapOfEnterprises.Server.csproj", "{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "interactivemapofenterprises.client", "interactivemapofenterprises.client\interactivemapofenterprises.client.esproj", "{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E93CC364-1749-4852-A7BC-3DD8265DC49A}
+	EndGlobalSection
+EndGlobal
