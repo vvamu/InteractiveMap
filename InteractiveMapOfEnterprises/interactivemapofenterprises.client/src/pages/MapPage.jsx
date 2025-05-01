@@ -1,10 +1,9 @@
 import { useRef, useState } from "react";
 
-import Map from "./../components/Map/Map";
-import Button from "../components/Buttons/Button";
-import ButtonIcon from "./../components/Buttons/ButtonIcon";
-import Link from "./../components/Links/Link";
-import BackIcon from "./../assets/icons/back.svg";
+import Map from "../components/MapPage/Map/Map";
+import ButtonIcon from "../components/Common/Buttons/ButtonIcon";
+import { backIconSrc } from "./../../config";
+
 
 function MapPage() {
   const mapRef = useRef();
@@ -19,33 +18,31 @@ function MapPage() {
           onRenderStart={() => setIsRender(true)}
           onRenderEnd={() => setIsRender(false)}
         />
-        <section className="map-header">
-          {mapRef.current ? (
-            <>
-              {mapRef.current.path.length === 0 ? (
-                ""
+        <section className="map-header" style={{ display: "flex",  alignItems:"flex-start" }}>
+            <div style={{ display: "flex", alignItems: "center", flexDirection: "column",gridGap :"20px" }}>
+              {mapRef.current ? (
+                <>
+                  {mapRef.current.path.length === 0 ? (
+                    ""
+                  ) : (
+                    <ButtonIcon
+                      src={backIconSrc}
+                      alt={"Назад"}
+                      disabled={isRender}
+                      onClick={() => mapRef.current.back()}
+                    ></ButtonIcon>
+                  )}
+                <h1 className="map-title" style={{ writingMode: "vertical-rl", whiteSpace: "nowrap" }}>
+                    {mapRef.current.current.crs.properties.title ? mapRef.current.current.crs.properties.title : ""}
+                                  </h1>
+
+                </>
               ) : (
-                <ButtonIcon
-                  src={BackIcon}
-                  alt={"Назад"}
-                  disabled={isRender}
-                  onClick={() => mapRef.current.back()}
-                ></ButtonIcon>
-              )}
-              <h1 className="map-title">
-                {mapRef.current.current.crs.properties.title
-                  ? mapRef.current.current.crs.properties.title
-                  : ""}
-              </h1>
-            </>
-          ) : (
-            ""
-          )}
+                ""
+                          )}
+          </div>
         </section>
-        <section className="map-footer">
-          <Link href={"/"}>ГЛАВНАЯ</Link>
-          <Link href="catalog">АДМИН ПАЛЕНЬ</Link>
-        </section>
+        
       </main>
       <footer></footer>
     </>

@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\..\\interactivemapofenterprises.client",
+"WorkingDirectory": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\..\\interactivemapofenterprises.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

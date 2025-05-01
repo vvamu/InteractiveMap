@@ -8,7 +8,40 @@
       "id": "gomel"
     }
   },
-  "markers": [],
+  "markers": [
+    {
+      "id": "475e8a9a-adfb-4022-68f4-08dd88ba05df",
+      "name": "wdqwdqwd",
+      "position": {
+        "lat": 53.071161135749726,
+        "lng": 30.211047307779136
+      }
+    },
+    {
+      "id": "e100bd74-163a-4c30-1675-08dd88bbe5d6",
+      "name": "dewdwedwed",
+      "position": {
+        "lat": 53.17000517049714,
+        "lng": 30.068278021004122
+      }
+    },
+    {
+      "id": "c063a695-5253-4b4a-5b60-08dd88beb573",
+      "name": "\u043F\u043A\u0443\u0435\u043F\u043A\u0443\u043F",
+      "position": {
+        "lat": 53.17658669317577,
+        "lng": 29.91452648140025
+      }
+    },
+    {
+      "id": "e2ee9fe2-801a-452a-5b61-08dd88beb573",
+      "name": "222222222222222",
+      "position": {
+        "lat": 53.0678624195742,
+        "lng": 30.793106707708006
+      }
+    }
+  ],
   "features": [
     {
       "type": "Feature",
@@ -19,7 +52,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Lyelchytsy",
-        "cityNameRU": "Лyелчyтсy"
+        "cityNameRU": "\u041By\u0435\u043B\u0447y\u0442\u0441y"
       },
       "geometry": {
         "type": "Polygon",
@@ -1294,7 +1327,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Zhytkavichy",
-        "cityNameRU": "Жyткавичy"
+        "cityNameRU": "\u0416y\u0442\u043A\u0430\u0432\u0438\u0447y"
       },
       "geometry": {
         "type": "Polygon",
@@ -2649,7 +2682,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Pyetrykaw",
-        "cityNameRU": "Пyетрyкаw"
+        "cityNameRU": "\u041Fy\u0435\u0442\u0440y\u043A\u0430w"
       },
       "geometry": {
         "type": "Polygon",
@@ -4556,7 +4589,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Mazyr",
-        "cityNameRU": "Мазyр"
+        "cityNameRU": "\u041C\u0430\u0437y\u0440"
       },
       "geometry": {
         "type": "Polygon",
@@ -6413,13 +6446,13 @@
     {
       "type": "Feature",
       "properties": {
-        "shapeName": "Yelʹsk",
+        "shapeName": "Yel\u02B9sk",
         "shapeISO": "",
         "shapeID": "67162791B11100068414031",
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
-        "cityNameEN": "Yelʹsk",
-        "cityNameRU": "Yелʹск"
+        "cityNameEN": "Yel\u02B9sk",
+        "cityNameRU": "Y\u0435\u043B\u02B9\u0441\u043A"
       },
       "geometry": {
         "type": "Polygon",
@@ -7638,7 +7671,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Naroulia",
-        "cityNameRU": "Нароулиа"
+        "cityNameRU": "\u041D\u0430\u0440\u043E\u0443\u043B\u0438\u0430"
       },
       "geometry": {
         "type": "Polygon",
@@ -8805,7 +8838,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Khoiniki",
-        "cityNameRU": "Кhоиники"
+        "cityNameRU": "\u041Ah\u043E\u0438\u043D\u0438\u043A\u0438"
       },
       "geometry": {
         "type": "Polygon",
@@ -10324,7 +10357,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Brahin",
-        "cityNameRU": "Браhин"
+        "cityNameRU": "\u0411\u0440\u0430h\u0438\u043D"
       },
       "geometry": {
         "type": "Polygon",
@@ -11731,7 +11764,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Loyew",
-        "cityNameRU": "Лоyеw"
+        "cityNameRU": "\u041B\u043Ey\u0435w"
       },
       "geometry": {
         "type": "Polygon",
@@ -12998,7 +13031,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Gomel",
-        "cityNameRU": "Гомел"
+        "cityNameRU": "\u0413\u043E\u043C\u0435\u043B"
       },
       "geometry": {
         "type": "Polygon",
@@ -14389,7 +14422,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Dobrush",
-        "cityNameRU": "Добруш"
+        "cityNameRU": "\u0414\u043E\u0431\u0440\u0443\u0448"
       },
       "geometry": {
         "type": "Polygon",
@@ -15456,7 +15489,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Chachersk",
-        "cityNameRU": "Чачерск"
+        "cityNameRU": "\u0427\u0430\u0447\u0435\u0440\u0441\u043A"
       },
       "geometry": {
         "type": "Polygon",
@@ -16667,7 +16700,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Kalinkavichy",
-        "cityNameRU": "Калинкавичy"
+        "cityNameRU": "\u041A\u0430\u043B\u0438\u043D\u043A\u0430\u0432\u0438\u0447y"
       },
       "geometry": {
         "type": "Polygon",
@@ -18982,7 +19015,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Rechytsa",
-        "cityNameRU": "Речyтса"
+        "cityNameRU": "\u0420\u0435\u0447y\u0442\u0441\u0430"
       },
       "geometry": {
         "type": "Polygon",
@@ -21009,7 +21042,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Akciabrski",
-        "cityNameRU": "Акциабрски"
+        "cityNameRU": "\u0410\u043A\u0446\u0438\u0430\u0431\u0440\u0441\u043A\u0438"
       },
       "geometry": {
         "type": "Polygon",
@@ -22340,7 +22373,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Zhlobin",
-        "cityNameRU": "Жлобин"
+        "cityNameRU": "\u0416\u043B\u043E\u0431\u0438\u043D"
       },
       "geometry": {
         "type": "Polygon",
@@ -24051,7 +24084,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Rahachow",
-        "cityNameRU": "Раhачоw"
+        "cityNameRU": "\u0420\u0430h\u0430\u0447\u043Ew"
       },
       "geometry": {
         "type": "Polygon",
@@ -25586,7 +25619,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Karma",
-        "cityNameRU": "Карма"
+        "cityNameRU": "\u041A\u0430\u0440\u043C\u0430"
       },
       "geometry": {
         "type": "Polygon",
@@ -26449,7 +26482,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Buda-Kashalyova",
-        "cityNameRU": "Буда-Кашалyова"
+        "cityNameRU": "\u0411\u0443\u0434\u0430-\u041A\u0430\u0448\u0430\u043By\u043E\u0432\u0430"
       },
       "geometry": {
         "type": "Polygon",
@@ -27828,7 +27861,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Vietka",
-        "cityNameRU": "Виетка"
+        "cityNameRU": "\u0412\u0438\u0435\u0442\u043A\u0430"
       },
       "geometry": {
         "type": "Polygon",
@@ -28803,7 +28836,7 @@
         "shapeGroup": "BLR",
         "shapeType": "ADM2",
         "cityNameEN": "Svietlahorsk",
-        "cityNameRU": "Свиетлаhорск"
+        "cityNameRU": "\u0421\u0432\u0438\u0435\u0442\u043B\u0430h\u043E\u0440\u0441\u043A"
       },
       "geometry": {
         "type": "Polygon",

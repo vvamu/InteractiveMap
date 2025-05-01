@@ -1,6 +1,6 @@
-import AchievementsComponyStep from "../components/Steps/AchievementsComponyStep";
-import MinimalInfoAboutComponyStep from "../components/Steps/MinimalInfoAboutComponyStep";
-import VideoComponyStep from "../components/Steps/VideoComponyStep";
+import AchievementsComponyStep from "../components/EditCompanyPage/Steps/AchievementsComponyStep";
+import MinimalInfoAboutComponyStep from "../components/EditCompanyPage/Steps/MinimalInfoAboutComponyStep";
+import VideoComponyStep from "../components/EditCompanyPage/Steps/VideoComponyStep";
 
 export const VOLUME_SOUND_UI = 1;
 

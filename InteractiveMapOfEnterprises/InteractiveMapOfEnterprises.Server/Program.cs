@@ -1,3 +1,7 @@
+using InteractiveMapOfEnterprises.Server.Persistence;
+using InteractiveMapOfEnterprises.Server.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -5,14 +9,21 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors();
-//    options =>
-//{
-//    options.AddPolicy(name: "Client",
-//        policy =>
-//        {
-//            policy.WithOrigins("http://localhost:5173");
-//        });
-//});
+#region DbContext
+var connectionString = builder.Configuration.GetConnectionString("RemoteConnection");
+
+builder.Services.AddDbContext<ApplicationDbContext>(
+options =>
+{
+    options.UseSqlServer(connectionString, options => options.EnableRetryOnFailure().CommandTimeout(60));
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+    options.EnableSensitiveDataLogging();
+},
+ServiceLifetime.Scoped);
+#endregion
+
+builder.Services.AddTransient<ICompanyService, CompanyService>();
+builder.Services.AddTransient<IApplicationUserService, ApplicationUserService>();
 
 builder.WebHost.ConfigureKestrel(options => { options.Limits.MaxRequestBodySize = 2147483647; });
 

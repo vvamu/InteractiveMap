@@ -7,7 +7,7 @@
   "type": "chrome",
   "request": "launch",
   "url": "http://localhost:5173",
-  "webRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client"
+  "webRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client"
 }</LaunchJsonTarget>
   </PropertyGroup>
 </Project>

@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import Title from "../components/Title";
-import ButtonIcon from "./../components/Buttons/ButtonIcon";
-import CatalogCompanies from "../components/Catalogs/CatalogCompanies";
-import SelectedChapterTypesBox from "./../components/InfoBoxs/SelectedChapterTypesBox";
+import Title from "../components/common/Title";
+import ButtonIcon from "../components/common/Buttons/ButtonIcon";
+import CatalogCompanies from "../components/CompaniesPage/Catalogs/Companies";
+import SelectedChapterTypesBox from "../components/common/InfoBoxs/SelectedChapterTypesBox";
 
-import createIcon from "./../assets/icons/create.svg";
+const createIcon = "/create.svg";
 
 function CatalogPage() {
   const [isActiveSelectedChaptersBox, setIsActiveSelectedChaptersBox] =

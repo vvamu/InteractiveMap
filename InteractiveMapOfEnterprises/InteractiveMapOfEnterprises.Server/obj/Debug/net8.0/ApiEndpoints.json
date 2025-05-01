@@ -1,26 +1,5 @@
 [
   {
-    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[InteractiveMapOfEnterprises.Server.WeatherForecast, InteractiveMapOfEnterprises.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
-  },
-  {
     "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
     "Method": "Create",
     "RelativePath": "company/create",
@@ -43,19 +22,9 @@
   },
   {
     "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
-    "Method": "Get",
-    "RelativePath": "company/get",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
-    "Method": "Get",
-    "RelativePath": "company/get/{id}",
-    "HttpMethod": "GET",
+    "Method": "Delete",
+    "RelativePath": "company/delete/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -69,9 +38,19 @@
   },
   {
     "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
-    "Method": "Delete",
-    "RelativePath": "company/{id}",
-    "HttpMethod": "DELETE",
+    "Method": "Get",
+    "RelativePath": "company/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "Get",
+    "RelativePath": "company/get/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

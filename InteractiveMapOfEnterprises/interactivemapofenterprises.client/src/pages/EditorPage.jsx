@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import Title from "../components/Title";
-import StepsProgress from "../components/StepsProgress/StepsProgress";
-import MinimalInfoAboutComponyStep from "./../components/Steps/MinimalInfoAboutComponyStep";
-import LoaderBox from "./../components/InfoBoxs/LoaderBox";
+import Title from "../components/common/Title";
+import StepsProgress from "../components/EditCompanyPage/StepsProgress/StepsProgress";
+import MinimalInfoAboutComponyStep from "./../components/EditCompanyPage/Steps/MinimalInfoAboutComponyStep";
+import LoaderBox from "./../components/common/InfoBoxs/LoaderBox";
 
 import companiesService from "./../services/companiesService";
 import { TYPE_CHAPTER } from "../constants/constants";

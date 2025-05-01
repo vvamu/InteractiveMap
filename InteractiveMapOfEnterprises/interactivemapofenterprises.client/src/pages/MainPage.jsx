@@ -1,5 +1,4 @@
-import Link from "../components/Links/Link";
-import Slider from "../components/Slider/Slider";
+import Slider from "../components/MainPage/Slider/Slider";
 
 function MainPage() {
   return (
@@ -21,7 +20,6 @@ function MainPage() {
               ]}
             />
           </div>
-          <Link href="map">КАРТА</Link>
         </div>
       </main>
       <footer></footer>

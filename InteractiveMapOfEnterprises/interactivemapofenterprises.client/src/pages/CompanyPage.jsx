@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import LoaderBox from "./../components/InfoBoxs/LoaderBox";
+import LoaderBox from "./../components/common/InfoBoxs/LoaderBox";
 
 import companiesService from "../services/companiesService";
-import Title from "../components/Title";
-import Article from "../components/Article/Article";
+import CompanyInfo from "../components/CompanyPage/CompanyInfo/CompanyInfo";
 
 function CompanyPage() {
   const location = useLocation();
@@ -25,8 +24,8 @@ function CompanyPage() {
   useEffect(() => {
     onActiveLoader();
     companiesService.get(id).then((result) => {
-      setData(result.data);
-      console.log(result.data)
+      setData(result);
+      console.log(result)
       onCloseLoader();
     });
   }, []);
@@ -35,7 +34,7 @@ function CompanyPage() {
     <>
       <header></header>
       <main >
-        <Article data={data}/>
+         <CompanyInfo data={data}/>
       </main>
       <footer></footer>
       <LoaderBox active={isActiveLoader}>

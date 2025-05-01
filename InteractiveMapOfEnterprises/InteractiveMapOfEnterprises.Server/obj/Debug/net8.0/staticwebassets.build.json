@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "Wn+XNNitSNsrpodD7rv6i7I8gr01+kPkYaX7Mm7l0Fo=",
+  "Hash": "DC3oBoofxNGG1ygyUHNRYd9m1kXNfW9i2qjiVprun9s=",
   "Source": "InteractiveMapOfEnterprises.Server",
   "BasePath": "_content/InteractiveMapOfEnterprises.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj",
       "Version": 2,
       "Source": "interactivemapofenterprises.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "InteractiveMapOfEnterprises.Server\\wwwroot",
       "Source": "InteractiveMapOfEnterprises.Server",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "companies#[.{fingerprint}]?.json",
       "AssetKind": "All",
@@ -43,17 +43,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "csqb5zoldd",
-      "Integrity": "XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=",
+      "Fingerprint": "klmhdb7eyb",
+      "Integrity": "WEqyHtwR5Ia2llOPnD0DR+ykK97OyJQ8NPiXVFP0mtQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\companies.json"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "companies/_#[.{fingerprint}]?.json",
       "AssetKind": "All",
@@ -71,10 +71,73 @@
       "OriginalItemSpec": "wwwroot\\companies\\_.json"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\b5884aed-510e-403e-9c89-9b0fe9f096bc.json",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "companies/b5884aed-510e-403e-9c89-9b0fe9f096bc#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ef1djhf7mw",
+      "Integrity": "hjDPLeNWjVXuOmez8c/ranvAUmZXpnEhq6EfEPYkrFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\companies\\b5884aed-510e-403e-9c89-9b0fe9f096bc.json"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\b6691969-2aa7-4533-8501-b230e046a569.json",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "companies/b6691969-2aa7-4533-8501-b230e046a569#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "737xf642uw",
+      "Integrity": "I6n+QEwYvN9y2DuDsXOTcZALwWX6oCWsXwPdXTHWwpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\companies\\b6691969-2aa7-4533-8501-b230e046a569.json"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "companies/d8ff0be2-d008-4a6d-aefd-323e73af85c8#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oyw5gqlfe6",
+      "Integrity": "IP4aE6dRWC5PiYl6PB2WMo5GmJd6UEl1YZcUaHvbPcY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\companies\\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/belarus#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -92,10 +155,10 @@
       "OriginalItemSpec": "wwwroot\\geojson\\belarus.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/brest#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -113,10 +176,10 @@
       "OriginalItemSpec": "wwwroot\\geojson\\brest.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/gomel#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -127,17 +190,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3ej6r77vgk",
-      "Integrity": "q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8=",
+      "Fingerprint": "7vw47av9rx",
+      "Integrity": "Y35TS43YB45Cus63gVQvPH0ceXh2AJlAWFWePJJGoxM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\geojson\\gomel.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/grodno#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -155,10 +218,10 @@
       "OriginalItemSpec": "wwwroot\\geojson\\grodno.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/minsk#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -176,10 +239,10 @@
       "OriginalItemSpec": "wwwroot\\geojson\\minsk.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/mogilev#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -197,10 +260,10 @@
       "OriginalItemSpec": "wwwroot\\geojson\\mogilev.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "geojson/vitebsk#[.{fingerprint}]?.geojson",
       "AssetKind": "All",
@@ -218,10 +281,10 @@
       "OriginalItemSpec": "wwwroot\\geojson\\vitebsk.geojson"
     },
     {
-      "Identity": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
       "SourceId": "InteractiveMapOfEnterprises.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
       "BasePath": "_content/InteractiveMapOfEnterprises.Server",
       "RelativePath": "media/_#[.{fingerprint}]?.json",
       "AssetKind": "All",
@@ -237,57 +300,432 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\_.json"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\013991c2-9099-4062-8797-e300feee41be.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/013991c2-9099-4062-8797-e300feee41be#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\013991c2-9099-4062-8797-e300feee41be.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\170ca223-87bc-42e6-ab50-f7b284068951.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/170ca223-87bc-42e6-ab50-f7b284068951#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\170ca223-87bc-42e6-ab50-f7b284068951.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/1cfde5b0-96a6-4199-aa5d-e2632b1a986d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/2b5cc704-106a-4bf8-be46-09f9c0fa3947#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "56nuxpqznt",
+      "Integrity": "zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/45e50526-3a02-4d38-9bf3-d83d9d1ab88d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "56nuxpqznt",
+      "Integrity": "zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/52fd6f4f-5f19-4e36-bbb5-438c5eb79373#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sx7z7afwgr",
+      "Integrity": "8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/62de74ea-1b12-48f2-bbea-f3c4301f25b7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\6e85a526-7d5c-48cc-8f75-810b5c82cc59.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/6e85a526-7d5c-48cc-8f75-810b5c82cc59#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\6e85a526-7d5c-48cc-8f75-810b5c82cc59.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\7b01ec24-d0a4-427f-8f23-6b493ee42b13.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/7b01ec24-d0a4-427f-8f23-6b493ee42b13#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "17pv53gtzo",
+      "Integrity": "TeKndLxZqKU42RmJg8ZYgUURC0jj0+vkxRAEcVRoGvM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\7b01ec24-d0a4-427f-8f23-6b493ee42b13.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8169b75b-11a1-43ed-a796-e70b74543ed7.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/8169b75b-11a1-43ed-a796-e70b74543ed7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sx7z7afwgr",
+      "Integrity": "8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\8169b75b-11a1-43ed-a796-e70b74543ed7.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8311d24e-ca76-4b6b-b800-d952177ab47d.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/8311d24e-ca76-4b6b-b800-d952177ab47d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\8311d24e-ca76-4b6b-b800-d952177ab47d.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8a5330cd-a561-4678-bc11-9d6187cfc0a9.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/8a5330cd-a561-4678-bc11-9d6187cfc0a9#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\8a5330cd-a561-4678-bc11-9d6187cfc0a9.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\907a4157-7b57-49d8-98e4-d6ba704fc445.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/907a4157-7b57-49d8-98e4-d6ba704fc445#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\907a4157-7b57-49d8-98e4-d6ba704fc445.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/98bce9dd-d58a-43f0-b1af-d7f4c6f876a5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\df18adc6-21c3-4184-897c-d8142c93e5ae.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/df18adc6-21c3-4184-897c-d8142c93e5ae#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\df18adc6-21c3-4184-897c-d8142c93e5ae.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/e05f04fd-46e1-4d3e-a237-e7d27fb4eef7#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "in9lafmukz",
+      "Integrity": "Hur1oejNTHVQjAChQuzMm5hkM2lZ0j4VXyjZI7gCb2Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/f27c95c3-2cd0-4edd-bfba-b0b21f176aed#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f458d521-fc0d-4224-adfd-a1c849026ff2.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/f458d521-fc0d-4224-adfd-a1c849026ff2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "56nuxpqznt",
+      "Integrity": "zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\f458d521-fc0d-4224-adfd-a1c849026ff2.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/f79a7aa7-ef26-4d50-9784-f46d6e85bd8c#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png"
+    },
+    {
+      "Identity": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png",
+      "SourceId": "InteractiveMapOfEnterprises.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\",
+      "BasePath": "_content/InteractiveMapOfEnterprises.Server",
+      "RelativePath": "media/fa24cf41-ed9e-45d2-a96d-d5aa037c985c#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fgkczta8k",
+      "Integrity": "IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png"
     }
   ],
   "Endpoints": [
     {
-      "Route": "companies.csqb5zoldd.json",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "csqb5zoldd"
-        },
-        {
-          "Name": "label",
-          "Value": "companies.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw="
-        }
-      ]
-    },
-    {
       "Route": "companies.json",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -296,7 +734,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4"
+          "Value": "618"
         },
         {
           "Name": "Content-Type",
@@ -304,11 +742,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=\""
+          "Value": "\"WEqyHtwR5Ia2llOPnD0DR+ykK97OyJQ8NPiXVFP0mtQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -318,13 +756,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw="
+          "Value": "sha256-WEqyHtwR5Ia2llOPnD0DR+ykK97OyJQ8NPiXVFP0mtQ="
+        }
+      ]
+    },
+    {
+      "Route": "companies.klmhdb7eyb.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WEqyHtwR5Ia2llOPnD0DR+ykK97OyJQ8NPiXVFP0mtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "klmhdb7eyb"
+        },
+        {
+          "Name": "label",
+          "Value": "companies.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WEqyHtwR5Ia2llOPnD0DR+ykK97OyJQ8NPiXVFP0mtQ="
         }
       ]
     },
     {
       "Route": "companies/_.json",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -361,7 +844,7 @@
     },
     {
       "Route": "companies/_.qygrwjo5h3.json",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\_.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -405,8 +888,254 @@
       ]
     },
     {
+      "Route": "companies/b5884aed-510e-403e-9c89-9b0fe9f096bc.ef1djhf7mw.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\b5884aed-510e-403e-9c89-9b0fe9f096bc.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "398"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hjDPLeNWjVXuOmez8c/ranvAUmZXpnEhq6EfEPYkrFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ef1djhf7mw"
+        },
+        {
+          "Name": "label",
+          "Value": "companies/b5884aed-510e-403e-9c89-9b0fe9f096bc.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hjDPLeNWjVXuOmez8c/ranvAUmZXpnEhq6EfEPYkrFU="
+        }
+      ]
+    },
+    {
+      "Route": "companies/b5884aed-510e-403e-9c89-9b0fe9f096bc.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\b5884aed-510e-403e-9c89-9b0fe9f096bc.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "398"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hjDPLeNWjVXuOmez8c/ranvAUmZXpnEhq6EfEPYkrFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hjDPLeNWjVXuOmez8c/ranvAUmZXpnEhq6EfEPYkrFU="
+        }
+      ]
+    },
+    {
+      "Route": "companies/b6691969-2aa7-4533-8501-b230e046a569.737xf642uw.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\b6691969-2aa7-4533-8501-b230e046a569.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I6n+QEwYvN9y2DuDsXOTcZALwWX6oCWsXwPdXTHWwpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 08:41:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "737xf642uw"
+        },
+        {
+          "Name": "label",
+          "Value": "companies/b6691969-2aa7-4533-8501-b230e046a569.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I6n+QEwYvN9y2DuDsXOTcZALwWX6oCWsXwPdXTHWwpM="
+        }
+      ]
+    },
+    {
+      "Route": "companies/b6691969-2aa7-4533-8501-b230e046a569.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\b6691969-2aa7-4533-8501-b230e046a569.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I6n+QEwYvN9y2DuDsXOTcZALwWX6oCWsXwPdXTHWwpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 08:41:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I6n+QEwYvN9y2DuDsXOTcZALwWX6oCWsXwPdXTHWwpM="
+        }
+      ]
+    },
+    {
+      "Route": "companies/d8ff0be2-d008-4a6d-aefd-323e73af85c8.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IP4aE6dRWC5PiYl6PB2WMo5GmJd6UEl1YZcUaHvbPcY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 12:54:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IP4aE6dRWC5PiYl6PB2WMo5GmJd6UEl1YZcUaHvbPcY="
+        }
+      ]
+    },
+    {
+      "Route": "companies/d8ff0be2-d008-4a6d-aefd-323e73af85c8.oyw5gqlfe6.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\companies\\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IP4aE6dRWC5PiYl6PB2WMo5GmJd6UEl1YZcUaHvbPcY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 12:54:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oyw5gqlfe6"
+        },
+        {
+          "Name": "label",
+          "Value": "companies/d8ff0be2-d008-4a6d-aefd-323e73af85c8.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IP4aE6dRWC5PiYl6PB2WMo5GmJd6UEl1YZcUaHvbPcY="
+        }
+      ]
+    },
+    {
       "Route": "geojson/belarus.2h0b4uvk1j.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -451,7 +1180,7 @@
     },
     {
       "Route": "geojson/belarus.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\belarus.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -488,7 +1217,7 @@
     },
     {
       "Route": "geojson/brest.9ijjrxgzf3.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -533,7 +1262,7 @@
     },
     {
       "Route": "geojson/brest.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\brest.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -569,8 +1298,8 @@
       ]
     },
     {
-      "Route": "geojson/gomel.3ej6r77vgk.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
+      "Route": "geojson/gomel.7vw47av9rx.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -579,7 +1308,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "758831"
+          "Value": "760230"
         },
         {
           "Name": "Content-Type",
@@ -587,11 +1316,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8=\""
+          "Value": "\"Y35TS43YB45Cus63gVQvPH0ceXh2AJlAWFWePJJGoxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 19:24:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -601,7 +1330,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3ej6r77vgk"
+          "Value": "7vw47av9rx"
         },
         {
           "Name": "label",
@@ -609,13 +1338,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8="
+          "Value": "sha256-Y35TS43YB45Cus63gVQvPH0ceXh2AJlAWFWePJJGoxM="
         }
       ]
     },
     {
       "Route": "geojson/gomel.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\gomel.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -624,7 +1353,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "758831"
+          "Value": "760230"
         },
         {
           "Name": "Content-Type",
@@ -632,11 +1361,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8=\""
+          "Value": "\"Y35TS43YB45Cus63gVQvPH0ceXh2AJlAWFWePJJGoxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 19:24:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -646,13 +1375,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8="
+          "Value": "sha256-Y35TS43YB45Cus63gVQvPH0ceXh2AJlAWFWePJJGoxM="
         }
       ]
     },
     {
       "Route": "geojson/grodno.33udguv0nz.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -673,7 +1402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 20:10:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -697,7 +1426,7 @@
     },
     {
       "Route": "geojson/grodno.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\grodno.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -718,7 +1447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 20:10:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -734,7 +1463,7 @@
     },
     {
       "Route": "geojson/minsk.faogms5bdo.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -755,7 +1484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 20:10:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -779,7 +1508,7 @@
     },
     {
       "Route": "geojson/minsk.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\minsk.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -800,7 +1529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:35:47 GMT"
+          "Value": "Thu, 01 May 2025 20:10:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -816,7 +1545,7 @@
     },
     {
       "Route": "geojson/mogilev.c2q1jxvovz.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -861,7 +1590,7 @@
     },
     {
       "Route": "geojson/mogilev.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\mogilev.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -898,7 +1627,7 @@
     },
     {
       "Route": "geojson/vitebsk.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -935,7 +1664,7 @@
     },
     {
       "Route": "geojson/vitebsk.u687cpvtru.geojson",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\geojson\\vitebsk.geojson",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -980,7 +1709,7 @@
     },
     {
       "Route": "media/_.json",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1017,7 +1746,7 @@
     },
     {
       "Route": "media/_.qygrwjo5h3.json",
-      "AssetFile": "D:\\work\\react-test\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\_.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1057,6 +1786,1646 @@
         {
           "Name": "integrity",
           "Value": "sha256-XmUQ1vm1Lni+GlGViWQhFGOADgAOPOJ43ewkgOKkBdw="
+        }
+      ]
+    },
+    {
+      "Route": "media/013991c2-9099-4062-8797-e300feee41be.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\013991c2-9099-4062-8797-e300feee41be.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/013991c2-9099-4062-8797-e300feee41be.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/013991c2-9099-4062-8797-e300feee41be.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\013991c2-9099-4062-8797-e300feee41be.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/170ca223-87bc-42e6-ab50-f7b284068951.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\170ca223-87bc-42e6-ab50-f7b284068951.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/170ca223-87bc-42e6-ab50-f7b284068951.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/170ca223-87bc-42e6-ab50-f7b284068951.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\170ca223-87bc-42e6-ab50-f7b284068951.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/1cfde5b0-96a6-4199-aa5d-e2632b1a986d.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:57:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:57:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/2b5cc704-106a-4bf8-be46-09f9c0fa3947.56nuxpqznt.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1352880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:53:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "56nuxpqznt"
+        },
+        {
+          "Name": "label",
+          "Value": "media/2b5cc704-106a-4bf8-be46-09f9c0fa3947.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY="
+        }
+      ]
+    },
+    {
+      "Route": "media/2b5cc704-106a-4bf8-be46-09f9c0fa3947.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1352880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:53:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY="
+        }
+      ]
+    },
+    {
+      "Route": "media/45e50526-3a02-4d38-9bf3-d83d9d1ab88d.56nuxpqznt.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1352880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:41:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "56nuxpqznt"
+        },
+        {
+          "Name": "label",
+          "Value": "media/45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY="
+        }
+      ]
+    },
+    {
+      "Route": "media/45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1352880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:41:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY="
+        }
+      ]
+    },
+    {
+      "Route": "media/52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "562121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI="
+        }
+      ]
+    },
+    {
+      "Route": "media/52fd6f4f-5f19-4e36-bbb5-438c5eb79373.sx7z7afwgr.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "562121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sx7z7afwgr"
+        },
+        {
+          "Name": "label",
+          "Value": "media/52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI="
+        }
+      ]
+    },
+    {
+      "Route": "media/62de74ea-1b12-48f2-bbea-f3c4301f25b7.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:40:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/62de74ea-1b12-48f2-bbea-f3c4301f25b7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/62de74ea-1b12-48f2-bbea-f3c4301f25b7.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:40:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/6e85a526-7d5c-48cc-8f75-810b5c82cc59.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\6e85a526-7d5c-48cc-8f75-810b5c82cc59.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 19:24:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/6e85a526-7d5c-48cc-8f75-810b5c82cc59.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/6e85a526-7d5c-48cc-8f75-810b5c82cc59.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\6e85a526-7d5c-48cc-8f75-810b5c82cc59.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 19:24:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/7b01ec24-d0a4-427f-8f23-6b493ee42b13.17pv53gtzo.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\7b01ec24-d0a4-427f-8f23-6b493ee42b13.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TeKndLxZqKU42RmJg8ZYgUURC0jj0+vkxRAEcVRoGvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 12:54:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "17pv53gtzo"
+        },
+        {
+          "Name": "label",
+          "Value": "media/7b01ec24-d0a4-427f-8f23-6b493ee42b13.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TeKndLxZqKU42RmJg8ZYgUURC0jj0+vkxRAEcVRoGvM="
+        }
+      ]
+    },
+    {
+      "Route": "media/7b01ec24-d0a4-427f-8f23-6b493ee42b13.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\7b01ec24-d0a4-427f-8f23-6b493ee42b13.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TeKndLxZqKU42RmJg8ZYgUURC0jj0+vkxRAEcVRoGvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 12:54:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TeKndLxZqKU42RmJg8ZYgUURC0jj0+vkxRAEcVRoGvM="
+        }
+      ]
+    },
+    {
+      "Route": "media/8169b75b-11a1-43ed-a796-e70b74543ed7.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8169b75b-11a1-43ed-a796-e70b74543ed7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "562121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 08:41:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI="
+        }
+      ]
+    },
+    {
+      "Route": "media/8169b75b-11a1-43ed-a796-e70b74543ed7.sx7z7afwgr.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8169b75b-11a1-43ed-a796-e70b74543ed7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "562121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 08:41:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sx7z7afwgr"
+        },
+        {
+          "Name": "label",
+          "Value": "media/8169b75b-11a1-43ed-a796-e70b74543ed7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI="
+        }
+      ]
+    },
+    {
+      "Route": "media/8311d24e-ca76-4b6b-b800-d952177ab47d.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8311d24e-ca76-4b6b-b800-d952177ab47d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:21:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/8311d24e-ca76-4b6b-b800-d952177ab47d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/8311d24e-ca76-4b6b-b800-d952177ab47d.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8311d24e-ca76-4b6b-b800-d952177ab47d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:21:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/8a5330cd-a561-4678-bc11-9d6187cfc0a9.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8a5330cd-a561-4678-bc11-9d6187cfc0a9.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 12:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/8a5330cd-a561-4678-bc11-9d6187cfc0a9.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/8a5330cd-a561-4678-bc11-9d6187cfc0a9.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\8a5330cd-a561-4678-bc11-9d6187cfc0a9.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 12:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/907a4157-7b57-49d8-98e4-d6ba704fc445.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\907a4157-7b57-49d8-98e4-d6ba704fc445.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:19:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/907a4157-7b57-49d8-98e4-d6ba704fc445.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/907a4157-7b57-49d8-98e4-d6ba704fc445.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\907a4157-7b57-49d8-98e4-d6ba704fc445.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:19:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:25:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:25:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/df18adc6-21c3-4184-897c-d8142c93e5ae.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\df18adc6-21c3-4184-897c-d8142c93e5ae.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:44:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/df18adc6-21c3-4184-897c-d8142c93e5ae.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/df18adc6-21c3-4184-897c-d8142c93e5ae.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\df18adc6-21c3-4184-897c-d8142c93e5ae.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:44:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.in9lafmukz.mp4",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hur1oejNTHVQjAChQuzMm5hkM2lZ0j4VXyjZI7gCb2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "in9lafmukz"
+        },
+        {
+          "Name": "label",
+          "Value": "media/e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hur1oejNTHVQjAChQuzMm5hkM2lZ0j4VXyjZI7gCb2Q="
+        }
+      ]
+    },
+    {
+      "Route": "media/e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hur1oejNTHVQjAChQuzMm5hkM2lZ0j4VXyjZI7gCb2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 10:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hur1oejNTHVQjAChQuzMm5hkM2lZ0j4VXyjZI7gCb2Q="
+        }
+      ]
+    },
+    {
+      "Route": "media/f27c95c3-2cd0-4edd-bfba-b0b21f176aed.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/f458d521-fc0d-4224-adfd-a1c849026ff2.56nuxpqznt.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f458d521-fc0d-4224-adfd-a1c849026ff2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1352880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:49:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "56nuxpqznt"
+        },
+        {
+          "Name": "label",
+          "Value": "media/f458d521-fc0d-4224-adfd-a1c849026ff2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY="
+        }
+      ]
+    },
+    {
+      "Route": "media/f458d521-fc0d-4224-adfd-a1c849026ff2.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f458d521-fc0d-4224-adfd-a1c849026ff2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1352880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:49:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY="
+        }
+      ]
+    },
+    {
+      "Route": "media/f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:50:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 13:50:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/fa24cf41-ed9e-45d2-a96d-d5aa037c985c.5fgkczta8k.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:10:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fgkczta8k"
+        },
+        {
+          "Name": "label",
+          "Value": "media/fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
+        }
+      ]
+    },
+    {
+      "Route": "media/fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png",
+      "AssetFile": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\wwwroot\\media\\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 14:10:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo="
         }
       ]
     }

@@ -12,11 +12,65 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>csqb5zoldd</Fingerprint>
-      <Integrity>XK2ikSSAXY4EVNxbZyJbv4cHXP/VNBjpxW9nRwgiDiw=</Integrity>
+      <Fingerprint>klmhdb7eyb</Fingerprint>
+      <Integrity>WEqyHtwR5Ia2llOPnD0DR+ykK97OyJQ8NPiXVFP0mtQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies.json'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\b5884aed-510e-403e-9c89-9b0fe9f096bc.json'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>companies/b5884aed-510e-403e-9c89-9b0fe9f096bc.json</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ef1djhf7mw</Fingerprint>
+      <Integrity>hjDPLeNWjVXuOmez8c/ranvAUmZXpnEhq6EfEPYkrFU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\b5884aed-510e-403e-9c89-9b0fe9f096bc.json'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\b6691969-2aa7-4533-8501-b230e046a569.json'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>companies/b6691969-2aa7-4533-8501-b230e046a569.json</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>737xf642uw</Fingerprint>
+      <Integrity>I6n+QEwYvN9y2DuDsXOTcZALwWX6oCWsXwPdXTHWwpM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\b6691969-2aa7-4533-8501-b230e046a569.json'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>companies/d8ff0be2-d008-4a6d-aefd-323e73af85c8.json</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oyw5gqlfe6</Fingerprint>
+      <Integrity>IP4aE6dRWC5PiYl6PB2WMo5GmJd6UEl1YZcUaHvbPcY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\companies\_.json'))">
       <SourceType>Package</SourceType>
@@ -84,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3ej6r77vgk</Fingerprint>
-      <Integrity>q05mdBokQBlp3r0JvAAXAP+iraCxRxOSZs+sRFPJvS8=</Integrity>
+      <Fingerprint>7vw47av9rx</Fingerprint>
+      <Integrity>Y35TS43YB45Cus63gVQvPH0ceXh2AJlAWFWePJJGoxM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\gomel.geojson'))</OriginalItemSpec>
@@ -161,6 +215,366 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\geojson\vitebsk.geojson'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\013991c2-9099-4062-8797-e300feee41be.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/013991c2-9099-4062-8797-e300feee41be.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\013991c2-9099-4062-8797-e300feee41be.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\170ca223-87bc-42e6-ab50-f7b284068951.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/170ca223-87bc-42e6-ab50-f7b284068951.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\170ca223-87bc-42e6-ab50-f7b284068951.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/2b5cc704-106a-4bf8-be46-09f9c0fa3947.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>56nuxpqznt</Fingerprint>
+      <Integrity>zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>56nuxpqznt</Fingerprint>
+      <Integrity>zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sx7z7afwgr</Fingerprint>
+      <Integrity>8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/62de74ea-1b12-48f2-bbea-f3c4301f25b7.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\6e85a526-7d5c-48cc-8f75-810b5c82cc59.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/6e85a526-7d5c-48cc-8f75-810b5c82cc59.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\6e85a526-7d5c-48cc-8f75-810b5c82cc59.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\7b01ec24-d0a4-427f-8f23-6b493ee42b13.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/7b01ec24-d0a4-427f-8f23-6b493ee42b13.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>17pv53gtzo</Fingerprint>
+      <Integrity>TeKndLxZqKU42RmJg8ZYgUURC0jj0+vkxRAEcVRoGvM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\7b01ec24-d0a4-427f-8f23-6b493ee42b13.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\8169b75b-11a1-43ed-a796-e70b74543ed7.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/8169b75b-11a1-43ed-a796-e70b74543ed7.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sx7z7afwgr</Fingerprint>
+      <Integrity>8NEMhZ0shPIIkNNcIqIK2vpfvuWpLMk87b73AUR7mFI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\8169b75b-11a1-43ed-a796-e70b74543ed7.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\8311d24e-ca76-4b6b-b800-d952177ab47d.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/8311d24e-ca76-4b6b-b800-d952177ab47d.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\8311d24e-ca76-4b6b-b800-d952177ab47d.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\8a5330cd-a561-4678-bc11-9d6187cfc0a9.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/8a5330cd-a561-4678-bc11-9d6187cfc0a9.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\8a5330cd-a561-4678-bc11-9d6187cfc0a9.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\907a4157-7b57-49d8-98e4-d6ba704fc445.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/907a4157-7b57-49d8-98e4-d6ba704fc445.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\907a4157-7b57-49d8-98e4-d6ba704fc445.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\98bce9dd-d58a-43f0-b1af-d7f4c6f876a5.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\df18adc6-21c3-4184-897c-d8142c93e5ae.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/df18adc6-21c3-4184-897c-d8142c93e5ae.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\df18adc6-21c3-4184-897c-d8142c93e5ae.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>in9lafmukz</Fingerprint>
+      <Integrity>Hur1oejNTHVQjAChQuzMm5hkM2lZ0j4VXyjZI7gCb2Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\e05f04fd-46e1-4d3e-a237-e7d27fb4eef7.mp4'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\f458d521-fc0d-4224-adfd-a1c849026ff2.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/f458d521-fc0d-4224-adfd-a1c849026ff2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>56nuxpqznt</Fingerprint>
+      <Integrity>zfWynB+tujFUzG23PQ6Gmy2K1tnP4Gnk9qoxjGvL+cY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\f458d521-fc0d-4224-adfd-a1c849026ff2.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>InteractiveMapOfEnterprises.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InteractiveMapOfEnterprises.Server</BasePath>
+      <RelativePath>media/fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5fgkczta8k</Fingerprint>
+      <Integrity>IdhRBITp2rQDx9Irh2icOU5xeIfTqztaUT4MoYzqHRo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\media\_.json'))">
       <SourceType>Package</SourceType>

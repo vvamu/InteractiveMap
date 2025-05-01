@@ -1,33 +1,22 @@
 :root {
-  --external-bnt-background-color: #000000;
-  --external-bnt-border-color: #000000;
-
-  --bnt-border-color: #2948af;
-  --bnt-text-color: #ffffff;
-
-  --internal-bnt-border-color: #2b81fa;
-  --internal-bnt-background-color: #4677c3;
-
-  --internal-bnt-active-border-color: #2948af;
-  --internal-bnt-active-background-color: #2948af;
-
-  --internal-bnt-disabled-background-color: #323232;
-
-  --external-link-background-color: #000000;
-  --external-link-border-color: #000000;
-
-  --link-border-color: #2948af;
-  --link-text-color: #ffffff;
-
-  --internal-link-border-color: #2b81fa;
-  --internal-link-background-color: #4677c3;
-
-  --internal-link-active-border-color: #2948af;
-  --internal-link-active-background-color: #2948af;
-
-  --map-title-color: rgb(0, 46, 115);
-
-  --slider-background: #cfcfcf;
+    --external-bnt-background-color: #ffffff;
+    --bnt-border-color: #bf5e5e;
+    --bnt-text-color: #ffffff;
+    --internal-bnt-border-color: #e68c8c;
+    --internal-bnt-background-color: #fffafa;
+    --internal-bnt-active-border-color: #e68c8c;
+    --internal-bnt-active-background-color: #f99a9a;
+    --internal-bnt-disabled-background-color: #cc8787;
+    --external-link-background-color: #000000;
+    --external-link-border-color: #000000;
+    --link-border-color: #2948af;
+    --link-text-color: #ffffff;
+    --internal-link-border-color: #2b81fa;
+    --internal-link-background-color: #4677c3;
+    --internal-link-active-border-color: #2948af;
+    --internal-link-active-background-color: #2948af;
+    --map-title-color: rgb(0, 46, 115);
+    --slider-background: #cfcfcf;
 }
 
 @font-face {

@@ -1,2 +1,21 @@
 [
+  {
+    "id": "d8ff0be2-d008-4a6d-aefd-323e73af85c8",
+    "name": " fgbfgtb",
+    "logoURL": "/api/media/7b01ec24-d0a4-427f-8f23-6b493ee42b13.png"
+  },
+  {
+    "id": "b6691969-2aa7-4533-8501-b230e046a569",
+    "name": "dewdewd",
+    "logoURL": "/api/media/8169b75b-11a1-43ed-a796-e70b74543ed7.png"
+  },
+  {
+    "id": "b5884aed-510e-403e-9c89-9b0fe9f096bc",
+    "name": "VIDEO",
+    "logoURL": "/api/media/52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png",
+    "ImageBytes": null,
+    "DateCreated": "0001-01-01T00:00:00",
+    "Creator": null,
+    "CreatorId": "00000000-0000-0000-0000-000000000000"
+  }
 ]
