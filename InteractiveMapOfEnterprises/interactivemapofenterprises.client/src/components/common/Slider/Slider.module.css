@@ -1,0 +1,40 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.controls {
+  display: flex;
+  width: calc(100% - 20px);
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 10px;
+}
+
+.caption {
+  padding: 3px 5px;
+  
+  border-radius: 5px;
+  background-color: #959595c6;
+  
+  font-size: 24px;
+  font-family: MA-Medium;
+  color: #ffffff;
+}

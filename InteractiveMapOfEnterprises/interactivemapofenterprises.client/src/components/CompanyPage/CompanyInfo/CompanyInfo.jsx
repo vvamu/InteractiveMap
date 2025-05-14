@@ -1,14 +1,21 @@
 import VideoCompony from "./VideoCompony";
 import AchievementsCompany from "./AchievementsCompany";
 import classes from "./CompanyInfo.module.css";
-import React from "react";
+import { React, useRef, useState, useEffect } from "react";
+const qualityMarkIcon = "/qualityMark.png";
 
+
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import ContentWithPaddings from "../../common/ContentWithPaddings";
+import Map from "../../MapPage/Map/Map";
 
 const components = {
   MINIMAL_INFO_ABOUT: MinimalInfoAboutCompony,
   VIDEO: VideoCompony,
   ACHIEVEMENTS: AchievementsCompany
 };
+
 
 function CompanyInfo({ data }) {
   console.log(data);
@@ -17,63 +24,102 @@ function CompanyInfo({ data }) {
     return null;
   }
   return (
-      <section className={classes.article}>
+     
           <MinimalInfoAboutCompony props={ data} />
-      {/*{data.map((d, index) => {*/}
-      {/*  const Component = components[d.type];*/}
-      {/*  return <Component key={index} props={d} />;*/}
-      {/*})}*/}
-    </section>
+      
   );
 }
 
-const qualityMarkIcon = "/qualityMark.png";
-
 
 const ImageComponent = (props) => {
-    // Convert the byte array to Base64 string
-    const byteArrayToBase64 = (byteArray) => {
-        if (byteArray == undefined) return "/qualityMark.png"
-        let binary = "";
-        for (let i = 0; i < byteArray.length; i++) {
-            binary += String.fromCharCode(byteArray[i]);
-        }
-        return `data:image/jpeg;base64,${btoa(binary)}`;
-    };
+
+    //return (
+    //    <img
+    //        className={classes.logo}
+    //        src={!props.props.imageBytes ? "/qualityMark.png" : `data:image/jpeg;base64,${props.props.imageBytes}`}
+    //        alt={props.props.name}
+    //        width={256}
+    //        height={256}
+    //    />
+    //);
+    let image = !props.imageBytes ? "url(emptyImageGray.jpg)" : `data:image/png;base64,${props.imageBytes}`
+    return <div style={{ backgroundImage: image, height: "580px", width: "100%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPositionX: "50%", backgroundPositionY: "center" }} ></div>
+};
+
+const IconComponent = (props) => {
 
     return (
         <img
-            className={classes.logo}
-            src={byteArrayToBase64(props.imageBytes)}
-            alt={props.name}
-            width={256}
-            height={256}
+            className={classes.qualityMark}
+            src={!props.props.iconBytes ? "/qualityMark.png" : `data:image/jpeg;base64,${props.props.iconBytes}`}
+            alt={props.props.name}
+            width={100}
+            height={100}
         />
     );
 };
+function MapOnPage(props) {
+    const { mapRef } = props; 
+    const [isRender, setIsRender] = useState(false);
+    let pos = [props.props.latitude, props.props.altitude]
 
+    //useEffect(() => {
+    //    const newMarkers = [props];
+    //    if (mapRef && mapRef.current) {
+    //        mapRef.current.setCompanies(newMarkers);
+    //    }
+    //}, [mapRef, props]);
+   
+    return <Map
+        center={pos}
+        zoom={8}
+        ref={mapRef}
+        onRenderStart={() => setIsRender(true)}
+        onRenderEnd={() => setIsRender(false)}
+        scrollWheelZoom={false}
+        isVisibleRegionBorders={false}
+        companiess={[props,props,props]}    />
+}
 function MinimalInfoAboutCompony({ props }) {
+
     return (
-        <div className={`${classes.chapter} ${classes.minimalInfoAboutCompony}`}>
+        <div>
+
             <ImageComponent props={props} />
-            <div>
+            {props.iconBytes ? (
+                <IconComponent props={props} />
+            ) : null}
+            {/*<div className={`${classes.chapter} ${classes.minimalInfoAboutCompony}`}>*/}
+                
+            <ContentWithPaddings>
                 <h2 className={classes.title}>{props.name}</h2>
-                <span className={classes.abbName}>{props.abbName}</span>
+                <div className={classes.description}>{props.category }</div>
                 <div className={classes.foundationDate}>
                     Date of placement: <span>{props.dateFoundation.substring(0, 10)}</span>
                 </div>
                 <div className={classes.foundationDate}>
-                    City: <span>{props.regionId}</span>
+                    Region: <span>{props.regionId}</span> 
                 </div>
                 <hr/>
                 <div className={classes.foundationDate}>
                     Creator: <span>{props.creatorName}</span> (<span>{props.dateCreatedArticle.substring(0, 10)}</span>)
                 </div>
+                <hr/>
+                <div className={classes.description}>{props.description}</div>
+            </ContentWithPaddings>
                 
-            </div>
-           
+            <MapOnPage props={props} />
+         
+               
+          
         </div>
     );
 }
 
 export default CompanyInfo;
+
+
+{/*{data.map((d, index) => {*/ }
+{/*  const Component = components[d.type];*/ }
+{/*  return <Component key={index} props={d} />;*/ }
+{/*})}*/ }

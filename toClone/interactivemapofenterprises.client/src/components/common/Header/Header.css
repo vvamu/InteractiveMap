@@ -1,0 +1,69 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgrey;
+    padding:15px 0px;
+}
+
+.Logo {
+    flex: 0 20%;
+    text-align: left;
+}
+
+.toggleBtn {
+    display: none;
+}
+/* по нажатию на кнопку новый класс для ссылок */
+.Navbar-links {
+    
+    display: flex;
+    flex: 0 60%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+}
+
+    .Navbar-links li {
+        margin: 0 1rem;
+    }
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 530px) {
+    .toggleBtn {
+        display: flex;
+    }
+
+    .Logo {
+        flex: 0 70%;
+        
+    }
+
+    /* .Navbar-links {
+    display: none;
+  } */
+
+    .Navbar-links {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex: 1 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none;
+    }
+
+    .Navbar-links--closed {
+        display: none;
+    }
+
+    .Navbar-links li {
+        margin: 1rem 0;
+    }
+}

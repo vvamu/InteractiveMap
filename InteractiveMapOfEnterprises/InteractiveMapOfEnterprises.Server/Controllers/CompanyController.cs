@@ -1,5 +1,6 @@
 ﻿using InteractiveMapOfEnterprises.Server.Models;
-using InteractiveMapOfEnterprises.Server.Services;
+using InteractiveMapOfEnterprises.Server.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -13,28 +14,37 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
         private readonly string geoJsonDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "geojson");
         private readonly string companyJsonDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
         private readonly ICompanyService _courseService;
-        private readonly IApplicationUserService _userService;
+        private readonly IUserService _userService;
+        private readonly IAuthService _authService;
 
-        public CompanyController(Services.ICompanyService courseService, IApplicationUserService userService)
+        public CompanyController(ICompanyService courseService, IUserService userService, IAuthService authService)
         {
             _courseService = courseService;
             _userService = userService;
+            _authService = authService;
         }
         [HttpPost]
-        [Route("create")]
-        public async Task<IActionResult> Create([FromForm] IFormFileCollection files, [FromForm] string jsonData)
+        [Route("")]
+
+        public async Task<IActionResult> Create( [FromForm] string jsonData, [FromForm] IFormFile? iconFormFile, [FromForm] IFormFileCollection? imageFormFiles)
         {
-            var user = await _userService.CreateAsync();
+            //var users = await _userService.GetAsync();
+            //foreach(var use in users)
+            //{
+            //    await _userService.Delete(use.Id,false);
+            //}    
+            var user = await _authService.GetCurrentUser(Request.HttpContext);
+            user = user ?? await _userService.CreateAsync(null);
             try
             {
-                await _courseService.CreateAsync(files, jsonData, user.Id);
+                await _courseService.CreateAsync(jsonData, user.Id, iconFormFile, imageFormFiles);
             }
             catch (Exception ex) { return BadRequest(new { message = "Course was not created" }); }
             return Ok(new { message = "Course was created successfully." });
         }
 
         [HttpGet]
-        [Route("get")]
+        [Route("")]
         public async Task<IActionResult> Get()
         {
             var companies = await _courseService.GetAsync();
@@ -43,7 +53,7 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
         }
 
         [HttpGet]
-        [Route("get/{id}")]
+        [Route("{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
             var company = await _courseService.GetAsync(id);
@@ -53,7 +63,31 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
             return Json(company);
         }
 
-        [HttpDelete]
+        [HttpGet]
+        [Route("{userId:guid}")]
+        public async Task<IActionResult> GetByUser(Guid userId)
+        {
+            var companies = await _courseService.GetByUserAsync(userId);
+            if (companies == null) return NotFound();
+
+            var jsonCompany = JsonSerializer.Serialize(companies);
+            return Json(companies);
+        }
+
+       
+
+        [HttpGet]
+        [Route("region/{id}")]
+        public async Task<IActionResult> GetByRegion(string regionId)
+        {
+            var companies = await _courseService.GetByRegionAsync(regionId);
+            if (companies == null) return NotFound();
+
+            var jsonCompany = JsonSerializer.Serialize(companies);
+            return Json(companies);
+        }
+
+        [HttpPost]
         [Route("delete/{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
@@ -68,6 +102,5 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
             return Ok($"Delete company by id: {id}");
         }
 
-       
     }
 }

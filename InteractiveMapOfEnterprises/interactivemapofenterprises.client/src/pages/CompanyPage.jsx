@@ -25,22 +25,18 @@ function CompanyPage() {
     onActiveLoader();
     companiesService.get(id).then((result) => {
       setData(result);
-      console.log(result)
       onCloseLoader();
     });
   }, []);
 
   return (
-    <>
-      <header></header>
-      <main >
-         <CompanyInfo data={data}/>
-      </main>
-      <footer></footer>
+    <div>
+      <CompanyInfo data={data}/>
+        
       <LoaderBox active={isActiveLoader}>
         <p className="message-loader"></p>
       </LoaderBox>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,53 @@
+.link {
+  height: 59px;
+  background-color: var(--external-link-background-color);
+  border: 2px solid var(--external-link-border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: MA-Medium;
+  color: var(--link-text-color);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.1s;
+  line-height: normal;
+}
+
+.link > div {
+  border-top: 0px solid var(--link-border-color);
+  border-bottom: 3px solid var(--link-border-color);
+  border-radius: 3px;
+  transition: 0.1s;
+  pointer-events: none;
+}
+
+.link > div > div {
+  padding: 16px 64px;
+  border: 2px solid var(--internal-link-border-color);
+  background-color: var(--internal-link-background-color);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: 0.1s;
+  pointer-events: none;
+}
+
+.link:hover > div {
+  border-top: 3px solid var(--link-border-color);
+  border-bottom: 0px solid var(--link-border-color);
+}
+
+.link:hover > div > div {
+  border-radius: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.link:active > div {
+  border: 0px solid var(--link-border-color);
+}
+
+.link:active > div > div {
+  border-radius: 2px;
+  border-color: var(--internal-link-active-border-color);
+  border-bottom: 5px solid var(--internal-link-active-border-color);
+  background-color: var(--internal-link-active-background-color);
+}

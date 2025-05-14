@@ -1,9 +1,10 @@
 import { useState } from "react";
 
+import ContentWithPaddings from "../components/common/ContentWithPaddings"
 import Title from "../components/common/Title";
 import ButtonIcon from "../components/common/Buttons/ButtonIcon";
-import CatalogCompanies from "../components/CompaniesPage/Catalogs/Companies";
-import SelectedChapterTypesBox from "../components/common/InfoBoxs/SelectedChapterTypesBox";
+import Companies from "../components/CompaniesPage/Companies/Companies";
+import SelectStepsTypeBox from "../components/CompaniesPage/SelectStepsTypeBox/SelectStepsTypeBox";
 
 const createIcon = "/create.svg";
 
@@ -15,30 +16,31 @@ function CatalogPage() {
     document.location = `/editor?type=create&chapterTypes=${chapterTypes
       .map((c) => c.type)
       .join(",")}`;
-  };
+    };
+
+    const toCreatePage = () => {
+        document.location = `/editor`
+    }
+
 
   return (
-    <>
-      <header className="catalog__header">
-        <Title className="catalog__header-title" level={1}>
-          Каталог
-        </Title>
-        <ButtonIcon
-          src={createIcon}
-          alt={"создать"}
-          onClick={() => setIsActiveSelectedChaptersBox(true)}
-        />
-      </header>
-      <main className="catalog__main">
-        <CatalogCompanies />
-      </main>
-      <footer className="catalog__footer"></footer>
-      <SelectedChapterTypesBox
-        active={isActiveSelectedChaptersBox}
-        onClose={() => setIsActiveSelectedChaptersBox(false)}
-        onEndSelected={handleSelectedChapterTypes}
-      />
-    </>
+      <ContentWithPaddings>
+          <header style={{display:"flex",justifyContent:"space-between",marginBottom:"3%"}}>
+            <Title className="catalog__header-title" level={1}>
+              Каталог
+            </Title>
+              {/*<ButtonIcon src={createIcon} alt={"создать"} onClick={() => setIsActiveSelectedChaptersBox(true)} />*/}
+              <ButtonIcon src={createIcon} alt={"создать"} onClick={() => toCreatePage()} />
+
+          </header>
+          <main className="">
+             <Companies />
+          </main>
+          <footer className="catalog__footer"></footer>
+         
+              {/*<SelectStepsTypeBox active={isActiveSelectedChaptersBox} onClose={() => setIsActiveSelectedChaptersBox(false)}*/}
+              {/*    onEndSelected={handleSelectedChapterTypes} />*/}
+      </ContentWithPaddings>
   );
 }
 

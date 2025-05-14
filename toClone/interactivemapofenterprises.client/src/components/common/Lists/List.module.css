@@ -1,0 +1,43 @@
+.list {
+  display: flex;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.horizontal {
+}
+
+.list > li {
+  font-size: 16px;
+  font-family: MA-Regular;
+}
+
+.list > li > span {
+  font-family: MA-Medium;
+}
+
+.listDetails {
+  margin-bottom: 10px;
+}
+
+.listDetails > ul > li {
+  margin-left: 20px;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.listHeader > * {
+  margin-right: 5px;
+}
+
+.title {
+  font-size: 18px;
+  font-family: MA-Medium;
+}

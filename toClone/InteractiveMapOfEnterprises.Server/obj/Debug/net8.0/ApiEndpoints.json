@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "Create",
+    "RelativePath": "company",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
+        "IsRequired": false
+      },
+      {
+        "Name": "jsonData",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "Get",
+    "RelativePath": "company",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "Get",
+    "RelativePath": "company/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "Delete",
+    "RelativePath": "company/delete/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.GeoJsonController",
+    "Method": "Geo",
+    "RelativePath": "geo/{fileName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -8,19 +8,23 @@ namespace InteractiveMapOfEnterprises.Server.Models
     {
         [JsonPropertyName("id")]
         public Guid Id { get; set; }
-
         public string RegionId { get; set; }
 
         [JsonPropertyName("name")]
         public string Name { get; set; } = string.Empty;
-        public string? ShortName { get; set; }
+        public string? Description { get; set; }
+
+        [JsonPropertyName("imageBytes")]
         public byte[]? ImageBytes { get; set; }
+        [JsonPropertyName("iconBytes")]
+        public byte[]? IconBytes { get; set; }
+        public string? Category { get; set; }
 
         [NotMapped]
         public JsonObject[]? Position { get; set; }
         public string Latitude { get; set; }
         public string Altitude { get; set; } 
-        public List<string> Achievements { get; set; }
+        public List<string>? Achievements { get; set; }
 
         #region Informational
 
@@ -28,7 +32,7 @@ namespace InteractiveMapOfEnterprises.Server.Models
         public DateTime DateCreatedArticle { get; set; }
 
         [NotMapped]
-        public string CreatorName { get; set; }
+        public string? CreatorName { get; set; }
         public ApplicationUser Creator { get; set; }
         public Guid CreatorId { get; set; }
 

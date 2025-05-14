@@ -31,6 +31,9 @@ export const ERRORS = {
   },
   ACHIEVEMENTS_IS_ZERO:{
     message: "Должно быть хотя бы одно достижение.",
+    },
+  NOT_VALID_URL: {
+      message: "Адрес компании не валиден.",
   }
 };
 

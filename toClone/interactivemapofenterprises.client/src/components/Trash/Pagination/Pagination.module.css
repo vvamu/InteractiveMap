@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.start {
+  justify-content: start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.end {
+  justify-content: end;
+}
+
+.bntPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.pages {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.pages > *:last-child {
+  margin-right: 0px;
+}

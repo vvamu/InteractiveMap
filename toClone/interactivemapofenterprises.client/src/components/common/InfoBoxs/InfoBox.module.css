@@ -1,0 +1,89 @@
+.InfoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.Active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.Modal {
+  width: 216px;
+  min-height: 100px;
+}
+
+.Modal > div {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.warning > .Modal {
+  width: 300px;
+}
+
+.warning > .Modal > div {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.error > .Modal > div {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: MA-Bold;
+}
+
+.title > span {
+  margin-right: 5px;
+}
+
+.message {
+  font-size: 14px;
+  font-family: MA-Regular;
+}
+
+.controls {
+  display: flex;
+  justify-self: end;
+}
+
+.controls > * {
+  margin-right: 5px;
+}
+
+.controls > *:last-child {
+  margin-right: 0px;
+}
+
+.counter {
+  margin-left: 5px;
+}
+
+.counter > span:first-of-type {
+  margin-right: 5px;
+}
+
+.counter > span:last-of-type {
+  margin-left: 5px;
+}
+
+.chapters {
+  margin-top: 10px;
+}
