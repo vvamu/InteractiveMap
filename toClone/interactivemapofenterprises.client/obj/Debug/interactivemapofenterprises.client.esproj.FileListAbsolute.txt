@@ -1,0 +1,3 @@
+D:\Projects\orders\InteractiveMapOfEnterprises\interactivemapofenterprises.client\obj\Debug\interactivemapofenterprises.client.esproj.CoreCompileInputs.cache
+D:\work\react-test\InteractiveMapOfEnterprises\interactivemapofenterprises.client\obj\Debug\interactivemapofenterprises.client.esproj.CoreCompileInputs.cache
+D:\work\react-InteractiveMapOfEnterprises\InteractiveMapOfEnterprises\interactivemapofenterprises.client\obj\Debug\interactivemapofenterprises.client.esproj.CoreCompileInputs.cache

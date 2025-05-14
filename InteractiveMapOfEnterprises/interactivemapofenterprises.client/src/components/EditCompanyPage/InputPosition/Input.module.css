@@ -1,0 +1,77 @@
+.container {
+  margin-bottom: 10px;
+}
+
+.mapHeader {
+    
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: 70px;
+}
+
+    .mapHeader > * {
+        margin-right: 5px;
+    }
+
+        .mapHeader > *:last-child {
+            margin-right: 0;
+        }
+
+
+.label {
+  display: block;
+  padding: 0 5px;
+}
+
+.label > span {
+  padding-right: 5px;
+  font-size: 14px;
+  font-family: MA-Bold;
+  color: #000000;
+}
+
+.em {
+  display: block;
+  font-size: 12px;
+  font-family: MA-Regular;
+  font-style: normal;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.input {
+  display: block;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: MA-Regular;
+  font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.inputPosition {
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    width: 99.8%;
+    height: 100%;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    border: black 1px solid;
+    border-radius:10px
+}
+
+.map {
+  
+  width: 100%;
+  height: 100%;
+  
+}

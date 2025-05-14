@@ -1,0 +1,20 @@
+version: '4'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./InteractiveMapOfEnterprises.Server/Dockerfile
+    ports:
+      - "7001:8080"
+  client:
+    build:
+      context: ./interactivemapofenterprises.client
+      dockerfile: ./Dockerfile
+    ports:
+      - "3002:3002"
+  proxy:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"

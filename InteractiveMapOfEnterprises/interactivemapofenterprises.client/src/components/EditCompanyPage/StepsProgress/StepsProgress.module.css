@@ -67,15 +67,11 @@
   background-color: #4677c3;
 }
 
-.progress > div {
-  border-bottom: 2px solid #2948af;
-}
-
-.progress > div > div {
-  border: 1px solid #2b81fa;
-  background-color: #4677c3;
-  opacity: 1;
-}
+    .progress > div > div {
+        border: 1px solid #e68c8c;
+        background-color: #e68c8c;
+        opacity: 1;
+    }
 
 .progress + .name {
   display: block;
