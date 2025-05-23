@@ -15,20 +15,16 @@
 .toggleBtn {
     display: none;
 }
-/* по нажатию на кнопку новый класс для ссылок */
+/* пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
 .Navbar-links {
     
     display: flex;
     flex: 0 60%;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     list-style: none;
 }
-
-    .Navbar-links li {
-        margin: 0 1rem;
-    }
 
 .hide {
     display: none;
@@ -63,7 +59,4 @@
         display: none;
     }
 
-    .Navbar-links li {
-        margin: 1rem 0;
-    }
 }

@@ -114,22 +114,6 @@
   },
   {
     "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
-    "Method": "GetByUser",
-    "RelativePath": "company/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
     "Method": "Delete",
     "RelativePath": "company/delete/{id}",
     "HttpMethod": "POST",
@@ -160,6 +144,22 @@
       {
         "Name": "id",
         "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "GetByUser",
+    "RelativePath": "company/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -202,22 +202,6 @@
       {
         "Name": "userId",
         "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
-    "Method": "GetAsync",
-    "RelativePath": "users/{username}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "username",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],

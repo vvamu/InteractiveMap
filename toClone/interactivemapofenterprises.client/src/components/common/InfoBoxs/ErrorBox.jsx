@@ -8,7 +8,7 @@ import ButtonIcon from "../Buttons/ButtonIcon";
 import classes from "./InfoBox.module.css";
 
 const errorIcon = "/error.svg";
-const closeIcon = "/close.svg";
+const closeIcon = "/check.png";
 
 import { backIconSrc } from "../../../../config";
 import { nextIconSrc } from "../../../../config";
@@ -45,11 +45,14 @@ function ErrorBox({ errors, active = false, onClose }) {
       </Title>
       <div className={classes.message}>{errors[currentIndex].message}</div>
       <div className={classes.controls}>
-        <ButtonIcon
-          src={backIconSrc}
-          onClick={handleBack}
-          disabled={currentIndex === 0}
-        />
+       
+      {errors.length <= 1 ? null : (
+            <ButtonIcon
+                src={backIconSrc}
+                onClick={handleBack}
+                disabled={currentIndex === 0}
+            />
+        )}  
         {currentIndex + 1 !== errors.length ? (
           <ButtonIcon
             src={nextIconSrc}

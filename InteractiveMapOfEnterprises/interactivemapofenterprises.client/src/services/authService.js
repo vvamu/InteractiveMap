@@ -19,6 +19,7 @@ const authService = {
                 { headers: { "Content-Type": "multipart/form-data" } });
             let token = response.data;
             cookieHandler({ cookieName: 'UserId', cookieValue: token });
+            return token;
             //localStorage.setItem("UserId", token);
 
             //if (token) {
@@ -26,7 +27,7 @@ const authService = {
             //}
 
         } catch (error) {
-            return null;
+            throw error.response.data;
         }
     },
 
@@ -47,13 +48,13 @@ const authService = {
         try {
             //let token = localStorage.getItem("UserId");
             //axios.defaults.headers.common["Authorization"] = token;
-
+            let url = window.location.href;
             const response = await axios.get(`${urlAuth}currentuser`, { withCredentials: true });
             return JSON.parse(response.data);
         } catch (error) {
             //throw error.message;
             console.log(error)
-            return (null);
+            throw error.response.data;
         }
     }
 };

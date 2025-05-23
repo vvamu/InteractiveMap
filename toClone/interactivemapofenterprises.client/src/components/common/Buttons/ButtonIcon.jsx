@@ -11,6 +11,9 @@ function ButtonIcon({
     isPlayingSound = true,
     src,
     alt,
+    imgStyle,
+    heightBtn,
+    title
 }) {
     return (
         <Button
@@ -19,10 +22,16 @@ function ButtonIcon({
             onClick={onClick}
             disabled={disabled}
             isPlayingSound={isPlayingSound}
-            style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center", height: { heightBtn } }}
+            
         >
-            <img
+            {/*{*/}
                 
+            {/*    src.split('.')[src.split('.').length - 1] == "svg" ? <:*/}
+            {/*}*/}
+            <img
+                title={title }
+                style={imgStyle}
                 width={width}
                 height={height}
                 src={src}

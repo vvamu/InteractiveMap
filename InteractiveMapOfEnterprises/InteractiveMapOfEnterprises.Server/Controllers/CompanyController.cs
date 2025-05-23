@@ -28,20 +28,27 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
 
         public async Task<IActionResult> Create( [FromForm] string jsonData, [FromForm] IFormFile? iconFormFile, [FromForm] IFormFileCollection? imageFormFiles)
         {
-            //var users = await _userService.GetAsync();
-            //foreach(var use in users)
-            //{
-            //    await _userService.Delete(use.Id,false);
-            //}    
+            var users = await _userService.GetAsync();
+            Company company;
+           
             var user = await _authService.GetCurrentUser(Request.HttpContext);
-            user = user ?? await _userService.CreateAsync(null);
+            if(user == null)
+            {
+                throw new Exception("User not auth");
+                //user = users.FirstOrDefault(x => x.Roles == "Administrator");
+                //if(user == null ) user = await _userService.CreateAsync(null);
+            }
             try
             {
-                await _courseService.CreateAsync(jsonData, user.Id, iconFormFile, imageFormFiles);
+                //var getData = _courseService.GetAsync(user.Id);
+                company =  await _courseService.CreateAsync(jsonData, user.Id, iconFormFile, imageFormFiles);
             }
-            catch (Exception ex) { return BadRequest(new { message = "Course was not created" }); }
-            return Ok(new { message = "Course was created successfully." });
+            catch (Exception ex) {
+                return BadRequest(ex.Message); }
+            return Json(company);
         }
+
+
 
         [HttpGet]
         [Route("")]
@@ -64,11 +71,11 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
         }
 
         [HttpGet]
-        [Route("{userId:guid}")]
+        [Route("user/{userId}")]
         public async Task<IActionResult> GetByUser(Guid userId)
         {
             var companies = await _courseService.GetByUserAsync(userId);
-            if (companies == null) return NotFound();
+            //if (companies == null) return NotFound();
 
             var jsonCompany = JsonSerializer.Serialize(companies);
             return Json(companies);

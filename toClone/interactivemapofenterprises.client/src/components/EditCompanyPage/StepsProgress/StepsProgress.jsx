@@ -3,8 +3,8 @@ import classes from "./StepsProgress.module.css";
 function StepsProgress({ steps }) {
   return (
     <ul className={classes.steps}>
-      {steps.map((step, id) => (
-        <li key={id} className={classes.step}>
+          {steps.map((step, id) => (
+        <li key={id} className={classes.step} style={{ display : "flex"}}>
           <span className={classes.line}></span>
           <div className={`${classes.point} ${classes[step.status]}`}>
             <div>

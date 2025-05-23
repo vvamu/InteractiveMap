@@ -1,5 +1,41 @@
 [
   {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.AuthController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "auth/currentuser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jsonData",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
     "Method": "Create",
     "RelativePath": "company",
@@ -8,13 +44,43 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "files",
-        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
+        "Name": "jsonData",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "jsonData",
+        "Name": "ContentType",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageFormFiles",
+        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
         "IsRequired": false
       }
     ],
@@ -63,6 +129,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "GetByRegion",
+    "RelativePath": "company/region/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regionId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.CompanyController",
+    "Method": "GetByUser",
+    "RelativePath": "company/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.GeoJsonController",
     "Method": "Geo",
     "RelativePath": "geo/{fileName}",
@@ -74,6 +177,101 @@
         "Name": "fileName",
         "Type": "System.String",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
+    "Method": "GetAsync",
+    "RelativePath": "users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
+    "Method": "GetAsync",
+    "RelativePath": "users/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
+    "Method": "Create",
+    "RelativePath": "users/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jsonData",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "users/delete/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "isSoft",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
+    "Method": "EditUser",
+    "RelativePath": "users/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jsonData",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InteractiveMapOfEnterprises.Server.Controllers.UserController",
+    "Method": "EditUserRole",
+    "RelativePath": "users/editAdmin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jsonData",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

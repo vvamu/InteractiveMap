@@ -1,12 +1,14 @@
 import Button from "../../common/Buttons/Button";
 
-function Step({ children, onNext }) {
+function Step({ children, onNext, onCancel }) {
+
+
   return (
-    <section className="step">
+    <section>
       {children}
       <div className="step__footer">
-        <Button onClick={() => window.location = "/catalog"}>Отмена</Button>
-        <Button onClick={onNext}>Далее</Button>
+              <Button onClick={() => { onCancel() }}>Отмена</Button>
+              <Button onClick={onNext}>Подтвердить</Button>
       </div>
     </section>
   );

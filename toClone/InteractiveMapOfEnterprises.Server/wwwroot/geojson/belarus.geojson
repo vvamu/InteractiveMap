@@ -4147,7 +4147,7 @@
         "id": "BYHO",
         "name": "Gomel",
         "nameRU": "Гомельская область",
-        "fill": "orange"
+        "fill": "#71b8f9"
       }
     },
     {
@@ -7324,7 +7324,7 @@
         "id": "BYBR",
         "name": "Brest",
         "nameRU": "Бресткая область",
-        "fill": "plum"
+        "fill": "#f49c06"
       }
     },
     {
@@ -10793,7 +10793,7 @@
         "id": "BYVI",
         "name": "Vitebsk",
         "nameRU": "Витебская область",
-        "fill": "pink"
+        "fill": "#ffea0a"
       }
     },
     {
@@ -13930,7 +13930,7 @@
         "id": "BYHR",
         "name": "Grodno",
         "nameRU": "Гродненская область",
-        "fill": "blue"
+        "fill": "#9e77f3"
       }
     },
     {
@@ -18403,7 +18403,7 @@
         "id": "BYMA",
         "name": "Mogilev",
         "nameRU": "Могилевская область",
-        "fill": "green"
+        "fill": "#c1e6b2"
       }
     },
     {
@@ -23722,7 +23722,7 @@
         "id": "BYMI",
         "name": "Minsk",
         "nameRU": "Минская область",
-        "fill": "yellow"
+        "fill": "#ef5b4d"
       }
     },
     {
@@ -23887,7 +23887,7 @@
         "id": "BYMI",
         "name": "City of Minsk",
         "nameRU": "",
-        "fill": "yellow"
+        "fill": "#ec3927"
       }
     }
   ]

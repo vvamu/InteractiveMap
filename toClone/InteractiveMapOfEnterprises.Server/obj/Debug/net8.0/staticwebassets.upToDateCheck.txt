@@ -1,8 +1,8 @@
 wwwroot\companies.json
-wwwroot\companies\_.json
 wwwroot\companies\b5884aed-510e-403e-9c89-9b0fe9f096bc.json
 wwwroot\companies\b6691969-2aa7-4533-8501-b230e046a569.json
 wwwroot\companies\d8ff0be2-d008-4a6d-aefd-323e73af85c8.json
+wwwroot\companies\_.json
 wwwroot\geojson\belarus.geojson
 wwwroot\geojson\brest.geojson
 wwwroot\geojson\gomel.geojson
@@ -10,11 +10,11 @@ wwwroot\geojson\grodno.geojson
 wwwroot\geojson\minsk.geojson
 wwwroot\geojson\mogilev.geojson
 wwwroot\geojson\vitebsk.geojson
-wwwroot\media\_.json
 wwwroot\media\013991c2-9099-4062-8797-e300feee41be.png
 wwwroot\media\170ca223-87bc-42e6-ab50-f7b284068951.png
 wwwroot\media\1cfde5b0-96a6-4199-aa5d-e2632b1a986d.png
 wwwroot\media\2b5cc704-106a-4bf8-be46-09f9c0fa3947.png
+wwwroot\media\2c413854-e84e-4daa-a77a-3f5d9cb8d563.png
 wwwroot\media\45e50526-3a02-4d38-9bf3-d83d9d1ab88d.png
 wwwroot\media\52fd6f4f-5f19-4e36-bbb5-438c5eb79373.png
 wwwroot\media\62de74ea-1b12-48f2-bbea-f3c4301f25b7.png
@@ -33,3 +33,4 @@ wwwroot\media\f27c95c3-2cd0-4edd-bfba-b0b21f176aed.png
 wwwroot\media\f458d521-fc0d-4224-adfd-a1c849026ff2.png
 wwwroot\media\f79a7aa7-ef26-4d50-9784-f46d6e85bd8c.png
 wwwroot\media\fa24cf41-ed9e-45d2-a96d-d5aa037c985c.png
+wwwroot\media\_.json

@@ -3,92 +3,111 @@
   "WorkspaceRootPath": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\memopage\\cards.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\memopage\\cards.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\services\\implementation\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\services\\implementation\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\memopage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\memopage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\puzzlepage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\puzzlepage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\services\\companiesservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
       "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\services\\companiesservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\helpers\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\helpers\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\common\\header\\menugames.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\common\\header\\menugames.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\who\\AppData\\Local\\SourceServer\\f0822a36019749840ead9e3c524a0ee1ea71f6af09567ef64bbc17b343bf8fd2\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ActionMethodExecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\editcompanypage\\inputposition\\input.module.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\editcompanypage\\inputposition\\input.module.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\editcompanypage\\steps\\minimalinfoaboutcomponystep.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\editcompanypage\\steps\\minimalinfoaboutcomponystep.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\editcompanypage\\inputposition\\inputposition.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\editcompanypage\\inputposition\\inputposition.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\common\\formcontent.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\common\\formcontent.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\common\\header\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\common\\header\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\usereditorpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\usereditorpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\services\\authservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\services\\authservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\editcompanypage\\steps\\step.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\editcompanypage\\steps\\step.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\services\\usecookiehandler.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\services\\usecookiehandler.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\editcompanypage\\steps\\minimalinfoaboutcomponystep.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\editcompanypage\\steps\\minimalinfoaboutcomponystep.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\services\\implementation\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\services\\implementation\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\node_modules\\react-leaflet\\node_modules\\@react-leaflet\\core\\lib\\dom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:interactivemapofenterprises.client\\node_modules\\react-leaflet\\node_modules\\@react-leaflet\\core\\lib\\dom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\services\\userservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\services\\userservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\mainpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\mainpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\usereditorpage\\edituserform.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\usereditorpage\\edituserform.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\common\\header\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\common\\header\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\common\\header\\menuunauthorized.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\common\\header\\menuunauthorized.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\who\\AppData\\Local\\SourceServer\\5a15c2e3fa3a60c17c9062bb1ea216ea22f845730a67e1c24de52f3028295100\\src\\Middleware\\CORS\\src\\Infrastructure\\CorsPolicyBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\common\\header\\menuauthorized.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\common\\header\\menuauthorized.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\components\\userspage\\listuser\\listuser.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\components\\userspage\\listuser\\listuser.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\who\\AppData\\Local\\SourceServer\\a687fa54e14796b317ab8ace6b97171ff8dc5061a27d567df99c3158347a3d3e\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.server\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1142AA6B-4770-4F42-A5D9-BE98C6FB9DB1}|InteractiveMapOfEnterprises.Server\\InteractiveMapOfEnterprises.Server.csproj|solutionrelative:interactivemapofenterprises.server\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\who\\AppData\\Local\\SourceServer\\a4e51d6c5d1dd2acab0c19418f13c9a041b075f71f926cb785396caade64c7e9\\src\\libraries\\System.Private.CoreLib\\src\\System\\Reflection\\MethodBaseInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\who\\AppData\\Local\\SourceServer\\171824d4bef0dae52d179f240ebc7cf750e1ea224a9b1c1b3705deb41b35b880\\src\\DefaultBuilder\\src\\WebApplicationBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|d:\\work\\react-interactivemapofenterprises\\interactivemapofenterprises\\interactivemapofenterprises.client\\src\\pages\\companyeditorpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5713DB5B-BF56-4C5B-B0AB-C9B081A53B40}|interactivemapofenterprises.client\\interactivemapofenterprises.client.esproj|solutionrelative:interactivemapofenterprises.client\\src\\pages\\companyeditorpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,9 +116,22 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 227,
-          "SelectedChildIndex": 8,
+          "DockedWidth": 287,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cards.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\MemoPage\\Cards.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\MemoPage\\Cards.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\MemoPage\\Cards.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\MemoPage\\Cards.jsx",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T17:03:38.182Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -114,52 +146,90 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Mapper.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Helpers\\Mapper.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Helpers\\Mapper.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Helpers\\Mapper.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Helpers\\Mapper.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAtwBsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:17:10.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CompanyService.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAApwCYAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:14:58.638Z",
+              "Title": "MemoPage.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\MemoPage.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\MemoPage.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\MemoPage.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\MemoPage.jsx",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T17:03:27.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ActionMethodExecutor.cs",
-              "DocumentMoniker": "C:\\Users\\who\\AppData\\Local\\SourceServer\\f0822a36019749840ead9e3c524a0ee1ea71f6af09567ef64bbc17b343bf8fd2\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ActionMethodExecutor.cs",
-              "ToolTip": "C:\\Users\\who\\AppData\\Local\\SourceServer\\f0822a36019749840ead9e3c524a0ee1ea71f6af09567ef64bbc17b343bf8fd2\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ActionMethodExecutor.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAtwAIBAAAMAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:01:10.439Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+              "DocumentIndex": 2,
+              "Title": "PuzzlePage.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\PuzzlePage.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\PuzzlePage.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\PuzzlePage.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\PuzzlePage.jsx",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T17:02:56.826Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
+              "Title": "index.css",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\index.css",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\index.css",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\index.css",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\index.css",
+              "ViewState": "AgIAAB4CAAAAAAAAAAAjwCoCAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-22T14:37:27.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MinimalInfoAboutComponyStep.jsx",
               "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\MinimalInfoAboutComponyStep.jsx",
               "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\MinimalInfoAboutComponyStep.jsx",
               "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\MinimalInfoAboutComponyStep.jsx",
               "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\MinimalInfoAboutComponyStep.jsx",
-              "ViewState": "AgIAAEkAAAAAAAAAAAArwFQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAuwHoBAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-13T13:30:51.421Z"
+              "WhenOpened": "2025-05-22T12:56:54.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:29:11.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuGames.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuGames.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuGames.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuGames.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuGames.jsx",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T07:51:23.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormContent.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\FormContent.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\common\\FormContent.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\FormContent.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\common\\FormContent.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T14:44:25.656Z"
             },
             {
               "$type": "Document",
@@ -169,224 +239,224 @@
               "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\services\\companiesService.js",
               "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\companiesService.js",
               "RelativeToolTip": "interactivemapofenterprises.client\\src\\services\\companiesService.js",
-              "ViewState": "AgIAABoAAAAAAAAAAAArwCgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwG4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-13T11:19:15.925Z",
+              "WhenOpened": "2025-05-22T07:16:12.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CompanyController.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Controllers\\CompanyController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T06:17:39.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\UserService.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\UserService.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\UserService.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\UserService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAtwC4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T06:17:39.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "userService.js",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\userService.js",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\services\\userService.js",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\userService.js",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\services\\userService.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-13T12:22:10.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainPage.jsx",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\MainPage.jsx",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\MainPage.jsx",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\MainPage.jsx",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\MainPage.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "InputPosition.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\InputPosition.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\InputPosition.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\InputPosition.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\InputPosition.jsx",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwGQAAAB+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-13T12:22:05.549Z"
+              "WhenOpened": "2025-05-22T14:33:22.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "useCookieHandler.jsx",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\useCookieHandler.jsx",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\services\\useCookieHandler.jsx",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\useCookieHandler.jsx",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\services\\useCookieHandler.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-13T12:21:47.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "main.jsx",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\main.jsx",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\main.jsx",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\main.jsx",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-13T11:13:08.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "App.jsx",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\App.jsx",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\App.jsx",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\App.jsx",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\App.jsx",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-13T07:44:52.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginPage.jsx",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-12T22:58:26.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Header.jsx",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDQAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-05-12T22:58:27.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "launch.json",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\.vscode\\launch.json",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\.vscode\\launch.json",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\.vscode\\launch.json",
-              "RelativeToolTip": "interactivemapofenterprises.client\\.vscode\\launch.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T06:29:55.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CorsPolicyBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\who\\AppData\\Local\\SourceServer\\5a15c2e3fa3a60c17c9062bb1ea216ea22f845730a67e1c24de52f3028295100\\src\\Middleware\\CORS\\src\\Infrastructure\\CorsPolicyBuilder.cs",
-              "ToolTip": "C:\\Users\\who\\AppData\\Local\\SourceServer\\5a15c2e3fa3a60c17c9062bb1ea216ea22f845730a67e1c24de52f3028295100\\src\\Middleware\\CORS\\src\\Infrastructure\\CorsPolicyBuilder.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAiwOcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T06:26:48.978Z"
+              "DocumentIndex": 5,
+              "Title": "Input.module.css",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\Input.module.css",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\Input.module.css",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\Input.module.css",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\InputPosition\\Input.module.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwEsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-22T14:38:06.592Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "authService.js",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\authService.js",
-              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\services\\authService.js",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\authService.js",
-              "RelativeToolTip": "interactivemapofenterprises.client\\src\\services\\authService.js",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAcwCkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-13T06:13:45.359Z"
+              "Title": "Step.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\Step.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\Step.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\Step.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\EditCompanyPage\\Steps\\Step.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T14:44:09.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T05:55:17.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\AuthController.cs",
               "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAUwDcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T05:55:10.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T13:09:44.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserEditorPage.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\UserEditorPage.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\UserEditorPage.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\UserEditorPage.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\UserEditorPage.jsx",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T13:56:34.062Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\AuthService.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\AuthService.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\AuthService.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\AuthService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAEwCIAAAAIAAAAAAAAAA==",
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
+              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
+              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Services\\Implementation\\CompanyService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAASwBkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T23:09:57.839Z"
+              "WhenOpened": "2025-05-22T14:00:33.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MethodBaseInvoker.cs",
-              "DocumentMoniker": "C:\\Users\\who\\AppData\\Local\\SourceServer\\a4e51d6c5d1dd2acab0c19418f13c9a041b075f71f926cb785396caade64c7e9\\src\\libraries\\System.Private.CoreLib\\src\\System\\Reflection\\MethodBaseInvoker.cs",
-              "ToolTip": "C:\\Users\\who\\AppData\\Local\\SourceServer\\a4e51d6c5d1dd2acab0c19418f13c9a041b075f71f926cb785396caade64c7e9\\src\\libraries\\System.Private.CoreLib\\src\\System\\Reflection\\MethodBaseInvoker.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAvwLEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:58:39.036Z"
+              "DocumentIndex": 13,
+              "Title": "dom.js",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\node_modules\\react-leaflet\\node_modules\\@react-leaflet\\core\\lib\\dom.js",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\node_modules\\react-leaflet\\node_modules\\@react-leaflet\\core\\lib\\dom.js",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\node_modules\\react-leaflet\\node_modules\\@react-leaflet\\core\\lib\\dom.js",
+              "RelativeToolTip": "interactivemapofenterprises.client\\node_modules\\react-leaflet\\node_modules\\@react-leaflet\\core\\lib\\dom.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T14:29:18.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "WebApplicationBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\who\\AppData\\Local\\SourceServer\\171824d4bef0dae52d179f240ebc7cf750e1ea224a9b1c1b3705deb41b35b880\\src\\DefaultBuilder\\src\\WebApplicationBuilder.cs",
-              "ToolTip": "C:\\Users\\who\\AppData\\Local\\SourceServer\\171824d4bef0dae52d179f240ebc7cf750e1ea224a9b1c1b3705deb41b35b880\\src\\DefaultBuilder\\src\\WebApplicationBuilder.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAHoBAAAAAAAAAABRwAAAAAAAAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:58:02.969Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+              "DocumentIndex": 15,
+              "Title": "userService.js",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\userService.js",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\services\\userService.js",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\services\\userService.js",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\services\\userService.js",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T14:18:40.172Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Program.cs",
-              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Program.cs",
-              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Program.cs",
-              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Program.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAcwHgAAAAAAAAAAAAAAA==",
+              "Title": "EditUserForm.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\UserEditorPage\\EditUserForm.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\UserEditorPage\\EditUserForm.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\UserEditorPage\\EditUserForm.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\UserEditorPage\\EditUserForm.jsx",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T13:56:42.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginPage.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\LoginPage.jsx",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwCAAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T13:39:27.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Header.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\common\\Header\\Header.jsx",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-21T20:26:22.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MenuUnAuthorized.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuUnAuthorized.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuUnAuthorized.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuUnAuthorized.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuUnAuthorized.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T09:13:07.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv0MAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:59:50.783Z"
+              "WhenOpened": "2025-05-22T07:16:12.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MenuAuthorized.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuAuthorized.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuAuthorized.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuAuthorized.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\common\\Header\\MenuAuthorized.jsx",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-22T07:33:31.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ListUser.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\UsersPage\\ListUser\\ListUser.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\components\\UsersPage\\ListUser\\ListUser.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\components\\UsersPage\\ListUser\\ListUser.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\components\\UsersPage\\ListUser\\ListUser.jsx",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-21T21:01:11.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\who\\AppData\\Local\\SourceServer\\a687fa54e14796b317ab8ace6b97171ff8dc5061a27d567df99c3158347a3d3e\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs",
+              "ToolTip": "C:\\Users\\who\\AppData\\Local\\SourceServer\\a687fa54e14796b317ab8ace6b97171ff8dc5061a27d567df99c3158347a3d3e\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\Tasks\\Task.cs",
+              "ViewState": "AgIAAD8DAAAAAAAAAAAIwEkDAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T07:01:41.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "InteractiveMapOfEnterprises.Server\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T19:22:41.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CompanyEditorPage.jsx",
+              "DocumentMoniker": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\CompanyEditorPage.jsx",
+              "RelativeDocumentMoniker": "interactivemapofenterprises.client\\src\\pages\\CompanyEditorPage.jsx",
+              "ToolTip": "D:\\work\\react-InteractiveMapOfEnterprises\\InteractiveMapOfEnterprises\\interactivemapofenterprises.client\\src\\pages\\CompanyEditorPage.jsx",
+              "RelativeToolTip": "interactivemapofenterprises.client\\src\\pages\\CompanyEditorPage.jsx",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-05-21T13:05:57.412Z"
             }
           ]
         },

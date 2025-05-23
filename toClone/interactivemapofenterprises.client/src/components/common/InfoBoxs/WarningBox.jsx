@@ -7,7 +7,7 @@ import ButtonIcon from "../Buttons/ButtonIcon";
 import classes from "./InfoBox.module.css";
 
 const warningIcon = "/warning.svg";
-const closeIcon = "/close.svg";
+const closeIcon = "/check.png";
 
 import { backIconSrc } from "../../../../config";
 import { nextIconSrc } from "../../../../config";
@@ -33,6 +33,7 @@ function WarningBox({ warnings, active = false, onClose }) {
   }
 
   return (
+      
     <InfoBox className={classes.warning} active={active}>
       <Title className={classes.title} level={3}>
         <span>
@@ -44,12 +45,15 @@ function WarningBox({ warnings, active = false, onClose }) {
         </p>
       </Title>
       <div className={classes.message}>{warnings[currentIndex].message}</div>
-      <div className={classes.controls}>
-        <ButtonIcon
-          src={backIconSrc}
-          onClick={handleBack}
-          disabled={currentIndex === 0}
-        />
+          <div className={classes.controls}>
+        {warnings.length <= 1 ? null : (
+            <ButtonIcon
+                src={backIconSrc}
+                onClick={handleBack}
+                disabled={currentIndex === 0}
+            />
+        )}  
+     
         {currentIndex + 1 !== warnings.length ? (
           <ButtonIcon
             src={nextIconSrc}

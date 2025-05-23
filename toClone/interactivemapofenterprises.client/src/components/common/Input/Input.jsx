@@ -13,11 +13,14 @@ function Input({
   isDisabled = false,
   accept = "",
   onChange,
+  onClick,
+  Classes,
+  placeholder
 }) {
-  return (
-    <div className={classes.container}>
-      <label className={classes.label} htmlFor={name}>
-        <span>{label}:</span>
+    return (
+        <div  className={classes.container}>
+       <label className={classes.label} htmlFor={name}>
+                <span className={Classes ?? ""}>{label}:</span>
         {isRequired ? (
           <abbr className={classes.abbr} title="required">
             *
@@ -25,21 +28,23 @@ function Input({
         ) : (
           ""
         )}
-        <em className={classes.em}>{em}</em>
+        <div className={classes.em}>{em}</div>
       </label>
-      <input
-        className={classes.input}
-        id={name}
-        name={name}
-        type={type}
-        value={value}
-        minLength={minLength}
-        maxLength={maxLength}
-        pattern={pattern}
-        onChange={onChange}
-        accept={accept}
-        required={isRequired}
-        disabled={isDisabled}
+            <input
+                className={ "" ?? classes.input}
+              id={name}
+              name={name}
+              type={type}
+              value={value}
+              minLength={minLength}
+              maxLength={maxLength}
+              pattern={pattern}
+              onChange={onChange}
+              onClick={onClick}
+              accept={accept}
+              required={isRequired}
+              disabled={isDisabled}
+              placeholder={placeholder}
       />
     </div>
   );

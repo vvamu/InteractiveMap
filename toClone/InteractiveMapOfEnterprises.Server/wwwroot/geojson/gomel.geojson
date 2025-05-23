@@ -8,32 +8,7 @@
       "id": "gomel"
     }
   },
-  "markers": [
-    {
-      "id": "475e8a9a-adfb-4022-68f4-08dd88ba05df",
-      "name": "wdqwdqwd",
-      "position": {
-        "lat": 53.071161135749726,
-        "lng": 30.211047307779136
-      }
-    },
-    {
-      "id": "e100bd74-163a-4c30-1675-08dd88bbe5d6",
-      "name": "dewdwedwed",
-      "position": {
-        "lat": 53.17000517049714,
-        "lng": 30.068278021004122
-      }
-    },
-    {
-      "id": "c063a695-5253-4b4a-5b60-08dd88beb573",
-      "name": "\u043F\u043A\u0443\u0435\u043F\u043A\u0443\u043F",
-      "position": {
-        "lat": 53.17658669317577,
-        "lng": 29.91452648140025
-      }
-    }
-  ],
+  "markers": [],
   "features": [
     {
       "type": "Feature",

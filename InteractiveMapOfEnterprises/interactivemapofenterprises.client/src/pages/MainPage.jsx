@@ -35,10 +35,10 @@ function MainPage() {
             
             <MainPageSlider />
             <SectionOne />
-            <button onClick={NewGame} >START</button>
-            <div id="game" ></div>
+            {/*<button onClick={NewGame} >START</button>*/}
+            {/*<div id="game" ></div>*/}
 
-            <div style={{ marginTop: "50px", height: "500px", width: "100%", backgroundColor: "#ffdc9b" }}></div>
+            {/*<div style={{ marginTop: "50px", height: "500px", width: "100%", backgroundColor: "#ffdc9b" }}></div>*/}
         </main>
     );
 }

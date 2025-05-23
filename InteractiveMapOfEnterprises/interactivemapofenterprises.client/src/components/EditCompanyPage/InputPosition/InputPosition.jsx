@@ -3,31 +3,36 @@ import Map from "../../MapPage/Map/Map";
 import Button from "../../common/Buttons/Button";
 import ButtonIcon from "../../common/Buttons/ButtonIcon";
 import { Icon } from "leaflet";
-
+import MyMarker from "../../MapPage/Map/MyMarker"
 
 const BackIcon = "/back.png";
 
 import classes from "./Input.module.css";
 
-function InputPosition({ idRegion, position, onCancel, onConfirm }) {
+function InputPosition({ idRegion, position, onCancel, onConfirm, onClick }) {
     const mapRef = useRef();
     const markerRef = useRef();
     const [isRender, setIsRender] = useState(false);
-    const [isDisabledConfirm, setIsDisabledConfirm] = useState(
-        position === undefined
-    );
+    const [isDisabledConfirm, setIsDisabledConfirm] = useState(position === undefined);
 
     const [newIdRegion, setNewIdRegion] = useState(idRegion);
     const [newPosition, setNewPosition] = useState(position);
 
     useEffect(() => {
+
+
         if (markerRef.current) {
             
             markerRef.current.setLatLng(newPosition);
             markerRef.current.setIcon(new Icon({ className: "marker", iconUrl: "/marker-icon.png", iconAnchor: [11, 40], popupAnchor: [0, -20], }))
             setIsDisabledConfirm(newPosition === undefined);
+            return;
         }
-    }, [newPosition]);
+        if (position) {
+            //const mapInstance = mapRef.current.map;
+            //L.marker(position).addTo(mapInstance);
+        }
+    }, [newPosition, onClick]);
 
     const handleRenderEnd = () => {
         setIsRender(false);
@@ -45,8 +50,10 @@ function InputPosition({ idRegion, position, onCancel, onConfirm }) {
         setNewIdRegion(id);
     };
 
+    
+
     return (
-        <div className={classes.inputPosition} style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}> 
+        <div className={classes.inputPosition} style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", height: "125%" } }> 
             <div style={{display:"flex", justifyContent:"space-between"}}>
                 <div className={classes.mapHeader}>
                     {mapRef.current ? (
@@ -91,7 +98,7 @@ function InputPosition({ idRegion, position, onCancel, onConfirm }) {
                 </div>
             </div>
 
-            <div className={classes.map} style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <div className={classes.map} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "105%" }}>
                 <Map
                     isClickableRegions={true}
                     isVisibleRegionBorders={true}
