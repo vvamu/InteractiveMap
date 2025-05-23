@@ -27,20 +27,15 @@ var connectionString = builder.Configuration.GetConnectionString("RemoteConnecti
 builder.Services.AddDbContext<ApplicationDbContext>(
 options =>
 {
-    //options.UseSqlServer(connectionString, options => options.EnableRetryOnFailure().CommandTimeout(60));
     options.UseSqlite("Data Source=databse.dat");
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
     options.EnableSensitiveDataLogging();
-},
-ServiceLifetime.Scoped);
+}, ServiceLifetime.Scoped); //,ServiceLifetime.Scoped
 //builder.Services.AddIdentityCore<ApplicationUser>()
 //    .AddRoles<IdentityRole<Guid>>()
 //    .AddEntityFrameworkStores<ApplicationDbContext>()
 //    .AddDefaultTokenProviders();
 #endregion
-
-//builder.Services.AddTransient<SignInManager<ApplicationUser>>();
-//builder.Services.AddTransient<UserManager<ApplicationUser>>();
 
 builder.Services.AddTransient<ICompanyService, CompanyService>();
 builder.Services.AddTransient<IAuthService, AuthService>();
@@ -60,6 +55,12 @@ builder.Services.AddCors(options =>
                 .AllowCredentials();
         });
 });
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.Name = "INTERACTIVE_MAP";
+    options.ExpireTimeSpan = TimeSpan.FromDays(10);
+    options.SlidingExpiration = true; 
+});
 
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme);
 //    .AddCookie(options =>
@@ -75,17 +76,10 @@ builder.Services.AddCors(options =>
 //builder.Services.AddDistributedMemoryCache();
 //builder.Services.AddSession();
 
-builder.Services.AddSession();
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.Cookie.Name = "INTERACTIVE_MAP";
-    options.ExpireTimeSpan = TimeSpan.FromDays(10); // ��������� ����� �������� ���� �� 10 ����
-    options.SlidingExpiration = true; // ��������� ����������� ��������� ����� ��������
 
 
-});
-builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>().AddEntityFrameworkStores<ApplicationDbContext>()
-.AddDefaultTokenProviders();
+//builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>().AddEntityFrameworkStores<ApplicationDbContext>()
+//.AddDefaultTokenProviders();
 
 
 //builder.Services.AddAuthentication(options =>
@@ -115,7 +109,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-////app.UseSession();
+//app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 

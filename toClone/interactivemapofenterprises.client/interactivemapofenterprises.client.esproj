@@ -11,7 +11,4 @@
   <ItemGroup>
     <TypeScriptConfiguration Include="config.js" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\components\cc\" />
-  </ItemGroup>
 </Project>

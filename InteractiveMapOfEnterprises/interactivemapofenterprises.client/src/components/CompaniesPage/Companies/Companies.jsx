@@ -7,14 +7,15 @@ import PaginationSetting from "./PaginationSetting";
 import CompanyItemCatalog from "../CompanyItemCatalog/CompanyItemCatalog";
 import ActionConfirmationBox from "../../common/InfoBoxs/ActionConfirmationBox";
 import LoaderBox from "../../common/InfoBoxs/LoaderBox";
+import ApplicationUrl from "../../../models/ApplicationUrl";
 
-
-function Companies() {
+function Companies({ userId,toAllUsers ,filters}) {
   const COUNT_ELEM = 10;
+  const [companies, setCompanies] = useState([]);
+  const [visibleCompanies, setVisibleCompanies] = useState([]);
 
   const [totalPages, setTotalPages] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
-  const [companies, setCompanies] = useState([]);
   const [isActiveActionConfirmation, setIsActiveActionConfirmation] =useState(false);
   const [messageActionConfirmation, setMessageActionConfirmation] =useState(undefined);
   const [currentOperationActionConfirmation,setCurrentOperationActionConfirmation] = useState(undefined);
@@ -30,16 +31,39 @@ function Companies() {
   }, []);
 
   useEffect(() => {setCurrentPage(1);}, [totalPages]);
+    useEffect(() => {
 
-  useEffect(() => {
-    companiesService.getPage(currentPage, COUNT_ELEM).then((data) => {
-      setCompanies(data);
-      setTimeout(() => onCloseLoader(), 1000);
-    });
-  }, [currentPage]);
+        if (filters?.category != null && filters?.category != "") {
+            let filteredd = companies?.filter(f => f.category == filters.category)
+            setVisibleCompanies(filteredd)
+            return;
+        }
+        setVisibleCompanies(companies)
 
-  const handleOpen = (id, name) => document.location = `/company?id=${id}`;
-  const handleEdit = (id, name) => document.location = `/editor?id=${id}`;
+    },[filters,companies])
+
+
+    useEffect(() => {
+
+      if (toAllUsers) {
+          companiesService.getPage(currentPage, COUNT_ELEM).then((data) => {
+              setCompanies(data);
+              
+              setTimeout(() => onCloseLoader(), 1000);
+          });
+      }
+      else {
+          var resData = companiesService.getByUser(userId).then((data) => {
+              setCompanies(data ?? []);
+              setTimeout(() => onCloseLoader(), 1000);
+          });
+      }
+      
+    
+  }, [currentPage, userId]);
+
+    const handleOpen = (id, name) => document.location = ApplicationUrl.Company.app.get + id;
+    const handleEdit = (id, name) => document.location = ApplicationUrl.Company.app.edit + id;
 
   const handleDelete = (id, name) =>
     onActiveActionConfirmationBox(`Вы уверины что хотите удалить "${name}"?`, {
@@ -86,8 +110,8 @@ function Companies() {
       currentPage={currentPage}
       totalPages={totalPages}
       onPageChange={(value) => setCurrentPage(value)}
-    >
-      {companies.map((compony, index) => (
+      >
+          {!visibleCompanies || visibleCompanies.length == 0 ? <div>Ни одной компании не создано</div> : visibleCompanies.map((compony, index) => (
         <CompanyItemCatalog
           key={index}
           data={compony}

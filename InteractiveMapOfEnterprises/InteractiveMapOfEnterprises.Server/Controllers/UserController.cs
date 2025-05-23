@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 [Route("users")]
 [ApiController]
-public class UserController : ControllerBase
+public class UserController : Controller
 {
     private readonly IUserService _userService;
     private readonly IAuthService _authService;
@@ -29,34 +29,28 @@ public class UserController : ControllerBase
     {
         try
         {
+            //var users = await _userService.GetAsync();
+
+            //foreach (var use in users)
+            //{
+            //    await _userService.Delete(use.Id, false);
+            //}
             var res = await _userService.GetAsync();
-            return Ok(res);
+            return Json(res);
         }
         catch (Exception ex)
         {
             return BadRequest(ex.Message);
         }
     }
-    [HttpGet("{username}")]
-    public async Task<IActionResult> GetAsync(string username)
-    {
-        try
-        {
-            var res = await _userService.GetAsync(username);
-            return res != null? Ok(res) : new EmptyResult();
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
-    [HttpGet("{userId:guid}")]
+
+    [HttpGet("{userId}")]
     public async Task<IActionResult> GetAsync(Guid userId)
     {
         try
         {
             var res = await _userService.GetAsync(userId);
-            return res != null ? Ok(res) : Ok(null);
+            return Json(res);
         }
         catch (Exception ex)
         {
@@ -70,8 +64,8 @@ public class UserController : ControllerBase
         try
         {
             var user = (CreateUserViewModel)Mapper.Map(jsonData, new CreateUserViewModel());
-            await _userService.CreateAsync(user);
-            return Ok("User created successful");
+            var userDb = await _userService.CreateAsync(user);
+            return Json(userDb);
         }
         catch (Exception ex)
         {
@@ -88,8 +82,8 @@ public class UserController : ControllerBase
         {
             var editUserAdmin = (EditUserAdminViewModel)Mapper.Map(jsonData, new EditUserAdminViewModel());
 
-            await _userService.EditUserAsync(editUserAdmin.Id, editUserAdmin.Roles);
-            return Ok("User role updated successfully");
+            var user = await _userService.EditUserRoleAsync(editUserAdmin.Id, editUserAdmin.Roles);
+            return Json(user);
         }
         catch (Exception ex)
         {
@@ -104,8 +98,8 @@ public class UserController : ControllerBase
         {
             var editUser = (EditUserViewModel)Mapper.Map(jsonData, new EditUserViewModel());
 
-            await _userService.EditUserAsync(editUser);
-            return Ok("User details updated successfully");
+            var user =  await _userService.EditUserAsync(editUser);
+            return Json(user);
         }
         catch (Exception ex)
         {
@@ -117,8 +111,8 @@ public class UserController : ControllerBase
     {
         try
         {
-            await _userService.Delete(userId, isSoft);
-            return Ok("User deleted successfully");
+            var user =  await _userService.Delete(userId, isSoft);
+            return Json(user);
         }
         catch (Exception ex)
         {

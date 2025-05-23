@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 import Step from "./Step";
-import Title from "../../common/Title";
 import Input from "../../common/Input/Input";
-import Button from "../../common/Buttons/Button";
 import WarningBox from "../../common/InfoBoxs/WarningBox";
 import ErrorBox from "../../common/InfoBoxs/ErrorBox";
 import InputPosition from "../InputPosition/InputPosition";
@@ -13,74 +12,84 @@ import ListWarnings from "../../common/Lists/ListWarnings";
 
 import { ERRORS, WARNINGS } from "../../../constants/constants";
 import companiesService from "../../../services/companiesService";
+import ApplicationUrl from "../../../models/ApplicationUrl";
+import authService from "../../../services/authService";
+import CompanyCategories from "../../../models/CompanyCategories";
 
-
-
-function MinimalInfoAboutComponyStep({ onPassed }) {
+function MinimalInfoAboutComponyStep({ handleReturn, company }) {
   const [warnings, setWarnings] = useState([]);
   const [isActiveWarningModal, setIsActiveWarningModal] = useState(false);
   const [errors, setErrors] = useState([]);
   const [isActiveErrorModal, setIsActiveErrorModal] = useState(false);
   const [isIgnoreWarning, setIsIgnoreWarning] = useState(false);
   const [isActiveInputMap, setIsActiveInputMap] = useState(false);
-  const [isSelectedMapPosition, setSelectedMapPosition] = useState(false);
   const [selectedMapCity, setSelectedMapCity] = useState("");
   const [selectedIcon, setSelectedIcon] = useState("Максимум 10мб");
   const [selectedImage, setSelectedImage] = useState("Максимум 10мб");
-
-
-  const categories = [
-      "Производство продуктов питания",
-      "Машиностроительные предприятия",
-      "Химическая промышленность",
-      "Легкая промышленность",
-      "Металлообработка и металлургия",
-      "Деревообработка",
-      "Электроника и электротехника",
-      "Фармацевтическая промышленность"
-  ];
+  const [currentUser,  setCurrentUser] = useState(null)
+    useEffect(() => {
+        async function getCurUser() {
+            try {
+                var res = await authService.getCurrentUser();
+                setCurrentUser(res);
+                let loca = document.location.pathname
+            }
+            catch (ex) {
+                console.log(ex)
+            }
+        }
+        getCurUser();
+    },[])
 
   const [prevData, setPrevData] = useState({
+      id: {value: ""},
       name:
           { value: "", isRequired: true, },
       description:
           { value: "", isRequired: false, },
-      foundationDate:
+      dateFoundation:
           { value: new Date(2023, 8, 10).toLocaleDateString("de-DE") , isRequired: true },
       category:
-          { value: categories[0], isRequired: true },
+          { value: CompanyCategories[0], isRequired: true },
       iconFormFile:
           { value: undefined, isRequired: false, path: undefined, accept: "image/png", },
       imageFormFile: 
           { value: undefined, isRequired: false, path: undefined, accept: "image/png", },
-      idRegion:
+      regionId:
           { value: undefined, isRequired: true, },
       position:
           { value: undefined, isRequired: true, },
-      qualityMark:
-          { value: false, isRequired: false, },
-      url:
-          { value: "", isRequired: false, }
+      uri:
+          { value: "", isRequired: false, },
+      
   });
 
-    const setValueByKey = (key, value) => {
-        const newPrevData = { ...prevData };
-        newPrevData[key].value = value;
-        setPrevData(newPrevData);
-    };
+    useEffect(() => {
+        if (company) {
 
-  const [data, setData] = useState({
-    name: "",
-    description: "",
-    foundationDate: new Date(2023, 8, 10),
-    iconFormFile: "", imageFormFile: "",
-    idRegion: undefined,
-    position: { lat: 0, lng: 0 },
-    qualityMark: false
-  });
+            setPrevData(prevData => ({
+                ...prevData,
+                id: { value: company.id },
+                name: { value: company.name, isRequired: true },
+                description: { value: company.description, isRequired: false },
+                dateFoundation: { value: company.dateFoundation.substring(0, 10), isRequired: true },
+                category: { value: company.category, isRequired: true },
+                regionId: { value: company.regionId, isRequired: true },
+                position: { value: { lat: company.latitude, lng: company.altitude }, isRequired: true },
+                uri: { value: company.uri, isRequired: false },
+                imageFormFile: { value: company.imageBytes, isRequired: false },
+                iconFormFile: { value: company.iconBytes, isRequired: false },
 
-    
-   //---------------START Change Input Value
+            }));
+
+            setSelectedMapCity(company.regionId);
+            //setSelectedImage(e.target.value); handleChangeImage(e)
+            
+        }
+    }, [company]);
+
+    //---------------START Change Input Value
+
     const handleChangeIcon = (evt) => {
         const newPrevData = { ...prevData };
 
@@ -97,96 +106,134 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
         setPrevData(newPrevData);
     };
 
-
     const handleChangeInput = (evt) =>
         setValueByKey(evt.target.name, evt.target.value);
 
-    const handleChangePosition = (idRegion, value) => {
-        setValueByKey("idRegion", idRegion);
+    const handleChangePosition = (regionId, value) => {
+        setValueByKey("regionId", regionId);
         setValueByKey("position", value);
     };
 
+    const setValueByKey = (key, value) => {
+        const newPrevData = { ...prevData };
+        newPrevData[key].value = value;
+        setPrevData(newPrevData);
+    };
     //---------------END Change Input Value
 
-  const handleNext = () => {
-    console.log(prevData)
-    const newErrors = [];
-    const newWarnings = [];
+    //---------------CONFIRM EDIT OR CREATE
+    const handleNext = async () => {
+        
+        const newErrors = [];
+        const newWarnings = [];
 
-    if (prevData.name.value.length > 0) {
-      if (prevData.name.value.length <= 3) {
-        newWarnings.push(WARNINGS.SMALL_NAME);
-      }
-    } else {
-      newErrors.push(ERRORS.NOT_VALUE_NAME);
-    }
-
-    //if (prevData.description.value.length > 0) {
-    //  if (prevData.name.value.length < 3) {
-    //    newWarnings.push(WARNINGS.SMALL_ADD_NAME);
-    //  }
-    //}
-
-    if (!prevData.foundationDate.value) {
-      newErrors.push(ERRORS.NOT_VALUE_FOUNDATION_DATE);
-      }
-
-      let url = prevData.url.value;
-      if (url.length > 0 && !(url.startsWith("https://") || url.startsWith("http://") )) {
-          newErrors.push(ERRORS.NOT_VALID_URL);
-      }
-
-    //if (!prevData.logoUrl.value) {
-    //  newErrors.push(ERRORS.NOT_SELECTED_LOGO);
-    //} else {
-    //    const extension = prevData.logoUrl.path.split(".").pop();
-    //    if (!(extension == "png" || extension == "jpg" || extension == "jpeg")) {
-    //    newErrors.push(ERRORS.NOT_CORRECT_EXTENSION_LOGO);
-    //  }
-    //}
-
-    if (!prevData.position.value) {
-      newErrors.push(ERRORS.NOT_VALUE_POSITION);
-    }
-
-    setWarnings(newWarnings);
-    setErrors([...newErrors]);
-
-    if (newErrors.length > 0) {
-      setIsActiveErrorModal(true);
-    } else if (newWarnings.length > 0 && !isIgnoreWarning) {
-      setIsActiveWarningModal(true);
-    } else {
-        const newData = {}; //toFixData
-        for (let key in prevData) {
-            newData[key] = prevData[key].value;
+        if (!currentUser) {
+            newErrors.push({ message: "Пользователь не авторизован." });
+            setErrors([...newErrors]); return;
         }
-        setData(newData);
-        onOverStept(newData);
+
+        if (prevData.name.value.length > 0) {
+          if (prevData.name.value.length <= 3) {
+            newWarnings.push(WARNINGS.SMALL_NAME);
+          }
+        } else {
+          newErrors.push(ERRORS.NOT_VALUE_NAME);
+        }
+
+        //if (prevData.description.value.length > 0) {
+        //  if (prevData.name.value.length < 3) {
+        //    newWarnings.push(WARNINGS.SMALL_ADD_NAME);
+        //  }
+        //}
+
+        if (!prevData.dateFoundation.value) {
+          newErrors.push(ERRORS.NOT_VALUE_FOUNDATION_DATE);
+          }
+
+          let uri = prevData.uri.value;
+          if (uri?.length > 0 && !(uri?.startsWith("https://") || uri?.startsWith("http://") )) {
+              newErrors.push(ERRORS.NOT_VALID_uri);
+          }
+
+
+        if (!prevData?.logouri?.value || !prevData?.imageFormFile?.value) {
+          //newErrors.push(ERRORS.NOT_SELECTED_LOGO);
+        } else {
+            const extension = prevData?.logouri?.path?.split(".").pop();
+            if (extension != null && extension != "png") {
+                newErrors.push(ERRORS.NOT_CORRECT_EXTENSION_LOGO);
+            
+            }
+            const extension2 = prevData?.imageFormFile?.path?.split(".").pop();
+            if (extension2 && extension2 != "png") {
+                newErrors.push(ERRORS.NOT_CORRECT_EXTENSION_LOGO);
+            }
+        }
+
+        
+        if (!prevData.position.value) {
+          newErrors.push(ERRORS.NOT_VALUE_POSITION);
+        }
+
+        setWarnings(newWarnings);
+        setErrors([...newErrors]);
+
+        if (newErrors.length > 0) {
+            setIsActiveErrorModal(true);
+        } else if (newWarnings.length > 0 && !isIgnoreWarning) {
+            setIsActiveWarningModal(true);
+        } else {
+            const newData = {}; //toFixData
+            for (let key in prevData) {
+                newData[key] = prevData[key].value;
+            }
+            await createCompany(newData);
+            
+        }
+    };
+
+
+    async function createCompany(newData) {
+        try {
+            let data = await companiesService.create(newData);
+ 
+                if (!data) {
+                    let resUrl = ApplicationUrl.User.app.get + currentUser?.id
+                    handleReturn == null ? document.location = resUrl : document.location = resUrl
+
+                }
+                let resUrl = ApplicationUrl.Company.app.get + data.id
+                handleReturn == null ? document.location = resUrl : document.location = resUrl
+            
+        }
+        catch (ex) {
+            let err = [ { message: ex?.message ?? ex }];
+            setErrors(err);
+        }
     }
+
+    const handleCloseErrorModal = () => {
+        setIsActiveErrorModal(false);
+        setIsActiveWarningModal(warnings.length > 0);
     };
 
-    const onOverStept = (updateSteps) => {
-      //onActiveLoader("Загрузка данных на сервер");
-      companiesService.create(updateSteps).then((isSaved) => {
-        document.location = "/catalog";
-      });
+    const handleCloseWarningModal = () => {
+        setIsActiveWarningModal(false);
     };
 
-  const handleCloseErrorModal = () => {
-    setIsActiveErrorModal(false);
-    setIsActiveWarningModal(warnings.length > 0);
-  };
 
-  const handleCloseWarningModal = () => {
-    setIsActiveWarningModal(false);
-  };
+    function onCancelStep (){
+        const urlParams = new URLSearchParams(window.location.search);
+        const returnUrlParam = urlParams.get('returnUrl');
+        document.location = returnUrlParam ?? `${ApplicationUrl.User.app.get}${data.id}`
+    }
 
   return (
-    <Step onNext={handleNext}>
-      <Title className="step-title" level={2}>
-        Краткая ифнормация
-      </Title>
+
+      <Step onNext={handleNext} onCancel={() => { onCancelStep() }} >
+      {/*<Title className="step-title" level={2}>*/}
+      {/*  Краткая ифнормация*/}
+      {/*</Title>*/}
       <ListErrors errors={errors} />
       <ListWarnings warnings={warnings} />
           {/*{warnings.length <= 0 ? null : */}
@@ -195,7 +242,9 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
           {/*        <input type="checkbox" onClick={(evt) => setIsIgnoreWarning(evt.target.checked)}/>*/}
           {/*    </div>*/}
           {/*}*/}
-      <form>
+          <form>
+
+              <input type="hidden" name="id" value={prevData.id.value} />
         <Input
           type="text"
           name={"name"}
@@ -206,34 +255,43 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
           onChange={handleChangeInput}
         />
         
+        {/*<div>*/}
+        {/*    <div style={{ fontFamily: "MA-Bold", fontSize: "14px" }}>Дата основания:</div>*/}
+        {/*    <label className={"input-file"}>*/}
+        {/*              <input type="date" name="dateFoundation" onChange={handleChangeInput}*/}
+        {/*                  value={prevData.dateFoundation.value} isRequired={prevData.dateFoundation.isRequired} />*/}
+            
+        {/*    </label>*/}
+        {/*</div>*/}
 
         <Input
           type="date"
-          name={"foundationDate"}
+          name={"dateFoundation"}
           label={"Дата основания"}
           Classes=""
-          value={prevData.foundationDate.value}
-          isRequired={prevData.foundationDate.isRequired}
+          value={prevData.dateFoundation.value}
+          isRequired={prevData.dateFoundation.isRequired}
           onChange={handleChangeInput}
-          placeholder="DD.MM.YYYY"
+          
               />
               {/*em="Если известен только год основания, выстовите дату в формате 01.01.<год_основания>"*/}
 
-        {!categories ? null :
-            <div style={{ marginBottom:"10px" }}>
+        {!CompanyCategories ? null :
+            <div  style={{ marginBottom:"10px" ,width: "100%" }}> 
                 <Input type="hidden" label={"Основное направление деятельности"} isRequired={prevData.category.isRequired}/>
-
-                <select name={"category"}  onChange={handleChangeInput}  value={prevData.category.value} >
-                        {categories.map(category => (
-                            <option key={category}>{category}</option>
-                        ))}
-                </select>
+                      <div className="styled-select" style={{ marginBottom: "10px", width: "97%", backgroundColor: "white" }}>
+                          <select name={"category"} onChange={handleChangeInput} value={prevData.category.value} style={{} } >
+                            {CompanyCategories.map(category => (
+                                <option key={category}>{category}</option>
+                            ))}
+                    </select>
+                </div>
             </div>
         }
 
         <div>
                   <div style={{ fontFamily: "MA-Bold", fontSize: "14px", marginBottom: "5px" }}>Местоположение:
-                      {isSelectedMapPosition ? (<span>☑</span>) : (<span> ☐ </span>)}
+                      {selectedMapCity!="" ? (<span>☑</span>) : (<span> ☐ </span>)}
                       {"  " +selectedMapCity}
                   </div>
             <label className={"input-file"}>
@@ -243,10 +301,10 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
             </label>
         </div>
 
-       <hr />
+              <div style={{marginBottom:"40px"} }></div>
 
-        <Input type="text" name={"url"} label={"Сайт"} Classes="" placeholder="http://www.example.com"
-          value={prevData.url.value} isRequired={prevData.url.isRequired} onChange={handleChangeInput} />
+        <Input type="text" name={"uri"} label={"Сайт"} Classes="" placeholder="http://www.example.com"
+          value={prevData.uri.value} isRequired={prevData.uri.isRequired} onChange={handleChangeInput} />
 
         <div>
             <Input type={"hidden"} label={"Информация о предприятии"} isRequired={prevData.description.isRequired} />
@@ -260,7 +318,7 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
             <div style={{ fontFamily: "MA-Bold" ,fontSize:"14px", fontStyle:"normal", marginTop:"10px"}}>Выберите изображение</div>
             <label className={"input-file"}>
                       <input type="file" name="imageFormFile" onChange={e => { setSelectedImage(e.target.value); handleChangeImage(e) }} value={prevData.imageFormFile.path} accept={prevData.iconFormFile.accept} />
-                <span className={"input-file-btn"}>Выберите файл</span>
+                      <span className={"input-file-btn"}>   {prevData.imageFormFile.value != null ? (<span>Выберите файл ☑</span>) : (<span> Выберите.png файл</span>)} </span>
                 <span className={"input-file-text"}>{selectedImage}</span>
             </label>
         </div>
@@ -269,7 +327,7 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
             <div style={{ fontFamily: "MA-Bold" ,fontSize:"14px"}}>Выберите логотип:</div>
             <label className={"input-file"}>
                       <input type="file" name="iconFormFile" onChange={e => { setSelectedIcon(e.target.value); handleChangeIcon(e); }} value={prevData.iconFormFile.path} accept={prevData.imageFormFile.accept} />
-                    <span className={"input-file-btn"}>Выберите файл</span>
+                      <span className={"input-file-btn"}>{prevData.iconFormFile.value ? (<span>Выберите файл ☑</span>) : (<span> Выберите .png файл</span>)}</span>
                     <span className={"input-file-text"}>{selectedIcon}</span>
             </label>
         </div>
@@ -316,15 +374,16 @@ function MinimalInfoAboutComponyStep({ onPassed }) {
         onClose={handleCloseErrorModal}
           />
 
-          {!isActiveInputMap ? null : (
+      {!isActiveInputMap ? null : (
               
           <InputPosition 
-              idRegion={prevData.idRegion.value}
+              onClick={() => onclick()}
+              regionId={prevData.regionId.value}
               position={prevData.position.value}
               onCancel={() => setIsActiveInputMap(false)}
               onConfirm={(id, value) => {
                   setIsActiveInputMap(false);
-                  setSelectedMapPosition(true);
+                  
                   handleChangePosition(id, value);
                   setSelectedMapCity(id);
               }}

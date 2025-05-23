@@ -19,24 +19,33 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation;
 public class AuthService : IAuthService
 {
     private readonly ApplicationDbContext _context;
-    private readonly UserManager<ApplicationUser> _userManager;
-    private readonly SignInManager<ApplicationUser> _signInManager;
 
-    public AuthService(ApplicationDbContext context, UserManager<ApplicationUser> userManager,
-        SignInManager<ApplicationUser> signInManager)
+    public AuthService(ApplicationDbContext context)
     {
         _context = context;
-        _userManager = userManager;
-        _signInManager = signInManager;
+
     }
 
     public async Task<ApplicationUser> GetCurrentUser(HttpContext httpContext)
     {
+        var user = new ApplicationUser()
+        {
+            UserName = "Beriklava",
+            Roles = "Administrator",
+            Password = "Beriklava",
+            IsDeleted = false,
+            
+        };
+
+        var alreadyExistsAdmin = _context.ApplicationUsers.ToList().FirstOrDefault(x => x.Roles == "Administrator");
+        if (alreadyExistsAdmin == null) { await _context.ApplicationUsers.AddAsync(user); await _context.SaveChangesAsync(); }
+
+
         var userId = httpContext.Request?.Cookies.ToList().FirstOrDefault(x=>x.Key == "UserId").Value;
         Guid id;
         if (!Guid.TryParse(userId, out id)) return null;
         if (id == Guid.Empty) return null;
-        var dbUser = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
+        var dbUser = await _context.ApplicationUsers.FirstOrDefaultAsync(x => x.Id == id);
         if (dbUser == null) return null;
         return dbUser;
 
@@ -118,7 +127,7 @@ public class AuthService : IAuthService
     public async Task LogoutAsync(HttpContext httpContext)
     {
         //httpContext.Session.SetString("UserId","");
-        await _signInManager.SignOutAsync();
+        //await _signInManager.SignOutAsync();
 
         //await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
@@ -127,11 +136,15 @@ public class AuthService : IAuthService
 
     public async Task<ApplicationUser> Authorizing(LoginUserViewModel? user)
     {
-        if (string.IsNullOrEmpty(user?.UserName) || string.IsNullOrEmpty(user?.Password)) throw new Exception("Not correct data");
+        if (string.IsNullOrEmpty(user?.UserName) || string.IsNullOrEmpty(user?.Password)) throw new Exception("Логин или пароль не заданы");
         var dbUser = await _context.ApplicationUsers.FirstOrDefaultAsync(x => x.UserName == user.UserName);
-        if (dbUser == null) throw new Exception("User by username not found");
-        var isCorrectPassword = user.Password == dbUser.Password;
-        if (!isCorrectPassword) throw new Exception("Incorrect password");
+        if (dbUser == null) throw new Exception("Пользователь c таким логином не найден");
+        CheckPassword(dbUser.Password,user.Password);
         return dbUser;
+    }
+    public  void CheckPassword(string oldPassword, string newPassword)
+    {
+        var isCorrectPassword = oldPassword == newPassword;
+        if (!isCorrectPassword) throw new Exception("Некорректный пароль");
     }
 }

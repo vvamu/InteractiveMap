@@ -4,12 +4,11 @@ import { useLocation } from "react-router-dom";
 import LoaderBox from "./../components/common/InfoBoxs/LoaderBox";
 
 import companiesService from "../services/companiesService";
-import CompanyInfo from "../components/CompanyPage/CompanyInfo/CompanyInfo";
-
+import CompanyInfo from "../components/CompanyPage/CompanyInfo";
+import { useParams } from 'react-router-dom';
 function CompanyPage() {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const id = searchParams.get("id");
+    const { id } = useParams();
+
   const [isActiveLoader, setIsActiveLoader] = useState(false);
   const [data, setData] = useState(undefined);
 
@@ -31,7 +30,7 @@ function CompanyPage() {
 
   return (
     <div>
-      <CompanyInfo data={data}/>
+     <CompanyInfo data={data} />
         
       <LoaderBox active={isActiveLoader}>
         <p className="message-loader"></p>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InteractiveMapOfEnterprises.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5a6f44ba9f1ef6c4373454c8b1faf7d1cfc7711")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44768b6a1377b77d72bf23b055dc74baa31c11ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("InteractiveMapOfEnterprises.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InteractiveMapOfEnterprises.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

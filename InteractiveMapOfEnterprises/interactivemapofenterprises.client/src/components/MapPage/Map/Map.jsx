@@ -10,8 +10,10 @@ import "leaflet/dist/leaflet.css";
 
 import mapDataService from "../../../services/mapDataService";
 
-import MarkerLabel from "./MarkerLabel";
-import MarkerCompany from "./MarkerCompany";
+
+import CityMarker from "./CityMarker";
+import MyMarker from "./MyMarker";
+
 
 function ChangeMap({ center, zoom }) {
     const map = useMap();
@@ -32,12 +34,15 @@ const Map = forwardRef(
         , zoom
         , isClickableRegions
         , isVisibleRegionBorders
+        , markers
     }, ref)
 
- {
+    {
+
     const mapRef = useRef();
 
-    const [geojsonLayers, setGeojsonLayers] = useState([]);
+    const [geoJsonPath, setGeoJsonPath] = useState([]);
+    const [geojsonLayers, setGeojsonLayers] = useState([]); //границы города
     const [geoJsonCurrent, setGeoJsonCurrent] = useState({
         crs: {
             properties: {
@@ -52,22 +57,8 @@ const Map = forwardRef(
         },
         features: [],
     });
-    const [geoJsonPath, setGeoJsonPath] = useState([]);
 
-    const [labelMarkers, setLabelMarkers] = useState([]);
-    const [companyMarkers, setCompanyMarkers] = useState([]);
-    const [mapColor, setMapColor] = useState(undefined);
-
-    const combinedStyles = {
-        ...{
-            border: "1px solid black",
-            padding: "20px 45px",
-            height: "550px",
-            position: "relative"
-
-        },
-        ...style
-    }
+    const [cityMarkers, setCityMarkers] = useState([]);
 
 
     useImperativeHandle(ref, () => ({
@@ -89,8 +80,8 @@ const Map = forwardRef(
 
     const addGeojsonLayer = (geojson) => {
         onRenderStart();
-        setCompanyMarkers([]);
-        setLabelMarkers([]);
+        
+        setCityMarkers([]);
         setGeojsonLayers([]);
 
         const delay = 100;
@@ -102,48 +93,18 @@ const Map = forwardRef(
         });
 
         setTimeout(() => {
-            geojson.markers && setCompanyMarkers(geojson.markers);
+
             onRenderEnd();
         }, (geojson.features.length + 3) * delay);
     };
 
-    const getPolygonStyle = (feature) => {
-        let fillColor = "blue";
-
-        if (feature.properties.fill) {
-            fillColor = feature.properties.fill;
-        } else if (mapColor) {
-            fillColor = mapColor;
-        }
-
-        return {
-            fillColor: fillColor,
-            weight: 2,
-            opacity: 0.45,
-            color: "#000",
-            fillOpacity: 0.5,
-        };
-    };
-
-    const handleAddMarker = (feature, layer) => {
-        if (feature.properties.isVisibleLabel) {
-            setLabelMarkers((prev) => [
-                ...prev,
-                {
-                    position: layer.getBounds().getCenter(),
-                    label: feature.properties.nameRU,
-                    onClick: () => handleClick(feature, layer),
-                },
-            ]);
-        }
-    };
-
-    const handleChange = (newGeoJson, newPath) => {
-        setGeoJsonCurrent(newGeoJson);
-        setGeoJsonPath(newPath);
-    };
-
     const handleClick = (feature, layer) => {
+
+        const handleChange = (newGeoJson, newPath) => {
+            setGeoJsonCurrent(newGeoJson);
+            setGeoJsonPath(newPath);
+        };
+
         mapDataService.getMapDataById(feature.properties.id).then((data) => {
             const center = layer.getBounds().getCenter();
             const mapGeoJson = data;
@@ -151,25 +112,22 @@ const Map = forwardRef(
             data.crs.properties.center = center;
             data.crs.properties.title = feature.properties.nameRU;
 
-            setMapColor(feature.properties.fill);
+            //setMapColor(feature.properties.fill);
             handleChange(mapGeoJson, [...geoJsonPath, geoJsonCurrent]);
         });
     };
 
     const handleBackGeoJson = () => {
-        if (geoJsonPath.length === 0) {
-            return;
-        }
+        if (geoJsonPath.length === 0) {return;}
 
         const mapGeoJson = geoJsonPath[geoJsonPath.length - 1];
-
         geoJsonPath.splice(geoJsonPath.length - 1, 1);
 
         setGeoJsonCurrent(mapGeoJson);
         setGeoJsonPath([...geoJsonPath]);
     };
 
-    const handleEachFeature = (feature, layer) => {
+    const loadCityBorders = (feature, layer) => {
         if (feature.properties.id) {
             layer.on({
                 click: () => {
@@ -186,11 +144,22 @@ const Map = forwardRef(
         }
 
         setTimeout(() => {
-            handleAddMarker(feature, layer);
+            if (feature.properties.isVisibleLabel) {
+                setCityMarkers((prev) => [
+                    ...prev,
+                    {
+                        position: layer.getBounds().getCenter(),
+                        label: feature.properties.nameRU,
+                        onClick: () => handleClick(feature, layer),
+                    },
+                ]);
+            }
         }, 0);
     };
 
-    return (
+        return (
+
+               
         <MapContainer
             ref={mapRef}
             attributionControl={false}
@@ -202,22 +171,36 @@ const Map = forwardRef(
             dragging={true}
             scrollWheelZoom={scrollWheelZoom ?? false}
 
-            style={combinedStyles}
+                style={{
+                    ...{
+                        border: "1px solid black",
+                        padding: "20px 45px",
+                        height: "550px",
+                        position: "relative",
+                        zIndex:"5"
 
-
+                    },
+                    ...style
+                }}
         >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-            {geojsonLayers.map((geojson, index) => (
+            {!isVisibleRegionBorders ? null : geojsonLayers.map((geojson, index) => (
                 <GeoJSON
                     key={index}
                     className="geo-polygon"
                     data={geojson}
-                    onEachFeature={handleEachFeature}
-                    style={getPolygonStyle}
+                    onEachFeature={loadCityBorders}
+                    style={{
+                        fillColor: geojson?.properties?.fill ?? "#a88aea",
+                        weight: 1,
+                        opacity: 0.35,
+                        color: "#000",
+                        fillOpacity: 0.5,
+                    }}
                 />
             ))}
-            {labelMarkers.map((marker, index) => (
-                <MarkerLabel
+            {cityMarkers.map((marker, index) => (
+                <CityMarker
                     key={index}
                     position={marker.position}
                     label={marker.label}
@@ -225,27 +208,21 @@ const Map = forwardRef(
                     }}
                 />
             ))}
-            {companyMarkers.map((marker, index) => (
+            {markers
+                ? markers.map((marker, index) => (
 
-                <Marker position={[marker.position.lat, marker.position.lng]} eventHandlers={{click: () => document.location = "/company?id=" + marker.id}}>
-                    <Popup>{marker.name ?? "EMPTY"} </Popup>
-                </Marker>
-                
-                //<MarkerCompany
-                //    key={index} 
-                //    marker={{ latitide: marker.position.lat, altitude: marker.position.lng ,name: marker.name} } 
-                //    eventHandlers={{
-                //        click: () => document.location = "/company?id=" + marker.id
-                //    }}
-                ///>
-            ))
+                    <MyMarker marker={marker} />  
+                ))
+                : null
             }
 
+
             <ChangeMap
-                center={geoJsonCurrent.crs.properties.center}
-                zoom={geoJsonCurrent.crs.properties.zoom}
+                center={center ?? geoJsonCurrent.crs.properties.center}
+                zoom={zoom ?? geoJsonCurrent.crs.properties.zoom}
             />
-        </MapContainer>
+                </MapContainer>
+
     );
 });
 

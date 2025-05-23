@@ -13,8 +13,6 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation
     public class CompanyService : ICompanyService
     {
         private readonly ApplicationDbContext _context;
-        private string geoJsonDirectory => Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "geojson");
-        private string companyJsonDirectory => Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
         public CompanyService(ApplicationDbContext context)
         {
             _context = context;
@@ -29,7 +27,22 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation
             await SetImageToCourse(company, imageFormFiles?.FirstOrDefault());
             await SetIconToCourse(company, iconFormFile);
 
-            var result = await _context.Companies.AddAsync(company);
+            if(company.Id != null && company.Id !=  Guid.Empty)
+            {
+                var dbItem = await GetAsync(company.Id);
+
+                if(iconFormFile ==null) company.IconBytes = dbItem.IconBytes;
+                if(imageFormFiles.Count ==0)  company.ImageBytes = dbItem.ImageBytes;
+                
+                var result = _context.Companies.Update(company);
+            }
+            else
+            {
+
+                if (_context.Companies.FirstOrDefault(x => x.Name == company.Name) != null) throw new Exception("Компания с заданным именем уже существует");
+                var resCompany = await _context.Companies.AddAsync(company);
+                company = resCompany.Entity;
+            }
             var res = await _context.SaveChangesAsync();
 
             return company;
@@ -38,7 +51,14 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation
 
         public async Task<Company?> EditAsync(string jsonData, Guid creatorId, IFormFile? iconFormFile, IFormFileCollection? imageFormFiles)
         {
-            throw new NotImplementedException();
+            var company = (Company)Mapper.Map(jsonData, new Company());
+            company.CreatorId = creatorId;
+            await SetImageToCourse(company, imageFormFiles?.FirstOrDefault());
+            await SetIconToCourse(company, iconFormFile);
+
+            var result = _context.Companies.Update(company);
+            var res = await _context.SaveChangesAsync();
+            return result.Entity;
         }
         public async Task<List<Company>> GetAsync()
         {
@@ -47,7 +67,7 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation
         public async Task<Company?> GetAsync(Guid id)
         {
             var item = await _context.Companies.Include(x => x.Creator).FirstOrDefaultAsync(x => x.Id == id);
-            item.CreatorName = item.Creator.Name;
+            item.CreatorName = item.Creator.UserName;
             item.Creator = null;
             return item;
         }

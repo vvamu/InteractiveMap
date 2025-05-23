@@ -177,7 +177,7 @@
         }
       }
     },
-    "/company/{userId}": {
+    "/company/user/{userId}": {
       "get": {
         "tags": [
           "Company"
@@ -278,28 +278,6 @@
       "get": {
         "tags": [
           "User"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/users/{username}": {
-      "get": {
-        "tags": [
-          "User"
-        ],
-        "parameters": [
-          {
-            "name": "username",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {

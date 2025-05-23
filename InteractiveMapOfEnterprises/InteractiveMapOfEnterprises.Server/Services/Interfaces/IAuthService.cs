@@ -8,4 +8,6 @@ public interface IAuthService
     public  Task LogoutAsync(HttpContext httpContext);
     public  Task<string> LoginAsync(LoginUserViewModel? user, HttpContext httpContext);
     public  Task<ApplicationUser> GetCurrentUser(HttpContext httpContext);
+
+    public void CheckPassword(string oldPassword, string newPassword);
 }

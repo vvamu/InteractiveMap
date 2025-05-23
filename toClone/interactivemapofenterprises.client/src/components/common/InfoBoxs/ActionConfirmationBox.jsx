@@ -4,8 +4,8 @@ import InfoBox from "./InfoBox";
 
 import classes from "./InfoBox.module.css";
 
-const closeIcon = "/close.svg";
-const checkIcon = "/check.svg";
+const closeIcon = "/close.png";
+const checkIcon = "/check.png";
 
 function ActionConfirmationBox({
   title,

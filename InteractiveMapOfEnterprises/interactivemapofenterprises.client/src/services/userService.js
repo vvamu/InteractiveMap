@@ -4,7 +4,7 @@ import { api_url } from "./../../config";
 const urlUser = api_url + "users/"
 
 const userService = {
-    create: async (user) => {
+    create: async (user,isSoftDelete) => {
         try {
             const formData = new FormData();
 
@@ -18,9 +18,25 @@ const userService = {
             throw error.response.data;
         }
     },
-    deleteUser: async (userId, isSoft = true) => {
+    deleteAsync: async (userId, isSoft = true) => {
         try {
             const response = await axios.post(`${urlUser}delete/${userId}?isSoft=${isSoft}`);
+            return response.data;
+        } catch (error) {
+            throw error.response.data;
+        }
+    },
+    getAll: async () => {
+        try {
+            const response = await axios.get(`${urlUser}`);
+            return response.data;
+        } catch (error) {
+            throw error.response.data;
+        }
+    },
+    get: async (id) => {
+        try {
+            const response = await axios.get(`${urlUser}${id}`);
             return response.data;
         } catch (error) {
             throw error.response.data;
@@ -36,6 +52,8 @@ const userService = {
 
             const response = await axios.put(`${urlUser}editAdmin`, formData,
                 { headers: { "Content-Type": "multipart/form-data" } });
+          
+
             return response.data;
         } catch (error) {
             throw error.response.data;
