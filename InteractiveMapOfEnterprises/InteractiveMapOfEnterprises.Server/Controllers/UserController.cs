@@ -111,7 +111,15 @@ public class UserController : Controller
     {
         try
         {
-            var user =  await _userService.Delete(userId, isSoft);
+            isSoft = false;
+            var curUser = await _authService.GetCurrentUser(Request.HttpContext);
+            if (curUser == null) throw new Exception("Текущий пользователь не найден");
+            var admins = await _userService.GetAdmins();
+            admins = admins.Where(x => x.Id != userId).ToList();
+            if (admins.Count() == 0) throw new Exception("Невозможно удалить пользователя при отсутствии администратора на сайте");
+            var adminId = admins[0].Id;
+
+            var user =  await _userService.Delete(userId, adminId, isSoft);
             return Json(user);
         }
         catch (Exception ex)

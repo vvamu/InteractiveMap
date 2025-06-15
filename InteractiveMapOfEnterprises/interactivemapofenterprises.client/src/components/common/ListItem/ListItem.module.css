@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.item:hover {
+    border-color: rgb(251 129 129);
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tools > * {
+    margin-left: 5px;
+}
+
+.item:hover > .tools {
+    opacity: 1;
+    pointer-events: all;
+}

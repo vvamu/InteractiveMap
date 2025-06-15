@@ -12,11 +12,12 @@ function ButtonIcon({
     src,
     alt,
     imgStyle,
+    btnStyle,
     heightBtn,
     title
 }) {
     return (
-        <Button
+        <button
             className={`${className} ${classes.btnIcon}`}
             type={type}
             onClick={onClick}
@@ -37,7 +38,7 @@ function ButtonIcon({
                 src={src}
                 alt={alt}
             />
-        </Button>
+        </button>
     );
 }
 

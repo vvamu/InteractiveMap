@@ -28,13 +28,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 options =>
 {
     options.UseSqlite("Data Source=databse.dat");
+    //options.UseSqlServer(connectionString);
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
     options.EnableSensitiveDataLogging();
-}, ServiceLifetime.Scoped); //,ServiceLifetime.Scoped
-//builder.Services.AddIdentityCore<ApplicationUser>()
-//    .AddRoles<IdentityRole<Guid>>()
-//    .AddEntityFrameworkStores<ApplicationDbContext>()
-//    .AddDefaultTokenProviders();
+}, ServiceLifetime.Scoped); 
 #endregion
 
 builder.Services.AddTransient<ICompanyService, CompanyService>();

@@ -24,6 +24,10 @@ namespace InteractiveMapOfEnterprises.Server.Migrations
                         .HasColumnType("TEXT")
                         .HasAnnotation("Relational:JsonPropertyName", "id");
 
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("TEXT")
+                        .HasAnnotation("Relational:JsonPropertyName", "dateCreated");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("INTEGER")
                         .HasAnnotation("Relational:JsonPropertyName", "isDeleted");
@@ -57,9 +61,6 @@ namespace InteractiveMapOfEnterprises.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT")
                         .HasAnnotation("Relational:JsonPropertyName", "id");
-
-                    b.PrimitiveCollection<string>("Achievements")
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("Altitude")
                         .IsRequired()
@@ -125,7 +126,7 @@ namespace InteractiveMapOfEnterprises.Server.Migrations
                     b.HasOne("InteractiveMapOfEnterprises.Server.Models.ApplicationUser", "Creator")
                         .WithMany("Companies")
                         .HasForeignKey("CreatorId")
-                        .OnDelete(DeleteBehavior.SetNull)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Creator");

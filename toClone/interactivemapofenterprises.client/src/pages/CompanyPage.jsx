@@ -7,35 +7,43 @@ import companiesService from "../services/companiesService";
 import CompanyInfo from "../components/CompanyPage/CompanyInfo";
 import { useParams } from 'react-router-dom';
 function CompanyPage() {
-    const { id } = useParams();
+  const { id } = useParams();
 
   const [isActiveLoader, setIsActiveLoader] = useState(false);
   const [data, setData] = useState(undefined);
 
-  const onActiveLoader = (message) => {
-    setIsActiveLoader(true);
-  };
-
-  const onCloseLoader = () => {
-    setIsActiveLoader(false);
-  };
 
   useEffect(() => {
-    onActiveLoader();
-    companiesService.get(id).then((result) => {
-      setData(result);
-      onCloseLoader();
-    });
+      setIsActiveLoader(true);
+
+      const getItemById = async() => {
+          companiesService.get(id).then((result) => {
+              if (result == undefined || result == null) {
+                  document.location = "/map"
+              }
+              setData(result);
+              setIsActiveLoader(false)
+          });
+      }
+
+
+      try {
+         getItemById();
+      }
+      catch (ex) {
+          console.log("ex");
+      }
   }, []);
 
   return (
-    <div>
-     <CompanyInfo data={data} />
+      <>
+          <LoaderBox active={isActiveLoader}>
+              <p className="message-loader"></p>
+          </LoaderBox>
+          <CompanyInfo data={data} setIsActiveLoader={(f) => { setIsActiveLoader(f) }} isActiveLoader={isActiveLoader} />
         
-      <LoaderBox active={isActiveLoader}>
-        <p className="message-loader"></p>
-      </LoaderBox>
-    </div>
+     
+    </>
   );
 }
 

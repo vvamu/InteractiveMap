@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 1px solid lightgrey;
-    padding:15px 0px;
+    border-bottom: 3px solid #ffdbdb;
+    padding: 15px 0px;
 }
 
 .Logo {
@@ -28,6 +28,9 @@
 
 .hide {
     display: none;
+}
+.nav-link-active{
+    border-bottom:2px solid red;
 }
 
 @media (max-width: 530px) {

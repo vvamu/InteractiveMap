@@ -3,14 +3,13 @@
   justify-content: space-between;
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 5px;
-  border: 2px solid #4678c311;
+  border-radius: 5px; 
   transition: 0.2s;
 }
 
-.item:hover {
-  border-color: #4677c3;
-}
+    .item:hover {
+        border-color: rgb(251 129 129);
+    }
 
 .name {
   margin: 0;

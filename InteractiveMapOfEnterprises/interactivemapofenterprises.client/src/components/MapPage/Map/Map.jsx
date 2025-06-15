@@ -35,6 +35,8 @@ const Map = forwardRef(
         , isClickableRegions
         , isVisibleRegionBorders
         , markers
+        , filterValue
+        , className
     }, ref)
 
     {
@@ -165,7 +167,7 @@ const Map = forwardRef(
             attributionControl={false}
             zoomControl={true}
            
-            className="map"
+                className={"map" + " " + className}
             center={center ?? geoJsonCurrent.center}
             zoom={zoom ?? geoJsonCurrent.zoom}
             dragging={true}
@@ -173,9 +175,9 @@ const Map = forwardRef(
 
                 style={{
                     ...{
-                        border: "1px solid black",
+                       
                         padding: "20px 45px",
-                        height: "550px",
+                        minHeight: "720px",
                         position: "relative",
                         zIndex:"5"
 

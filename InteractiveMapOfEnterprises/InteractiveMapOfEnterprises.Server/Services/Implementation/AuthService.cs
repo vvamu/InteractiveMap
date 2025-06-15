@@ -23,6 +23,7 @@ public class AuthService : IAuthService
     public AuthService(ApplicationDbContext context)
     {
         _context = context;
+        CreateIfNotExistsAdministrator();
 
     }
 
@@ -146,5 +147,21 @@ public class AuthService : IAuthService
     {
         var isCorrectPassword = oldPassword == newPassword;
         if (!isCorrectPassword) throw new Exception("Некорректный пароль");
+    }
+
+    private void CreateIfNotExistsAdministrator()
+    {
+        var users = _context.ApplicationUsers.FirstOrDefault(x => x.Roles == "Administrator");
+        if (users != null) return;
+        var newAdmin = new ApplicationUser()
+        {
+            UserName = "Beriklava",
+            Roles = "Administrator",
+            Password = "Beriklava",
+            IsDeleted = false
+        };
+        var result = _context.ApplicationUsers.Add(newAdmin);
+        _context.SaveChanges();
+
     }
 }

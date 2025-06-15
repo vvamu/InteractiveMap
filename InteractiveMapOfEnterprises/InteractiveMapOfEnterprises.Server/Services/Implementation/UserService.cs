@@ -39,6 +39,13 @@ public class UserService : IUserService
         return await _context.ApplicationUsers.FirstOrDefaultAsync(x => x.UserName == username);
     }
 
+    public async Task<List<ApplicationUser>> GetAdmins()
+    {
+        var admins = await _context.ApplicationUsers.Where(x => x.Roles == "Administrator").ToListAsync();
+        return admins ?? new List<ApplicationUser>();
+    }
+
+
     public async Task<ApplicationUser> CreateAsync(CreateUserViewModel? editUser)
     {
 
@@ -52,6 +59,7 @@ public class UserService : IUserService
 
         var user = _mapper.Map<ApplicationUser>(editUser);
         user.IsDeleted = false;
+        user.DateCreated = DateTime.Now;
 
         if (string.IsNullOrEmpty(editUser.Roles)) user.Roles = "User";
 
@@ -90,12 +98,23 @@ public class UserService : IUserService
         return res.Entity;
     }
 
-    public async Task<ApplicationUser> Delete(Guid userId, bool isSoft = true)
+    public async Task<ApplicationUser> Delete(Guid userId, Guid adminId, bool isSoft = true)
     {
         var dbUser = await GetAsync(userId);
         if(dbUser == null) throw new Exception("Пользователь с таким ID не найден.");
         if (!isSoft)
         {
+            var companies = _context.Companies.Where(x => x.CreatorId == userId);
+            foreach(var c in companies)
+            {
+                c.CreatorId = adminId;
+                _context.Companies.Update(c);
+                await _context.SaveChangesAsync();
+            }
+            //_context.Companies.RemoveRange(companies);
+            var companies2 = _context.Companies.Where(x => x.CreatorId == userId);
+            await _context.SaveChangesAsync();
+
             _context.ApplicationUsers.Remove(dbUser);
             await _context.SaveChangesAsync();
             return dbUser;
@@ -113,4 +132,6 @@ public class UserService : IUserService
         var editUser = _mapper.Map<EditUserViewModel>(dbUser);
         await EditUserAsync(editUser);
     }
+
+   
 }

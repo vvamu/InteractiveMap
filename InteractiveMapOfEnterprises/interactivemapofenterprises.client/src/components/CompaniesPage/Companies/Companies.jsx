@@ -1,6 +1,6 @@
 import companiesService from "../../../services/companiesService";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import classes from "./Companies.module.css";
 
 import PaginationSetting from "./PaginationSetting";
@@ -8,120 +8,198 @@ import CompanyItemCatalog from "../CompanyItemCatalog/CompanyItemCatalog";
 import ActionConfirmationBox from "../../common/InfoBoxs/ActionConfirmationBox";
 import LoaderBox from "../../common/InfoBoxs/LoaderBox";
 import ApplicationUrl from "../../../models/ApplicationUrl";
+import UserContext from "../../../context/UserContext";
+function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMarkersLocal,
+    withBtnActions,
+    withOpenByItem, withImage, children }) {
+    const COUNT_ELEM = 10;
+    const curUser = useContext(UserContext).user;
 
-function Companies({ userId,toAllUsers ,filters}) {
-  const COUNT_ELEM = 10;
-  const [companies, setCompanies] = useState([]);
-  const [visibleCompanies, setVisibleCompanies] = useState([]);
 
-  const [totalPages, setTotalPages] = useState(1);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [isActiveActionConfirmation, setIsActiveActionConfirmation] =useState(false);
-  const [messageActionConfirmation, setMessageActionConfirmation] =useState(undefined);
-  const [currentOperationActionConfirmation,setCurrentOperationActionConfirmation] = useState(undefined);
+    const [allCompanies, setAllCompanies] = useState([]);
 
-  const [isActiveLoader, setIsActiveLoader] = useState(false);
-  const [messageLoader, setMessageLoader] = useState(undefined);
+    const [totalPages, setTotalPages] = useState(1);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [isActiveActionConfirmation, setIsActiveActionConfirmation] = useState(false);
+    const [messageActionConfirmation, setMessageActionConfirmation] = useState(undefined);
+    const [currentOperationActionConfirmation, setCurrentOperationActionConfirmation] = useState(undefined);
 
-  useEffect(() => {
-    onActiveLoader("Загрузка...");
-    companiesService.getTotalPages(COUNT_ELEM).then((data) => {
-      setTotalPages(data);
-    });
-  }, []);
+    const [isActiveLoader, setIsActiveLoader] = useState(true);
+    const [messageLoader, setMessageLoader] = useState(undefined);
 
-  useEffect(() => {setCurrentPage(1);}, [totalPages]);
+    const [isActiveDeleteConfirmationBox, setIsActiveDeleteConfirmationBox] = useState(false);
+
+    useEffect(() => {
+        onActiveLoader("Загрузка...");
+        companiesService.getTotalPages(COUNT_ELEM).then((data) => {
+            setTotalPages(data);
+        });
+        companiesService.getPage(currentPage, COUNT_ELEM).then((data) => {
+            //setAllCompanies(data);
+            //setCompanies(data);
+            let filteredd;
+            let allCompanies = data;
+            if (filters?.category != null && filters?.category != "Все" && filters?.category != "Собственные") {
+                filteredd = data?.filter(f => f.category == filters.category)
+            }
+            if (filters?.category == "Собственные" || userId != null) {
+
+                let one = data;
+                filteredd = data?.filter(f => f.creatorId == userId)
+                allCompanies = filteredd;
+            }
+            
+            let passedCompanies = filteredd ?? data;
+            let comp = orderItemsByUser(curUser, passedCompanies)
+            setCompanies(comp ?? data)
+            setAllCompanies(allCompanies);
+
+            setTimeout(() => onCloseLoader(), 1000);
+        });
+
+    }, []);
+
     useEffect(() => {
 
-        if (filters?.category != null && filters?.category != "") {
-            let filteredd = companies?.filter(f => f.category == filters.category)
-            setVisibleCompanies(filteredd)
-            return;
+        let filteredd;
+        if (filters?.category == "Собственные" || userId != null) {
+
+            filteredd = allCompanies?.filter(f => f.creatorId == curUser.id)
         }
-        setVisibleCompanies(companies)
+        else {
+            filteredd = allCompanies;
+        }
 
-    },[filters,companies])
+        if (filters?.category != null && filters?.category != "Все") {
+            filteredd = filteredd?.filter(f => f.category == filters.category)
+        }
+        
+        let passedCompanies = filteredd;
+        let comp = orderItemsByUser(curUser, passedCompanies)
+        setCompanies(comp ?? allCompanies)
+
+    }, [filters])
+    function orderItemsByUser(curUser, companies) {
+
+        let comp = companies;
+        if (curUser != null) {
+            comp = companies.sort((a, b) => {
+                // Primary sort: current user's items first
+                const aIsCurrentUser = a.creatorId === curUser.id;
+                const bIsCurrentUser = b.creatorId === curUser.id;
+
+                if (aIsCurrentUser && !bIsCurrentUser) return -1;
+                if (!aIsCurrentUser && bIsCurrentUser) return 1;
+
+                // Secondary sort: alphabetical by some property (e.g., name)
+                return a.name.localeCompare(b.name);
+            });
+        }
+        return comp;
+    }
 
 
-    useEffect(() => {
+  //  useEffect(() => {
 
-      if (toAllUsers) {
-          companiesService.getPage(currentPage, COUNT_ELEM).then((data) => {
-              setCompanies(data);
-              
-              setTimeout(() => onCloseLoader(), 1000);
-          });
-      }
-      else {
-          var resData = companiesService.getByUser(userId).then((data) => {
-              setCompanies(data ?? []);
-              setTimeout(() => onCloseLoader(), 1000);
-          });
-      }
+  //    if (toAllUsers || userId == null || userId == undefined) {
+  //        companiesService.getPage(currentPage, COUNT_ELEM).then((data) => {
+  //            setAllCompanies(data);
+  //            setCompanies(data);
+  //            setTimeout(() => onCloseLoader(), 1000);
+  //        });
+  //    }
+  //    else {
+  //        var resData = companiesService.getByUser(userId).then((data) => {
+  //            setAllCompanies(data);
+  //            setCompanies(data ?? []);
+  //            setTimeout(() => onCloseLoader(), 1000);
+  //        });
+  //    }
       
     
-  }, [currentPage, userId]);
+  //}, [currentPage, userId]);
 
-    const handleOpen = (id, name) => document.location = ApplicationUrl.Company.app.get + id;
-    const handleEdit = (id, name) => document.location = ApplicationUrl.Company.app.edit + id;
+    const handleOpen = (id) =>
+        document.location = ApplicationUrl.Company.app.get + id;
 
-  const handleDelete = (id, name) =>
-    onActiveActionConfirmationBox(`Вы уверины что хотите удалить "${name}"?`, {
-      operation: () => {
-        onActiveLoader(`Удаление "${name}"`);
-        companiesService.deleteAsync(id).then(() => {
-          location.reload();
-        });
-      },
-    });
+    const handleEdit = (id) =>
+        document.location = ApplicationUrl.Company.app.edit + id;
+
+    const handleDelete = async (id) => {
+         
+        try {
+
+            companiesService.deleteAsync(id).then(() => {
+
+                companiesService.getByUser(userId).then((data) => {
+                    setCompanies(data ?? []);
+                    document.location = ApplicationUrl.User.app.get + userId;
+                })
+
+            });
+
+        }
+        catch {
+            document.location = ApplicationUrl.User.app.get + userId;
+        }
+        finally {
+            var resData = companiesService.getByUser(userId).then((data) => {
+                setAllCompanies(data);
+                setCompanies(data ?? []);
+                setTimeout(() => onCloseLoader(), 1000);
+                document.location = ApplicationUrl.User.app.get + userId;
+            });
+
+            document.location = ApplicationUrl.User.app.get + userId;
+        }
+           
+    };
 
 
-  const handleConfirm = () => {
-    currentOperationActionConfirmation.operation();
-    onCloseActionConfirmationBox();
-  };
 
-  const hadnleCancel = () => onCloseActionConfirmationBox();
+    const handleConfirm = () => {
+        currentOperationActionConfirmation.operation();
+        onCloseActionConfirmationBox();
+    };
 
-  const onActiveActionConfirmationBox = (message, operation) => {
-    setIsActiveActionConfirmation(true);
-    setMessageActionConfirmation(message);
-    setCurrentOperationActionConfirmation(operation);
-  };
+    const hadnleCancel = () => onCloseActionConfirmationBox();
 
-  const onCloseActionConfirmationBox = () => {
-    setIsActiveActionConfirmation(false);
-    setMessageActionConfirmation(undefined);
-    setCurrentOperationActionConfirmation(undefined);
-  };
+    const onActiveLoader = (message) => {
+        setIsActiveLoader(true);
+        setMessageLoader(message);
+    };
 
-  const onActiveLoader = (message) => {
-    setIsActiveLoader(true);
-    setMessageLoader(message);
-  };
+    const onCloseLoader = () => {
+        setIsActiveLoader(false);
+        setMessageLoader(undefined);
+    };
 
-  const onCloseLoader = () => {
-    setIsActiveLoader(false);
-    setMessageLoader(undefined);
-  };
+    return (
+        <div style={{ width:"100%" }}>
+            {children}
 
-  return (
-      <PaginationSetting
-      currentPage={currentPage}
-      totalPages={totalPages}
-      onPageChange={(value) => setCurrentPage(value)}
-      >
-          {!visibleCompanies || visibleCompanies.length == 0 ? <div>Ни одной компании не создано</div> : visibleCompanies.map((compony, index) => (
-        <CompanyItemCatalog
-          key={index}
-          data={compony}
-              onOpen={() =>
-                  handleOpen(compony.id, compony.addName ? compony.addName : compony.name)}
-              onEdit={() =>
-                  handleEdit(compony.id, compony.addName ? compony.addName : compony.name)}
-              onDelete={() =>
-                  handleDelete(compony.id, compony.addName ? compony.addName : compony.name)}
-        />
+          {!companies || companies.length == 0 ? <div>Ни одной компании не создано</div> : companies.map((compony, index) => (
+              <>
+                  <ActionConfirmationBox active={isActiveDeleteConfirmationBox} message={`Удалить ${compony.name}?`} onConfirm={() => {
+                      handleDelete(compony.id)
+                  }} onCancel={() => { setIsActiveDeleteConfirmationBox(false) }} />
+
+
+                  <CompanyItemCatalog
+                      withImage={withImage }
+                      withOpenByItem={withOpenByItem}
+                      withBtnActions={withBtnActions}
+                      key={index}
+                      data={compony}
+                      onOpen={() => {
+                          handleOpen(compony.id ?? compony.companyId)
+                      } }
+                      onEdit={() => {
+                          handleEdit(compony.id)
+                      }}
+                      onDelete={() => { setIsActiveDeleteConfirmationBox(true) }}
+                  />
+              </>
       ))}
       <ActionConfirmationBox
         title={"Подтверждение"}
@@ -129,11 +207,13 @@ function Companies({ userId,toAllUsers ,filters}) {
         active={isActiveActionConfirmation}
         onCancel={hadnleCancel}
         onConfirm={handleConfirm}
-      />
-      <LoaderBox active={isActiveLoader}>
-        <p className={classes.messageLoader}>{messageLoader}</p>
-      </LoaderBox>
-    </PaginationSetting>
+          />
+          <div style={{ position: "absolute", top:"50%", left:"50%" }}>
+        <LoaderBox  active={isActiveLoader}>
+            <p className={classes.messageLoader}>{messageLoader}</p>
+              </LoaderBox>
+          </div>
+      </div>
   );
 }
 

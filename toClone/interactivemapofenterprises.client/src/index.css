@@ -1,9 +1,35 @@
-
-* {
-    font-family: EntezareZohoor2;
-    color: #353539
+/* Initial state */
+.emerging-enter {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
+/* Active animation state */
+.emerging-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity var(--duration) cubic-bezier(0.16, 1, 0.3, 1), transform var(--duration) cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--delay);
+}
+
+/* Final state */
+.emerging-enter-done {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Base styles */
+.emerging-content {
+    will-change: opacity, transform;
+    backface-visibility: hidden; /* Fixes flickering in WebKit */
+}
+
+.full-width {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat
+}
 
 :root {
     --external-bnt-background-color: #ffffff;
@@ -33,6 +59,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Osmo';
+    src: url('fonts/osmo_font.otf') format("truetype");
+    font-style: normal;
+}
+div {
+    font-family: EntezareZohoor2, 'Cambria Math';
+    color: #353539;
+    font-size:20px
+}
+
 
 
 body {
@@ -53,13 +90,15 @@ h4 {
 button, input[type=button], .input-file-btn, NavLink {
     margin: 0;
     border: 2px solid rgb(234 147 147);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(255 118 118, 0.2) 0px 7px 29px 0px;
     padding: 10px 15px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 20px;
     background-color: white;
     transition: background-color 0.2s;
     font-family: EntezareZohoor2;
+    transition: background-color 0.5s;
+    cursor:pointer
 }
 
 .boxShadow {
@@ -71,24 +110,22 @@ button, input[type=button], .input-file-btn, NavLink {
     display:flex;
     align-items:center;
     justify-content:center;
-    grid-gap:20px
+    grid-gap:20px;
+    flex-flow:wrap;
+    flex-direction:row;
 }
 
 /* Change button color and size on focus */
-    button:focus, .input-file input[type=file]:focus + .input-file-btn, NavLink:focus {
-        border-color: #d76e6e; /* Updated background color on focus */
-        /*font-size: 18px; /* Increased font size on focus */
-        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-    }
-
-
-
-
+button:focus, .input-file input[type=file]:focus + .input-file-btn, NavLink:focus {
+    border-color: rgb(255, 118, 118); /* Updated background color on focus */
+    /*font-size: 18px; /* Increased font size on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
 /* Change button color and size on hover */
-    button:hover, .input-file:hover .input-file-btn, NavLink:hover {
-        background-color: #d76e6e; /* Updated background color on hover */
-        /*font-size: 18px; /* Increased font size on hover */
-    }
+button:hover, .input-file:hover .input-file-btn, NavLink:hover, .companyFilterOnMapPage:hover {
+    background-color: rgb(255, 118, 118); /* Updated background color on hover */
+    /*font-size: 18px; /* Increased font size on hover */
+}
 
     button:active, .input-file:active .input-file-btn, NavLink:active{
         background-color: #d76e6e; /* Updated background color on click */
@@ -105,12 +142,23 @@ a {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #383838
+    color: #383838;
+    transition: color 0.5s;
 }
 
-    a:hover, a:active {
-        color: #8f0202
-    }
+.logotype {
+    margin-right: 10px;
+    cursor: pointer;
+    color: rgb(233 119 119);
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 20px
+}
+
+
+a:hover, a:active, .logotype:hover {
+    color: rgb(219 76 76)
+}
 a:disabled{color:#ababab}
 
 ul,
@@ -367,10 +415,7 @@ ul > li {
     justify-content: center;
     align-items: center;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 1em;
-}
+
 
 .container {
     height: 700px;
@@ -383,6 +428,8 @@ h1 {
 
 .card {
     background-color: #d4d4d4;
+/*    background-image:url(/cardMemo.png);
+    background-size:contain;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,8 +451,8 @@ h1 {
 }
 
 .card img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 95%;
+    max-height: 95%;
     transition: transform 0.5s;
     transform: scale(0);
     animation: 2s hideImage linear;
@@ -427,6 +474,7 @@ h1 {
 
 .card.correct {
     background-color: #65e469;
+
 }
 
 .card.wrong {
@@ -496,11 +544,10 @@ input {
 
 textarea {
     min-width: 95%;
-    max-width: 100%;
+    max-width: 95%;
     max-height: 200px;
     min-height: 30px;
-
-    font-size: 18px;
+    font-size:18px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 95%;
@@ -527,23 +574,27 @@ input:focus ~ label, input:valid ~ label {
     border-radius: 3px;
     overflow: hidden;
     position: relative;
+    
 }
-
-    .styled-select, .styled-select select {
-        width: 240px;
-    }
 
 select:focus {
     outline: none;
 }
 
 .styled-select select {
-    height: 34px;
+    width: 240px;
+    height: 40px;
     padding: 5px 0 5px 5px;
     background: transparent;
     border: none;
     /*hide default down arrow in webkit */
     -webkit-appearance: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+select {
+    background-color: white
 }
 
 @-moz-document url-prefix() {
@@ -561,4 +612,45 @@ select:focus {
 
 select::-ms-expand {
     display: none;
+}
+
+
+/**/
+
+.cart {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px 25px;
+    transition: box-shadow 0.5s;
+    border-radius:10px;
+    cursor:pointer
+}
+.cart:focus {
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  
+}
+.cart:hover {
+     box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+}
+.linkCart:active {
+}
+.linkCart:disabled {
+}
+
+
+.companyFilterOnMapPage {
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: background-color 0.5s
+}
+
+
+.pageHeader{
+    margin-bottom:20px
+}
+.pageStats {
+    font-size: 20px;
+}
+
+.coloredText {
+    color: rgb(234 147 147)
 }

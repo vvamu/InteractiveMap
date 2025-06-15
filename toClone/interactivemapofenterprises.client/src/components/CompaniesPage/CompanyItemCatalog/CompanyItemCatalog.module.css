@@ -8,9 +8,9 @@
   transition: 0.2s;
 }
 
-.item:hover {
-  border-color: #4677c3;
-}
+    .item:hover {
+        border-color: rgb(251 129 129);
+    }
 
 .name {
   margin: 0;

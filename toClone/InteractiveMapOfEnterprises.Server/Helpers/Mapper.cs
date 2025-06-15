@@ -157,6 +157,7 @@ namespace InteractiveMapOfEnterprises.Server.Helpers
 
             JsonNode content = jsonNode["data"];
             var id = Guid.Parse(content["id"].ToString());
+
             var roles = content["roles"].ToString();
            
             var loginUser = new EditUserAdminViewModel() { Id =  id,Roles= roles};

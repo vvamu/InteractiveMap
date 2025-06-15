@@ -22,7 +22,7 @@ function ActionConfirmationBox({
       <p className={classes.message}>{message}</p>
       <div className={classes.controls}>
         <ButtonIcon src={checkIcon} alt={"подтвердить"} onClick={onConfirm} />
-        <ButtonIcon src={closeIcon} alt={"отменить"} onClick={onCancel} />
+              <ButtonIcon src={closeIcon} alt={"отменить"} onClick={onCancel} />
       </div>
     </InfoBox>
   );

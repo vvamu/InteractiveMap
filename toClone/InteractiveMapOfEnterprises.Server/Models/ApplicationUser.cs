@@ -19,7 +19,6 @@ public class ApplicationUser
 
 
     [JsonPropertyName("dateCreated")]
-    [NotMapped]
     public DateTime DateCreated { get; set; }
 
     [JsonPropertyName("isDeleted")]

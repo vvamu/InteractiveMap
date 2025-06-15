@@ -2,9 +2,17 @@ import { useState ,useEffect,useRef } from 'react';
 import Card from './Card';
 import companiesService from '../../services/companiesService';
 
-function Cards() {
+function Cards({ zoom, isResetClicked, setResetVisible }) {
 
     const [isCompleted, setIsCompleted] = useState(false);
+    const emptyIcons = ['/gamesContent/belaz.png',
+        '/gamesContent/belwest.png',
+        '/gamesContent/kommunarka.png',
+        '/gamesContent/maz.png',
+        '/gamesContent/milavitsa.png',
+        '/gamesContent/milk.png',
+        '/gamesContent/redPisch.png',
+        '/gamesContent/blink.png']
     const [isSort, setIsSort] = useState(false);
 
     const [items, setItems] = useState([].sort(() => Math.random() - 0.5))
@@ -12,24 +20,44 @@ function Cards() {
     const [prev, setPrev] = useState(-1);
     const [isAlreadyChecking, setIsAlreadyChecking] = useState(false);
     const [timer, setTimer] = useState(0);
+
+    const [intervalId, setIntervalId] = useState();
     let intervalRef = useRef();
 
     useEffect(() => {
         async function getCompanies() {
-            if (items.length > 0) return;
+            setItems(null);  
+            setTimer(0);
+            stopTimer();
             var itemsDb = await companiesService.getAll();
 
             itemsDb = itemsDb.filter(i => i.imageBytes != null).sort(() => Math.random() - 0.5);
             let maxLenght = itemsDb.length > 8 ? 8 : itemsDb.length;
 
-            let newItems = [];
+            
+
             for (var i = 0; i < maxLenght; i++) {
+                
                 let src = `data:image/png;base64,${itemsDb[i].imageBytes}`;
                 let newItem = { id: i, img: src, stat: "", counter: 0 };
                 let newItem2 = { id: i, img: src, stat: "", counter: 1 };
 
                 setItems(prevItems => [...prevItems, newItem]);
                 setItems(prevItems => [...prevItems, newItem2]);
+            }
+
+            if (itemsDb.length < 8) {
+                let insertedIcons = emptyIcons.sort(() => Math.random() - 0.5)
+                let counter = 0;
+                for (var i = itemsDb.length; i < 8; i++) {
+
+                    let newItem = { id: i, img: insertedIcons[counter], stat: "", counter: 0 };
+                    let newItem2 = { id: i, img: insertedIcons[counter], stat: "", counter: 1 };
+
+                    setItems(prevItems => [...prevItems, newItem]);
+                    setItems(prevItems => [...prevItems, newItem2]);
+                    counter++;
+                }
             }
 
             setIsCompleted(true);
@@ -39,24 +67,56 @@ function Cards() {
     }, []);
 
     useEffect(() => {
-        let tut = items.sort(() => Math.random() - 0.5)
-        setItems(tut)
+        // Shuffle items
+        let shuffledItems = [...items].sort(() => Math.random() - 0.5);
+
+        if (shuffledItems.length === 0) {
+            let insertedIcons = [...emptyIcons].sort(() => Math.random() - 0.5);
+            let newItems = [];
+
+            for (let i = 0; i < 8; i++) {
+                let newItem = { id: i * 2, img: insertedIcons[i], stat: "", counter: 0 };
+                let newItem2 = { id: i * 2 + 1, img: insertedIcons[i], stat: "", counter: 1 };
+                newItems.push(newItem, newItem2);
+            }
+
+            shuffledItems = newItems;
+        }
+
+        setItems(shuffledItems);
         setIsSort(true);
 
-    },[isCompleted])
-    
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current - 1); // Note: `intervalRef.current - 1` might not be what you intend
+        }
+    }, [isCompleted, isResetClicked]);
 
+    useEffect(() => {
+        resetGame()
+        let interval = intervalRef
+        clearInterval(intervalRef.current);
+        interval = intervalRef
 
- 
+    }, [isResetClicked])
+
     function startTimer() {
-        intervalRef.current = setInterval(() => {
+        //let itervalId = setInterval(() => { setTimer(prevTimer => prevTimer + 1); },1000)
+
+        intervalRef.current = setInterval((dat) => {
+            if (timer > 0) {
+                console.log(timer);
+            }
             setTimer(prevTimer => prevTimer+1);
         }, 1000);
     }
 
+    
+
     function stopTimer() {
         clearInterval(intervalRef.current);
     }
+
+
 
     function check(current) {
 
@@ -83,17 +143,26 @@ function Cards() {
         if (isWin === items.length) {
             setTimeout(() => {
                 alert("Поздравляем! Вы сопоставили все карточки!");
-                setItems([...items.map(item => ({ ...item, stat: "" }))]);
-                setTimer(0);
-                stopTimer()
+                resetGame()
             }, 1000);
             
         }
     }
 
+    function resetGame() {
+        setItems([...items.map(item => ({ ...item, stat: "" }))]);
+        setTimer(0);
+        stopTimer()
+        setResetVisible(false);
+        
+    }
+
     function handleClick(id) {
-        if (!timer)
+        if (!timer) {
             startTimer();
+            setResetVisible(true);
+        }
+            
         if (!isAlreadyChecking) {
             if (prev === -1) {
                 items[id].stat = "active";
@@ -108,7 +177,7 @@ function Cards() {
     return (
         <div >
             <div>Время: {timer} секунд</div>
-            <div className="container">
+            <div className="container" style={{ zoom: zoom }}>
                 {!isSort ? null : items.map((item, index) => (
                     <Card key={index} item={item} id={index} handleClick={handleClick} />
                 ))}

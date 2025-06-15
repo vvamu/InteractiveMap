@@ -1,6 +1,7 @@
-function ContentWithPaddings({ children, className = "", style = {} }) {
+import EmergingDiv from "./EmergingDiv";
+function ContentWithPaddings({ children, className = "", style = {}, duration }) {
     const defaultStyles = {
-        padding: "20px 45px"
+        padding: "1% 5%",
     };
 
     const combinedStyles = {
@@ -8,7 +9,10 @@ function ContentWithPaddings({ children, className = "", style = {} }) {
         ...style
     };
 
-    return <div className={className} style={combinedStyles}>{children}</div>;
+    return (<div><EmergingDiv className={`${className}`} style={combinedStyles} duration={duration ?? 2000 }> 
+            
+        {children}</EmergingDiv></div>
+    )
 }
 
 export default ContentWithPaddings;

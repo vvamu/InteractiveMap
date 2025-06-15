@@ -1,7 +1,10 @@
 import ContentWithPaddings from "./ContentWithPaddings";
-export default function FormContent({ children, style = {}, backgroundImage, backgroundColor }) {
+import EmergingDiv from "./EmergingDiv";
+import ContentWithBluredBackground from "./ContentWithBluredBackground";
+export default function FormContent({ children, style = {}, backgroundImage, backgroundColor, duration }) {
     const defaultStyles = {
-        padding: "20px 45px"
+        padding: "5% 5% 2%", margin: "10px 20% 0px", borderRadius: "10px",
+        backgroundColor: backgroundColor ?? "rgb(255 255 255 / 70%)", height: "120%", minHeight: "300px"
     };
 
     const combinedStyles = {
@@ -9,16 +12,17 @@ export default function FormContent({ children, style = {}, backgroundImage, bac
         ...style
     };
 
-    return <ContentWithPaddings style={{ backgroundImage: backgroundImage??"url(/soligorsk.jpg)", minHeight: "650px", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-        <div style={{
-            padding: "5% 5% 2%", margin: "10px 20% 0px", borderRadius: "10px",
-            backgroundColor: backgroundColor ?? "rgb(255 255 255 / 70%)",
-            
-           
-        }}>
-            {children}
-        </div>
-</ContentWithPaddings>            ;
+    return (
+        <ContentWithBluredBackground backgroundImage={backgroundImage}>
+        
+                <EmergingDiv duration={duration ?? 5000} style={
+                combinedStyles
+                     }>
+                        {children}
+                </EmergingDiv>
+
+        </ContentWithBluredBackground >
+    );
 }
 
 

@@ -98,13 +98,14 @@ namespace InteractiveMapOfEnterprises.Server.Controllers
         [Route("delete/{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
+           
             var company = await _courseService.DeleteAsync(id);
             if (company == null) return NotFound();
 
-            var filePathGeojson = Path.Combine(geoJsonDirectory, $"{company.RegionId}.geojson");
-            var geojsonNode = JsonNode.Parse(await System.IO.File.ReadAllTextAsync(filePathGeojson));
-            geojsonNode["markers"].AsArray().Remove(geojsonNode["markers"].AsArray().First((j) => j["id"].ToString() == id.ToString()));
-            System.IO.File.WriteAllText(filePathGeojson, geojsonNode.ToString());
+            //var filePathGeojson = Path.Combine(geoJsonDirectory, $"{company.RegionId}.geojson");
+            //var geojsonNode = JsonNode.Parse(await System.IO.File.ReadAllTextAsync(filePathGeojson));
+            //geojsonNode["markers"].AsArray().Remove(geojsonNode["markers"].AsArray().First((j) => j["id"].ToString() == id.ToString()));
+            //System.IO.File.WriteAllText(filePathGeojson, geojsonNode.ToString());
 
             return Ok($"Delete company by id: {id}");
         }

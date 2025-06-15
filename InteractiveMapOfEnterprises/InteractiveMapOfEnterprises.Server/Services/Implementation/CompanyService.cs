@@ -30,10 +30,15 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation
             if(company.Id != null && company.Id !=  Guid.Empty)
             {
                 var dbItem = await GetAsync(company.Id);
-
+                if(dbItem == null)
+                {
+                    if (_context.Companies.FirstOrDefault(x => x.Name == company.Name) != null) throw new Exception("Компания с заданным именем уже существует");
+                    var resCompany = await _context.Companies.AddAsync(company);
+                    company = resCompany.Entity;
+                }
                 if(iconFormFile ==null) company.IconBytes = dbItem.IconBytes;
                 if(imageFormFiles.Count ==0)  company.ImageBytes = dbItem.ImageBytes;
-                
+                company.CreatorId = dbItem.CreatorId;
                 var result = _context.Companies.Update(company);
             }
             else
@@ -67,7 +72,9 @@ namespace InteractiveMapOfEnterprises.Server.Services.Implementation
         public async Task<Company?> GetAsync(Guid id)
         {
             var item = await _context.Companies.Include(x => x.Creator).FirstOrDefaultAsync(x => x.Id == id);
-            item.CreatorName = item.Creator.UserName;
+            if (item == null) return null; 
+            item.CreatorName = item?.Creator?.UserName;
+            
             item.Creator = null;
             return item;
         }

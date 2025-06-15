@@ -1,39 +1,80 @@
 import ButtonIcon from "../../Common/Buttons/ButtonIcon";
 import classes from "./CompanyItemCatalog.module.css";
 import authService from "../../../services/authService";
-import { useState,useEffect } from "react";
+import { useState,useEffect, useContext } from "react";
+import ApplicationUrl from "../../../models/ApplicationUrl";
 
 const openIcon = "/open.svg";
 const editIcon = "/edit.svg";
 const deleteIcon = "/delete.svg";
 
-function CompanyItemCatalog({ data, onOpen, onEdit, onDelete }) {
 
-    const [curUser, setCurUser] = useState(null);
-    useEffect(() => {
+import ListItem from "../../common/ListItem/ListItem";
+import ListItemActions from "../../common/ListItem/ListItemActions";
 
-        async function getUser() {
-            await authService.getCurrentUser().then((data) => {
-                setCurUser(data);
-            })
+import UserContext from "../../../context/UserContext";
+import FitImage from "../../common/FitImage";
+
+function CompanyItemCatalog({ data, onOpen, onEdit, onDelete, withBtnActions, withOpenByItem , withImage }) {
+
+    //const [curUser, setCurUser] = useState({ roles: localStorage.getItem("Roles"), id: localStorage.getItem("UserId") });
+    
+    //useEffect(() => {
+
+    //    async function getUser() {
+    //        await authService.getCurrentUser().then((data) => {
+    //            setCurUser(data);
+    //        })
+    //    }
+    //    getUser();
+    //})
+
+    const curUser = useContext(UserContext).user;
+
+    const isCanEditAndDelete =
+        (curUser?.roles == "Administrator" || curUser?.id == data.creatorId);
+
+    function editAction() {
+        if (curUser?.roles == "Administrator" || curUser?.id == data.creatorId) {
+            onEdit();
+            return;
+        };       
+        return null;
+        
+    }
+
+    function deleteAction() {
+        if (curUser?.roles == "Administrator" || curUser?.id == data.creatorId) {
+            onDelete();
+            return;
         }
-        getUser();
-    })
+        return null;
+    }
 
-  return (
-    <li className={classes.item}>
-      <div >
-              <p className={classes.name}>{data.name}</p>
-              <p style={{fontSize:"15px"}}>{data.category}</p>
-      </div>
-      <div className={classes.tools}>
-              <ButtonIcon imgStyle={{ filter: "invert(1)"}} src={openIcon} alt={"Открыть"} onClick={onOpen} />
-              {/* <ButtonIcon src={editIcon} alt={"Редактировать"} onClick={onEdit} /> */}
+    return (
+        <ListItem onClick={() => {
+            withOpenByItem ? onOpen(data?.id) : null
+        }} >
 
-              {curUser?.roles != "Administrator" ? null : <ButtonIcon imgStyle={{ filter: "invert(1)" }} src={deleteIcon} alt={"Удалить"} onClick={onDelete} />}
-             
-      </div>
-    </li>
+            <div className="flexContent">
+                {withImage ? 
+                    (<div>
+                        <FitImage imageBytes={data.imageBytes} height={"70px"} width={"120px"} />
+                    </div>)
+                    : null
+                }
+               
+                <div >
+                    <p className={classes.name}  >{data.name}</p>
+                    <p style={{ fontSize: "15px" }}>{data.category}</p>
+                </div>
+            </div>
+            <ListItemActions openHandler={() => { onOpen(data?.id) }}
+                editHandler={editAction}
+                deleteHandler={deleteAction}
+                isCanEdit={withBtnActions ?? isCanEditAndDelete} />
+         
+      </ListItem>
   );
 }
 

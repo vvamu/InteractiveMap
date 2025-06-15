@@ -1,6 +1,4 @@
-import AchievementsComponyStep from "../components/EditCompanyPage/Steps/AchievementsComponyStep";
 import MinimalInfoAboutComponyStep from "../components/EditCompanyPage/Steps/MinimalInfoAboutComponyStep";
-import VideoComponyStep from "../components/EditCompanyPage/Steps/VideoComponyStep";
 
 export const VOLUME_SOUND_UI = 1;
 
@@ -62,18 +60,5 @@ export const TYPE_CHAPTER = {
     isVisible: false,
     componentStep: MinimalInfoAboutComponyStep,
   },
-  VIDEO: {
-    type: "VIDEO",
-    name: "Видиоролик",
-    description: "Ознакомительный видеоролик об предприятии.",
-    isVisible: true,
-    componentStep: VideoComponyStep,
-  },
-  ACHIEVEMENTS: {
-    type: "ACHIEVEMENTS",
-    name: "Достежения",
-    description: "Перечесление достежений предприятия.",
-    isVisible: true,
-    componentStep: AchievementsComponyStep,
-  },
+  
 };

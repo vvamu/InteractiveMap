@@ -9,23 +9,34 @@ export default function EditUserFormByAdmin({ user, returnUrl, setError }) {
 
     async function UpdateRole(newUser) {
         try {
-           
-            await userService.editUserRole(newUser).then(async (data) => {
-                window.location.href = ApplicationUrl.User.app.get + user.id;
+
+            let res = userService.editUserRole(newUser).then(() => {
+                document.location = ApplicationUrl.User.app.get;
             })
+            
+            
+
         } catch (error) {
             setError(error);
             return;
         }
+        finally {
+            document.location = ApplicationUrl.User.app.get;
+        }
+        
+
+
     }
 
     const handleEditUserByAdmin = async () => {
         const newUser = {
             id: user.id,
-            roles: roles
+            roles: roles ?? user?.roles
         };
         UpdateRole(newUser);   
-        window.location.href = ApplicationUrl.User.app.get + user.id;
+
+
+        document.location = ApplicationUrl.User.app.get + user.id;
 
     }
 

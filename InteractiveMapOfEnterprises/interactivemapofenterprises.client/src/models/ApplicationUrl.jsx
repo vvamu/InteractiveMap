@@ -16,7 +16,11 @@ export const ApplicationUrl = {
             edit: "/companies/edit/",
             delete: ""
         },
-       
+    },
+    Game: {
+        app: {
+            get: "/games/",
+        },
     }
 }
 

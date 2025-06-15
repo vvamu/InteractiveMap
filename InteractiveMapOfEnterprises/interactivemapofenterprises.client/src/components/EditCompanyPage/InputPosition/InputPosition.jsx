@@ -57,7 +57,7 @@ function InputPosition({ idRegion, position, onCancel, onConfirm, onClick }) {
             <div style={{display:"flex", justifyContent:"space-between"}}>
                 <div className={classes.mapHeader}>
                     {mapRef.current ? (
-                        <>
+                        <div className="flexContent" style={{ position: "absolute" , zIndex:"100", left:"10%" }}>
                             {mapRef.current.path.length === 0 ? (
                                 ""
                             ) : (
@@ -68,16 +68,16 @@ function InputPosition({ idRegion, position, onCancel, onConfirm, onClick }) {
                                     onClick={() => mapRef.current.back()}
                                 ></ButtonIcon>
                             )}
-                            <h1 className="map-title">
+                            <div>
                                 {mapRef.current.current.crs.properties.title
                                     ? mapRef.current.current.crs.properties.title
                                     : ""}
-                            </h1>
-                        </>
+                            </div>
+                        </div>
                     ) : (
                         ""
                     )}
-                    <div style={{ display:"flex", gridGap:"10px" }}>
+                    <div style={{ display: "flex", gridGap: "10px", position: "absolute", zIndex: "100", right: "10%" }}>
                         <Button
                             onClick={() => {
                                 setNewIdRegion(idRegion);
@@ -103,7 +103,7 @@ function InputPosition({ idRegion, position, onCancel, onConfirm, onClick }) {
                     isClickableRegions={true}
                     isVisibleRegionBorders={true}
 
-                    style={{width:"100%" , height:"100%", borderRadius:"10px"} }
+                    style={{width:"100%" , height:"120%", borderRadius:"10px" , position:"absolute", top:"-20%"} }
                     ref={mapRef}
                     onRenderStart={() => setIsRender(true)}
                     onRenderEnd={handleRenderEnd}

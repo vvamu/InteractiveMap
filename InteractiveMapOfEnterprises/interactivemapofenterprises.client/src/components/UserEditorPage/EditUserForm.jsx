@@ -54,7 +54,9 @@ export default function EditUserForm({ user, returnUrl, setError }) {
     },[])
 
     function isValid() {
-        if (username == null || username === "") throw new Error("Логин не может быть пустым");
+        let usernameCheck = username ?? user?.username;
+        
+        if (usernameCheck == null || usernameCheck === "") throw new Error("Логин не может быть пустым");
         if (password == null || password === "") throw new Error("Пароль не может быть пустым");
     }
 

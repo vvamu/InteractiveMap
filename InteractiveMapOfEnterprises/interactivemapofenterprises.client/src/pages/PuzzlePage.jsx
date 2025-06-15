@@ -2,12 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { Motion, spring } from "react-motion";
 import ContentWithPaddings from '../components/common/ContentWithPaddings';
 import companiesService from '../services/companiesService';
+import GamePageContent from "../components/GamePage/GamePageContent";
 
 const TILE_COUNT = 16;
 const GRID_SIZE = 4;
-const BOARD_SIZE = 320;
+const BOARD_SIZE = 350;
 
 const PuzzlePage = () => {
+
+    const emptyIcons = ['/gamesContent/belaz.png',
+        '/gamesContent/belwest.png',
+        '/gamesContent/kommunarka.png',
+        '/gamesContent/maz.png',
+        '/gamesContent/milavitsa.png',
+        '/gamesContent/milk.png',
+        '/gamesContent/redPisch.png',
+        '/gamesContent/blink.png']
 
     const [imgUrl, setImgUrl] = useState("")
     const [curCompany, setCurCompany] = useState(null);
@@ -17,7 +27,10 @@ const PuzzlePage = () => {
             var itemsDb = await companiesService.getAll();
             itemsDb = itemsDb.filter(i => i.imageBytes != null).sort(() => Math.random() - 0.5);
             setCurCompany(itemsDb[0])
-            let src = `data:image/png;base64,${itemsDb[0].imageBytes}`;
+            let src = itemsDb[0]?.imageBytes ? `data:image/png;base64,${itemsDb[0]?.imageBytes}` : null;
+            if (src == null) {
+                src = emptyIcons.sort(() => Math.random() - 0.5)[0];
+            }
             setImgUrl(src);
         }
 
@@ -32,62 +45,52 @@ const PuzzlePage = () => {
         }
     }, [])
 
-    //const handleImageChange = (e) => {
-    //    setImgUrl(e.target.value)
-    //    window.history.replaceState("", "", updateURLParameter(window.location.href, "img", e.target.value))
-    //}
-
     const pieceWidth = Math.round(BOARD_SIZE / GRID_SIZE);
     const pieceHeight = Math.round(BOARD_SIZE / GRID_SIZE);
-    const style = {
-        marginLeft: "10%",
-        
-        borderRadius: "15px",
-        padding: "30px",
-        boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
-    };
+
 
 
     return (
-        <ContentWithPaddings style={{ display: "flex", alignItems: "center", justifyContent: "start", gridGap: "10%" }}>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "30%" }}>
-                <h3>«Puzzle»</h3>
-                <p>
-                    Игра Puzzle или двигающиеся пазлы будет понятна многим за счет схожести с пазлами и детскими кубиками.
-                    Однако данная игра требует больше усидчивости и продумывания ходов, что делает ее схожей с Кубик Рубика.
-                    Двигающиеся пазлы состоят из области, к которой складывается изображение и двигающихся пазлов.
-                </p>
-                <p>
-                    Суть игры проста. Необходимо двигать пазлы последовательно чтобы по итогу мы получили первоначальное изображение.
-                </p>
-            </div>
 
-           
-                {
-                !curCompany ? null : (
-                    <div style={style} className="flexContent" style={{ flexDirection: "column" }}>
-                        <Board imgUrl={imgUrl} />
-                        <div>{curCompany?.name}</div>
-                    </div>)
-                }
-               
-                {/*<div class="group" style={{marginTop:"50px"}}>*/}
-                {/*    <input type="text" value={imgUrl} onChange={handleImageChange}/>*/}
-                {/*        <span class="highlight"></span>*/}
-                {/*        <span class="bar"></span>*/}
-                {/*        <label>Адрес изображения</label>*/}
-                {/*</div>*/}
-             
-           
-        </ContentWithPaddings>
+
+        <GamePageContent currentGameIndex={1} >
+                   
+            <div className="flexContent" style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "flex-start", gridGap: "5px", backgroundColor: "white", borderRadius: "10px" }}>
+                <div className="flexContent" style={{flexDirection:"column"}}>
+                    <Board imgUrl={imgUrl} />
+                    <div>{curCompany?.name}</div>
+                </div>
+                <div className="flexContent" style={{ flexDirection: "column" }}>
+                    <Board imgUrl={imgUrl} disabled={ true} />
+                    <div></div>
+                </div>
+            </div>
+            {/*<div class="group" style={{ marginTop: "50px" }}>*/}
+            {/*    <input type="text" value={imgUrl} onChange={handleImageChange} />*/}
+            {/*    <span class="highlight"></span>*/}
+            {/*    <span class="bar"></span>*/}
+            {/*    <label>Адрес изображения</label>*/}
+            {/*</div>*/}
+        </GamePageContent>
     );
 }
 
 export default PuzzlePage;
 
+//<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "30%" }}>
+//    <h3>«Двигающиеся пазлы»</h3>
+//    <p>
+//        Игра Puzzle или двигающиеся пазлы будет понятна многим за счет схожести с пазлами и детскими кубиками.
+//        Однако данная игра требует больше усидчивости и продумывания ходов, что делает ее схожей с Кубик Рубика.
+//        Двигающиеся пазлы состоят из области, к которой складывается изображение и двигающихся пазлов.
+//    </p>
+//    <p>
+//        Суть игры проста. Необходимо двигать пазлы последовательно чтобы по итогу мы получили первоначальное изображение.
+//    </p>
+//</div>
 
 
-function Board({ imgUrl }) {
+function Board({ imgUrl,disabled=false }) {
     const [tiles, setTiles] = useState([...Array(TILE_COUNT).keys()]);
     const [isStarted, setIsStarted] = useState(false);
     console.log('is started:', isStarted)
@@ -120,6 +123,7 @@ function Board({ imgUrl }) {
     const pieceWidth = Math.round(BOARD_SIZE / GRID_SIZE);
     const pieceHeight = Math.round(BOARD_SIZE / GRID_SIZE);
     const style = {
+        objectFit:"cover",
         width: BOARD_SIZE,
         height: BOARD_SIZE,
         boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px 0px",
@@ -129,7 +133,9 @@ function Board({ imgUrl }) {
     const hasWon = isSolved(tiles)
 
     return (
-        <div style={{ display:"flex", flexDirection:"column" }} className="board">
+        <div style={{ display: "flex", flexDirection: "column" }} className="board">
+            {disabled ? <img style={style} src={imgUrl}></img> :
+        
             <ul style={style} className="board">
                 {tiles.map((tile, index) => (
                     <Tile
@@ -142,15 +148,80 @@ function Board({ imgUrl }) {
                         handleTileClick={handleTileClick}
                     />
                 ))}
-            </ul>
+                </ul>
+            }
             {hasWon && isStarted && <div>Puzzle solved 🧠 🎉</div>}
-            
-                {!isStarted ?
+            {disabled ? <div style={{ marginTop: "26px" }} >ㅤ</div> : 
+                !isStarted ?
                 (<button style={{marginTop:"10px"}} onClick={() => handleStartClick()}>Начать</button>) :
-                (<button style={{marginTop:"10px"}} onClick={() => handleShuffleClick()}>Заново</button>)}
-           
+                (<button style={{marginTop:"10px"}} onClick={() => handleShuffleClick()}>Заново</button>)
+           }
         </div>
     );
+}
+
+//function Tile(props) {
+//    const { tile, index, width, height, handleTileClick, imgUrl } = props;
+
+//    const { row, col } = getMatrixPosition(index);
+//    const visualPos = getVisualPosition(row, col, width, height);
+//    const tileStyle = {
+//        width: `calc(100% / ${GRID_SIZE})`,
+//        height: `calc(100% / ${GRID_SIZE})`,
+//        translateX: visualPos.x,
+//        translateY: visualPos.y,
+//        backgroundImage: `url(${imgUrl})`,
+//        //backgroundSize: 'cover', // Ensure the image covers the entire tile
+//        backgroundPosition: `${(100 / (GRID_SIZE - 1)) * (tile % GRID_SIZE)}% ${(100 / (GRID_SIZE - 1)) * (Math.floor(tile / GRID_SIZE))}%`,
+//    };
+//    const motionStyle = {
+//        translateX: spring(visualPos.x),
+//        translateY: spring(visualPos.y)
+//    }
+
+//    return (
+//        <Motion style={motionStyle}>
+//            {({ translateX, translateY }) => (
+//                <li
+//                    style={{
+//                        ...tileStyle,
+//                        transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+//                        opacity: tile === TILE_COUNT - 1 ? 0 : 1,
+//                    }}
+//                    className="tile"
+//                    onClick={() => { handleTileClick(index) }}
+//                >
+//                    {
+//                        imgUrl != null ? null : <div style={{ borderRadius: "30px", backgroundColor: "aliceblue", padding: "2px" }}>{tile + 1}</div>
+//                    }
+
+//                </li>
+//            )}
+//        </Motion>
+//    );
+//}
+
+async function cropImageToSquare(src) {
+    return new Promise((resolve) => {
+        const img = new Image();
+        img.crossOrigin = 'Anonymous';
+        img.src = src;
+
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const size = Math.min(img.width, img.height);
+            canvas.width = size;
+            canvas.height = size;
+
+            const ctx = canvas.getContext('2d');
+            // Center crop
+            const offsetX = (img.width - size) / 2;
+            const offsetY = (img.height - size) / 2;
+            ctx.drawImage(img, offsetX, offsetY, size, size, 0, 0, size, size);
+
+            resolve(canvas.toDataURL());
+        };
+    });
 }
 
 
@@ -158,7 +229,17 @@ function Board({ imgUrl }) {
 
 function Tile(props) {
     const { tile, index, width, height, handleTileClick, imgUrl } = props;
-   
+
+
+    // Then in your component:
+    const [croppedUrl, setCroppedUrl] = useState(null);
+
+    useEffect(() => {
+        if (imgUrl) {
+            cropImageToSquare(imgUrl).then(setCroppedUrl);
+        }
+    }, [imgUrl]);
+
     const { row, col } = getMatrixPosition(index);
     const visualPos = getVisualPosition(row, col, width, height);
     const tileStyle = {
@@ -166,7 +247,7 @@ function Tile(props) {
         height: `calc(100% / ${GRID_SIZE})`,
         translateX: visualPos.x,
         translateY: visualPos.y,
-        backgroundImage: `url(${imgUrl})`,
+        backgroundImage: `url(${croppedUrl})`,
         backgroundSize: `${BOARD_SIZE}px`,
         backgroundPosition: `${(100 / (GRID_SIZE - 1)) * (tile % GRID_SIZE)}% ${(100 / (GRID_SIZE - 1)) * (Math.floor(tile / GRID_SIZE))}%`,
 

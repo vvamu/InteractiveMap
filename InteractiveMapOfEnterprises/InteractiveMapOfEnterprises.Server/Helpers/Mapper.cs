@@ -30,6 +30,7 @@ namespace InteractiveMapOfEnterprises.Server.Helpers
             string pattern = "yyyy-MM-dd";
 
             JsonNode content = jsonNode["data"];
+            if (content == null) throw new Exception("Данные о компании не были переданы");
             var name = content["name"].ToString();
             var description = content["description"].ToString();
             var regionId = content["regionId"].ToString();
@@ -157,6 +158,7 @@ namespace InteractiveMapOfEnterprises.Server.Helpers
 
             JsonNode content = jsonNode["data"];
             var id = Guid.Parse(content["id"].ToString());
+
             var roles = content["roles"].ToString();
            
             var loginUser = new EditUserAdminViewModel() { Id =  id,Roles= roles};

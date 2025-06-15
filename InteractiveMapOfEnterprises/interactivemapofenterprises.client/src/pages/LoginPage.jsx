@@ -4,6 +4,7 @@ import useCookieHandler from '../services/useCookieHandler';
 import ContentWithPaddings from '../components/common/ContentWithPaddings';
 import FormContent from '../components/common/FormContent';
 
+import useLocationChangeLogger from "../hooks/useLocationChangeLogger";
 
 
 const LoginPage = ({ changeUser }) => {
@@ -11,6 +12,8 @@ const LoginPage = ({ changeUser }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null); // Update to use a single error state
+
+
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -49,7 +52,7 @@ const LoginPage = ({ changeUser }) => {
                     Пароль:
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
-                <div style={{ marginTop: "20px" }}>
+                <div style={{ marginTop: "20px" }} className="flexContent">
                     <button type="submit">Войти</button>
                 </div>
             </form>

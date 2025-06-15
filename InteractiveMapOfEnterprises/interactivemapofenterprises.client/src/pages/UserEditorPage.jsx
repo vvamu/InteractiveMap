@@ -8,12 +8,13 @@ import EditUserFormByAdmin from '../components/UserEditorPage/EditUserFormByAdmi
 import EditUserForm from '../components/UserEditorPage/EditUserForm';
 
 import { useParams } from 'react-router-dom';
+import useLocationChangeLogger from '../hooks/useLocationChangeLogger';
 
 export default function UserEditorPage() {
     const { id } = useParams();
     const [returnUrl, setReturnUrl] = useState('');
     const [user, setUser] = useState(null); // Declare user state first
-
+    
     const [error, setError] = useState('');
 
     useEffect(() => {
@@ -47,7 +48,7 @@ export default function UserEditorPage() {
 
 
     return (
-        <FormContent backgroundImage={"url(/createUserImage.jpg)"}>
+        <FormContent backgroundImage={"url(/companiesBackgrounds/brest-meat.webp)"}>
             <h2>{!user ? "Создать" : "Редактировать"} пользователя</h2>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {currentUser?.roles == "Administrator" && currentUser?.id != user?.id ? 

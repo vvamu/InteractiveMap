@@ -20,7 +20,14 @@ const userService = {
     },
     deleteAsync: async (userId, isSoft = true) => {
         try {
-            const response = await axios.post(`${urlUser}delete/${userId}?isSoft=${isSoft}`);
+            const response = await
+                axios(`${urlUser}delete/${userId}`, {
+                    method: "post",
+                    data: { isSoft: false },
+                    withCredentials: true
+                });
+
+                //axios.post(`${urlUser}delete/${userId}?isSoft=${isSoft}`, { withCredentials: true });
             return response.data;
         } catch (error) {
             throw error.response.data;
@@ -36,7 +43,7 @@ const userService = {
     },
     get: async (id) => {
         try {
-            const response = await axios.get(`${urlUser}${id}`);
+            const response = await axios.get(`${urlUser}${id}` );
             return response.data;
         } catch (error) {
             throw error.response.data;

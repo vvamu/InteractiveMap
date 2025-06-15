@@ -4,13 +4,13 @@ function Step({ children, onNext, onCancel }) {
 
 
   return (
-    <section>
-      {children}
-      <div className="step__footer">
+    <>
+          {children}
+          <div className="flexContent" style={{margin:"10px 0px"}}>
               <Button onClick={() => { onCancel() }}>Отмена</Button>
               <Button onClick={onNext}>Подтвердить</Button>
       </div>
-    </section>
+    </>
   );
 }
 

@@ -32,7 +32,7 @@ public class Company
     public string Latitude { get; set; }
     [JsonPropertyName("altitude")]
     public string Altitude { get; set; } 
-    public List<string>? Achievements { get; set; }
+    //public List<string>? Achievements { get; set; }
 
     #region Informational
     [JsonPropertyName("dateFoundation")]

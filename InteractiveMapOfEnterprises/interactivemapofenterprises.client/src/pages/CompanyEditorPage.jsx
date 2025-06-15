@@ -11,6 +11,8 @@ import LoaderBox from "../components/common/InfoBoxs/LoaderBox";
 import companiesService from "../services/companiesService";
 import { TYPE_CHAPTER } from "../constants/constants";
 import { useParams } from 'react-router-dom';
+import ContentWithBluredBackground from "../components/common/ContentWithBluredBackground";
+import ContentWithPaddings from "../components/common/ContentWithPaddings";
 function CompanyEditorPage({ currentUser }) {
 
     const { id } = useParams();
@@ -47,17 +49,17 @@ function CompanyEditorPage({ currentUser }) {
 
 
 
-  return (
-      <FormContent backgroundImage={ "url(/createCompany.jpg)"}> 
-        <Title className="editor-header__title" level={1}>
-          Заполнение информации об предприятии
-        </Title>
+    return (
+        <>
+        <LoaderBox active={isActiveLoader}>
+            <p className="message-loader">{messageLoader}</p>
+         </LoaderBox>
 
-          <MinimalInfoAboutComponyStep  company={company} currentUser={currentUser} />
-      <LoaderBox active={isActiveLoader}>
-        <p className="message-loader">{messageLoader}</p>
-      </LoaderBox>
-    </FormContent>
+            <ContentWithPaddings style={{ height: "80%", padding: "0" }} duration={5000} > 
+                <MinimalInfoAboutComponyStep  company={company} currentUser={currentUser} />
+              
+            </ContentWithPaddings>
+        </>
   );
 }
 

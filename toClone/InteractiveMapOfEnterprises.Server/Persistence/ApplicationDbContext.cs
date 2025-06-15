@@ -12,7 +12,7 @@ public class ApplicationDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite();
+        //optionsBuilder.UseSqlite();
     }
     public DbSet<Company> Companies { get; set; }
     public DbSet<ApplicationUser> ApplicationUsers { get; set; }
@@ -28,7 +28,7 @@ public class ApplicationDbContext : DbContext
                .HasOne(x => x.Creator)
                .WithMany(x => x.Companies)
                .HasForeignKey(x => x.CreatorId)
-               .OnDelete(DeleteBehavior.SetNull);
+               .OnDelete(DeleteBehavior.NoAction);
         base.OnModelCreating(builder);
     }
 }

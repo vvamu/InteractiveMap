@@ -2,13 +2,16 @@ import { useState } from "react";
 
 import ContentWithPaddings from "../components/common/ContentWithPaddings"
 import ButtonIcon from "../components/common/Buttons/ButtonIcon";
-import  ListUsers  from "../components/UsersPage/ListUsers/ListUsers";
+import ListUsers from "../components/UsersPage/ListUsers/ListUsers";
+import useLocationChangeLogger from "../hooks/useLocationChangeLogger";
 
 const createIcon = "/create.svg";
 
 export default function UsersPage({ currentUser }) {
-  const [isActiveSelectedChaptersBox, setIsActiveSelectedChaptersBox] =
-    useState(false);
+
+  
+  const [isActiveSelectedChaptersBox, setIsActiveSelectedChaptersBox] =useState(false);
+  const [countUsers, setCountUsers] = useState(0);
 
   const handleSelectedChapterTypes = (chapterTypes) => {
     document.location = `/editor?type=create&chapterTypes=${chapterTypes
@@ -16,15 +19,18 @@ export default function UsersPage({ currentUser }) {
       .join(",")}`;
     };
 
+
+
     return (
-        
-        <ContentWithPaddings>
-            
-                <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "50px" }}>
-                        <h3>Пользователи</h3>
-                        {/*<ButtonIcon src={createIcon} alt={"создать"} onClick={() => toCreatePage()} />*/}
-                    </div>
-                    <ListUsers />
+
+        <ContentWithPaddings >
+
+            <div className="pageHeader">
+                <h3>Пользователи</h3>
+                <div className="pageStats coloredText">Созданных  пользователей: { countUsers}</div>
+                {/*<ButtonIcon src={createIcon} alt={"создать"} onClick={() => toCreatePage()} />*/}
+            </div>
+            <ListUsers setCountUsers={setCountUsers} />
                
                 
         </ContentWithPaddings>
