@@ -7,16 +7,15 @@ import userService from "../../../services/userService";
 import ActionConfirmationBox from "../../common/InfoBoxs/ActionConfirmationBox"
 import UserContext from "../../../context/UserContext";
 import ApplicationUrl from "../../../models/ApplicationUrl";
+import ErrorBox from "../../common/InfoBoxs/ErrorBox";
 
-const ListUsers = ({ setCountUsers }) => {
+const ListUsers = ({ setCountUsers, setErrorMessages ,children}) => {
 
     const [users, setUsers] = useState([]);
     const [isEditUser, setEditUser] = useState([]);
     const [isActiveLoader, setIsActiveLoader] = useState(false);
     const [messageLoader, setMessageLoader] = useState(undefined);
-    const [isActiveDeleteConfirmationBox, setIsActiveDeleteConfirmationBox] = useState(false);
     const curUser = useContext(UserContext).user;
-
 
 
     useEffect(() => {
@@ -53,25 +52,21 @@ const ListUsers = ({ setCountUsers }) => {
             document.location = ApplicationUrl.User.app.get;
         }
         catch (ex) {
-            document.location = ApplicationUrl.User.app.get;
+            let error = { message: `${ex}` };
+            let errors = [error]
+            setErrorMessages(errors) 
+            //document.location = ApplicationUrl.User.app.get;
         }
 
     };
 
     return (
         <div >
-
-          
-
             {users.map((user, index) => (
                 <>
-                    <ActionConfirmationBox active={isActiveDeleteConfirmationBox} message={`Удалить ${user.name}?`} onConfirm={() => {
-                        deleteAsync(user.id)
-                }} onCancel={() => { setIsActiveDeleteConfirmationBox(false) }} />
-
-                
                     <ListUser key={index} data={user} setEditUser={setEditUser}
-                        deleteAsync={() => { setIsActiveDeleteConfirmationBox(true) }} />
+                        deleteAsync={(userId) => { deleteAsync(userId) }}>
+                    </ListUser>
                 </>
             ))}
             <LoaderBox active={isActiveLoader}>

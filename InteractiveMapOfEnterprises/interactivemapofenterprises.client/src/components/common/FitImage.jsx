@@ -35,9 +35,9 @@ export default function FitImage({ src, imageBytes, height, width, style, object
                 src={src ?? image}
                 style={{
                     objectFit: objectFit ?? "cover",
-                    width: isHover ? "110%" : "100%",
-                    height: isHover ? "110%" : "100%",
-                    transition: "width  0.5s, height 0.5s", // Add smooth transition
+                    width: isHover ? "105%" : "100%",
+                    height: isHover ? "105%" : "100%",
+                    transition: "width  1s, height 1s", // Add smooth transition
                    
                 }}
                 alt="" // Always include alt text for accessibility

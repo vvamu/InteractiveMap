@@ -9,6 +9,7 @@ import ActionConfirmationBox from "../../common/InfoBoxs/ActionConfirmationBox";
 import LoaderBox from "../../common/InfoBoxs/LoaderBox";
 import ApplicationUrl from "../../../models/ApplicationUrl";
 import UserContext from "../../../context/UserContext";
+import ErrorBox from "../../common/InfoBoxs/ErrorBox";
 function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMarkersLocal,
     withBtnActions,
     withOpenByItem, withImage, children }) {
@@ -26,8 +27,7 @@ function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMa
 
     const [isActiveLoader, setIsActiveLoader] = useState(true);
     const [messageLoader, setMessageLoader] = useState(undefined);
-
-    const [isActiveDeleteConfirmationBox, setIsActiveDeleteConfirmationBox] = useState(false);
+    const [errorMessages, setErrorMessages] = useState([])
 
     useEffect(() => {
         onActiveLoader("Загрузка...");
@@ -70,7 +70,7 @@ function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMa
             filteredd = allCompanies;
         }
 
-        if (filters?.category != null && filters?.category != "Все") {
+        if (filters?.category != null && filters?.category != "Собственные" && filters?.category != "Все") {
             filteredd = filteredd?.filter(f => f.category == filters.category)
         }
         
@@ -128,6 +128,9 @@ function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMa
     const handleDelete = async (id) => {
          
         try {
+            if (!id) {
+                return;
+            }
 
             companiesService.deleteAsync(id).then(() => {
 
@@ -139,7 +142,8 @@ function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMa
             });
 
         }
-        catch {
+        catch (ex) {
+            let ex2 = ex;
             document.location = ApplicationUrl.User.app.get + userId;
         }
         finally {
@@ -180,9 +184,12 @@ function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMa
 
           {!companies || companies.length == 0 ? <div>Ни одной компании не создано</div> : companies.map((compony, index) => (
               <>
-                  <ActionConfirmationBox active={isActiveDeleteConfirmationBox} message={`Удалить ${compony.name}?`} onConfirm={() => {
-                      handleDelete(compony.id)
-                  }} onCancel={() => { setIsActiveDeleteConfirmationBox(false) }} />
+                  
+                  <ErrorBox
+                      errors={errorMessages}
+                      active={errorMessages.length > 0}
+                      onClose={() => { setErrorMessages([]) }}
+                  />
 
 
                   <CompanyItemCatalog
@@ -191,13 +198,14 @@ function Companies({ userId, toAllUsers, filters, companies, setCompanies, setMa
                       withBtnActions={withBtnActions}
                       key={index}
                       data={compony}
+                      setErrorMessages={setErrorMessages}
                       onOpen={() => {
                           handleOpen(compony.id ?? compony.companyId)
                       } }
                       onEdit={() => {
                           handleEdit(compony.id)
                       }}
-                      onDelete={() => { setIsActiveDeleteConfirmationBox(true) }}
+                      onDelete={(companyId) => { handleDelete(companyId) }}
                   />
               </>
       ))}

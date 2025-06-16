@@ -15,24 +15,16 @@ import ListItemActions from "../../common/ListItem/ListItemActions";
 import UserContext from "../../../context/UserContext";
 import FitImage from "../../common/FitImage";
 
-function CompanyItemCatalog({ data, onOpen, onEdit, onDelete, withBtnActions, withOpenByItem , withImage }) {
+import ActionConfirmationBox from "../../common/InfoBoxs/ActionConfirmationBox";
+import ErrorBox from "../../common/InfoBoxs/ErrorBox";
 
-    //const [curUser, setCurUser] = useState({ roles: localStorage.getItem("Roles"), id: localStorage.getItem("UserId") });
-    
-    //useEffect(() => {
-
-    //    async function getUser() {
-    //        await authService.getCurrentUser().then((data) => {
-    //            setCurUser(data);
-    //        })
-    //    }
-    //    getUser();
-    //})
-
+function CompanyItemCatalog({ data, onOpen, onEdit, onDelete, withBtnActions, withOpenByItem, withImage, setErrorMessages }) {
     const curUser = useContext(UserContext).user;
+    const [isActiveDeleteConfirmationBox, setIsActiveDeleteConfirmationBox] = useState(false);
 
-    const isCanEditAndDelete =
-        (curUser?.roles == "Administrator" || curUser?.id == data.creatorId);
+
+
+    const isCanEditAndDelete = (curUser?.roles == "Administrator" || curUser?.id == data.creatorId);
 
     function editAction() {
         if (curUser?.roles == "Administrator" || curUser?.id == data.creatorId) {
@@ -43,38 +35,50 @@ function CompanyItemCatalog({ data, onOpen, onEdit, onDelete, withBtnActions, wi
         
     }
 
-    function deleteAction() {
+    function deleteAction(userId) {
         if (curUser?.roles == "Administrator" || curUser?.id == data.creatorId) {
-            onDelete();
+            onDelete(userId);
             return;
         }
-        return null;
+        let error = { message: "Компанию не может удалить пользователь, не являющийся создателем или администратором" };
+        setErrorMessagesList(...[error]) 
     }
 
-    return (
-        <ListItem onClick={() => {
-            withOpenByItem ? onOpen(data?.id) : null
-        }} >
 
-            <div className="flexContent">
-                {withImage ? 
-                    (<div>
-                        <FitImage imageBytes={data.imageBytes} height={"70px"} width={"120px"} />
-                    </div>)
-                    : null
-                }
-               
-                <div >
-                    <p className={classes.name}  >{data.name}</p>
-                    <p style={{ fontSize: "15px" }}>{data.category}</p>
+
+    return (
+        <>
+            <ActionConfirmationBox active={isActiveDeleteConfirmationBox} message={`Удалить ${data.name}?`}
+                onConfirm={() => { deleteAction(data.id) }}
+                onCancel={() => { setIsActiveDeleteConfirmationBox(false) }} />
+
+          
+
+            <ListItem onClick={() => {
+                withOpenByItem ? onOpen(data?.id) : null
+            }} >
+
+                <div className="flexContent">
+                    {withImage ?
+                        (<div>
+                            <FitImage imageBytes={data.imageBytes} height={"70px"} width={"120px"} />
+                        </div>)
+                        : null
+                    }
+
+                    <div >
+                        <p className={classes.name}  >{data.name}</p>
+                        <p style={{ fontSize: "15px" }}>{data.category}</p>
+                    </div>
                 </div>
-            </div>
-            <ListItemActions openHandler={() => { onOpen(data?.id) }}
-                editHandler={editAction}
-                deleteHandler={deleteAction}
-                isCanEdit={withBtnActions ?? isCanEditAndDelete} />
-         
-      </ListItem>
+                <ListItemActions openHandler={() => { onOpen(data?.id) }}
+                    editHandler={editAction}
+                    deleteHandler={() => { setIsActiveDeleteConfirmationBox(true)} }
+                    isCanEdit={withBtnActions ?? isCanEditAndDelete} />
+
+            </ListItem>
+        </>
+        
   );
 }
 

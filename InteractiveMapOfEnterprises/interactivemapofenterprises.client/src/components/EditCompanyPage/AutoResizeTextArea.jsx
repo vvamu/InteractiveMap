@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react"
 import Input from "../common/Input/Input";
 
-const AutoResizeTextArea = ({ handleChangeInput, prevData, style, disabled = false }) => {
+const AutoResizeTextArea = ({ handleChangeInput, prevData, text, style, disabled = false }) => {
     const textareaRef = useRef(null);
     function handleChangeTextArea(e) {
         const textarea = textareaRef.current;
@@ -32,12 +32,12 @@ const AutoResizeTextArea = ({ handleChangeInput, prevData, style, disabled = fal
         <>
             
             {disabled ? 
-                <textarea id="textarea" ref={textareaRef} value={prevData.description} style={style} />
+                <textarea id="textarea" ref={textareaRef} value={text ?? prevData.description} style={style} />
                 :
                 <>
-                    <Input type={"hidden"} label={"Информация о предприятии"} isRequired={prevData.description.isRequired} />
+                    <Input type={"hidden"} label={"Информация о предприятии"} isRequired={prevData?.description?.isRequired} />
                     <textarea ref={textareaRef} placeholder={"ОАО «Минский автомобильный завод» (МАЗ) — управляющая компания холдинга «БЕЛАВТОМАЗ» (бел. Мінскі аўтамабільны завод)"}
-                        name={"description"} value={prevData.description.value} isRequired={prevData.description.isRequired} onChange={(e) => { handleChangeTextArea(e) }} />
+                        name={"description"} value={text ?? prevData?.description?.value} isRequired={prevData?.description?.isRequired} onChange={(e) => { handleChangeTextArea(e) }} />
                     </>
             }
            
